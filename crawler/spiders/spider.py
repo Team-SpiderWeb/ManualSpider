@@ -12,7 +12,7 @@ from urllib.parse import urlparse
 import urllib
 import pymysql
 
-db = pymysql.connect("localhost","root","belle","thsst" )
+db = pymysql.connect("localhost","root","belle","thsst_v2" )
 
 class Spider(scrapy.Spider):
 
@@ -33,13 +33,15 @@ class Spider(scrapy.Spider):
     def getLastId(self):
         cursor = db.cursor()
         count = cursor.execute("SELECT COUNT(*) FROM page")
+        db.commit()
         rows = cursor.fetchone()[0]
         cursor.close()
-        return rows
+        self.html_ctr = rows
 
     def parse(self, response):
 
-        self.html_ctr = self.getLastId()
+        self.getLastId()
+        
         for rapplerStory in response.css('div.story-area'):
 
             item = CrawlerItem()
