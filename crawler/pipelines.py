@@ -15,7 +15,7 @@ class CrawlerPipeline(object):
 		'host': 'localhost',
 		'user': 'root',
 		'password': 'belle',
-		'database': 'thsst_v2',
+		'database': 'thsst_db',
 		'raise_on_warnings': True,
 	}
 	
@@ -48,14 +48,19 @@ class CrawlerPipeline(object):
     
     
 	def save(self, row): 
-		cursor = self.cnx.cursor()
-		page_query = ("INSERT INTO " + self.page_table + 
-			"(url, author, date, title, content) "
-			"VALUES (%(url)s, %(author)s, %(date)s, %(title)s, %(content)s)")
 
-		# Insert new page row
-		cursor.execute(page_query, row)		
-		self.cnx.commit()
+		cursor = self.cnx.cursor()
+		try:
+			page_query = ("INSERT INTO " + self.page_table + 
+				"(url, author, date, title, content) "
+				"VALUES (%(url)s, %(author)s, %(date)s, %(title)s, %(content)s)")
+
+			# Insert new page row
+			cursor.execute(page_query, row)		
+			self.cnx.commit()
+		except MySQLError as e:
+			print(e)
+			
 		cursor.close()
 
 

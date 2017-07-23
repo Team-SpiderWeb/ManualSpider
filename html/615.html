@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="alternate" href="/android-app://com.rappler.RapplerMobile/http/www.rappler.com/nation/138019-last-session-serge-osmena" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="http://www.rappler.com/nation/138019-last-session-serge-osmena" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="keywords" content="Sergio Osmeña III, Serge Osmeña, #PHVote, politics, Philippine Senate, senators, elections" />
+<meta name="rights" content="All rights reserved by Rappler, Inc.   " />
+<meta name="news_keywords" content="Sergio Osmeña III, Serge Osmeña, #PHVote, politics, Philippine Senate, senators, elections" />
+<meta name="description" content="Senator Serge Osmeña III, three-time senator, self-proclaimed liberal, martial law detainee, 14th in the senatorial race, speaks to Rappler reporter Patricia Evangelista on what it means to say goodbye" />
+<title>The last session: Serge Osmeña leaves the building</title>
+<link rel="stylesheet" href="https://static.rappler.com/cache/assets/1498961288-ce075218a063c233fdbba70bfbb79ebd.css" type="text/css" />
+<script src="https://www.googletagservices.com/tag/js/gpt.js" type="text/javascript"></script>
+<script src="https://cdns.gigya.com/js/gigya.js?apiKey=3_ao3WNnqtFDhSjgAe1TC-0ykqEbogOlYXE1kYr0LoFxTDRzrwrGJkZpdnR_XEn3D5" type="text/javascript">{ siteName: "rappler.com", enabledProviders: "facebook,twitter,google,linkedin,yahoo,messenger,myspace,aol,foursquare,orkut,vkontakte,renren,QQ,Sina,kaixin",connectWithoutLoginBehavior: "alwaysLogin", me_server: "https://me.rappler.com"}</script>
+<script src="https://static.rappler.com/cache/assets/1440183726-6bfc3f5c9b1f7daf5f47ce862d3e2f7d.js" type="text/javascript"></script>
+<link href="https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/AC5C8F68E7224542A579A5130721E718/last-session.-sergio-osmena-iii--photo--by-patricia-evangelista0.jpg" rel="image_src" />
+<link href="https://static.rappler.com/templates/rappler3_default/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link href="http://feeds.feedburner.com/rappler/" rel="alternate" type="application/rss+xml" title="RAPPLER" />
+<link href="http://feeds.feedburner.com/elections-2013" rel="alternate" type="application/rss+xml" title="Elections-2013" />
+<link href="http://feeds.feedburner.com/" rel="alternate" type="application/rss+xml" title="Project Agos + #WeatherAlert feed" />
+<meta property="fb:admins" content="659407145" />
+<meta property="fb:app_id" content="129650183806730" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.rappler.com/nation/138019-last-session-serge-osmena" />
+<meta property="og:title" content="The last session: Serge Osmeña leaves the building" />
+<meta name="cXenseParse:recs:articleid" content="138019"/>
+<meta name="cXenseParse:pageclass" content="article" />
+<meta name="cXenseParse:recs:publishtime" content="2016-06-29T12:30:00+0800"/>
+<meta name="bt:id" content="138019"/>
+<meta name="bt:pubDate" content="2016-06-29T12:30:00+0800"/>
+<meta name="bt:modDate" content="2016-06-29T10:43:13+0800"/>
+<meta name="bt:keywords" content="Sergio Osmeña III, Serge Osmeña, #PHVote, politics, Philippine Senate, senators, elections"/>
+<meta name="bt:author" content="Patricia Evangelista"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:app:country" content="PH">
+<meta name="twitter:site" content="@rapplerdotcom">
+<meta name="twitter:app:id:iphone" content="600797927" />
+<meta name="twitter:app:id:ipad" content="600797927" />
+<meta name="twitter:app:id:googleplay" content="com.rappler.RapplerMobile" />
+<meta property="al:ios:url" content="fb129650183806730://nation/138019-last-session-serge-osmena" />
+<meta name="twitter:app:url:iphone" content="rappler://nation/138019-last-session-serge-osmena" />
+<meta name="twitter:app:url:ipad" content="rappler://nation/138019-last-session-serge-osmena" />
+<meta name="twitter:app:url:googleplay" content="rappler://nation/138019-last-session-serge-osmena" />
+<meta property="al:android:url" content="fb129650183806730://nation/138019-last-session-serge-osmena">
+<link rel="canonical" href="http://www.rappler.com/nation/138019-last-session-serge-osmena" />
+<meta name="twitter:image" content="https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/AC5C8F68E7224542A579A5130721E718/last-session.-sergio-osmena-iii--photo--by-patricia-evangelista0.jpg" />
+<meta property="og:image" content="https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/AC5C8F68E7224542A579A5130721E718/last-session.-sergio-osmena-iii--photo--by-patricia-evangelista0.jpg" />
+<meta property="og:description" content="Senator Serge Osmeña III, three-time senator, self-proclaimed liberal, martial law detainee, 14th in the senatorial race, speaks to Rappler reporter Patricia Evangelista on what it means to say goodbye" />
+<meta name="twitter:description" content="Senator Serge Osmeña III, three-time senator, self-proclaimed liberal, martial law detainee, 14th in the senatorial race, speaks to Rappler reporter Patricia Evangelista on what it means to say goodbye" />
+<meta property="og:site_name" content="Rappler" />
+<meta name="cXenseParse:recs:image" content="https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/C31B4E925C0744BBA3F025CE5C4EAFD4/last-session_C31B4E925C0744BBA3F025CE5C4EAFD4.jpg"/>
+<meta property="article:author" content="https://www.facebook.com/patricia.evangelista.ph" />
+<meta property="bt:type" content="article" />
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script> function wrapDFPWithCxsense(adSlot) { cX.callQueue.push(["invoke", function () { googletag.cmd.push(function () { googletag.display(adSlot); }); }]); } var googleSlots = []; var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; var TopMrecMap = googletag.sizeMapping().addSize([1024, 300], [336, 280]).addSize([900, 300], [300, 250]).addSize([768, 300], [728, 90]).addSize([0, 0], [300, 250]).build(); var MidMrecMap = googletag.sizeMapping().addSize([1024, 300], [336, 280]).addSize([900, 300], [300, 250]).addSize([768, 300], [728, 90]).addSize([0, 0], [300, 250]).build(); var leaderboardMap = googletag.sizeMapping().addSize([1024, 300], [728, 90]).addSize([768, 300], [728, 90]).addSize([640, 300], [468, 60]).addSize([0, 0], [300, 250]).build(); var cX = cX || {}; cX.callQueue = cX.callQueue || []; cX.callQueue.push(["invoke", function () { console.log(cX.getUserSegmentIds({ persistedQueryId: "82ef547962d8ecd598da83a1543cb91a6670175e" })); googletag.cmd.push(function () { googleSlot1 = googletag.defineSlot("/15125093/Rappler_Top", [[300, 250], [336, 280], [728, 90], [300, 100][320, 50]], "Rappler_Top").addService(googletag.pubads()) .setTargeting("category", "nation") .setTargeting("articleId", "138019") .setTargeting("keywords", ['Sergio Osmeña III','Serge Osmeña','#PHVote','politics','Philippine Senate','senators','elections']) .defineSizeMapping(TopMrecMap); googleSlot2 = googletag.defineSlot("/15125093/Rappler_Mid", [[468, 60], [728, 90], [320, 50], [336, 280], [300, 250]], "Rappler_Mid").addService(googletag.pubads()) .setTargeting("category", "nation") .setTargeting("articleId", "138019") .setTargeting("keywords", ['Sergio Osmeña III','Serge Osmeña','#PHVote','politics','Philippine Senate','senators','elections']) .defineSizeMapping(MidMrecMap); googleSlot3 = googletag.defineSlot("/15125093/Rappler_Bottom", [[728, 90], [468, 60], [336, 280], [320, 50]], "Rappler_Bottom").addService(googletag.pubads()) .setTargeting("category", "nation") .setTargeting("articleId", "138019") .setTargeting("keywords", ['Sergio Osmeña III','Serge Osmeña','#PHVote','politics','Philippine Senate','senators','elections']) .defineSizeMapping(leaderboardMap); googleSlot4 = googletag.defineSlot("/15125093/Rappler_Scripts", [1, 1], "Rappler_Scripts").addService(googletag.pubads()) .setTargeting("category", "nation") .setTargeting("articleId", "138019") .setTargeting("keywords", ['Sergio Osmeña III','Serge Osmeña','#PHVote','politics','Philippine Senate','senators','elections']); googleSlot5 = googletag.defineSlot("/15125093/Rappler_Moods", [[300, 250], [336, 280]], "Rappler_Moods").addService(googletag.pubads()) .setTargeting("category", "nation") .setTargeting("articleId", "138019") .setTargeting("keywords", ['Sergio Osmeña III','Serge Osmeña','#PHVote','politics','Philippine Senate','senators','elections']); googletag.pubads().enableAsyncRendering(); googletag.pubads().collapseEmptyDivs(); googletag.pubads().setTargeting("CxSegments", cX.getUserSegmentIds({ persistedQueryId: "82ef547962d8ecd598da83a1543cb91a6670175e" })); !function () { var e = { "300x250": 803911, "300x600": 803912, "320x50": 803914, "320x100": 803915, "728x90": 803913 }, t = { placements: [] }; for (var o in googletag.pubads().getSlots()) { var i = googletag.pubads().getSlots()[o]; for (var n in i.getSizes()) { var g = i.getSizes()[n], a = e[g.getWidth() + "x" + g.getHeight()] || null; if (a) { t.placements.push({ slotid: i.getSlotElementId(), zoneid: a }); break } } } if (t.placements.length > 0) { window.Criteo = window.Criteo || {}, window.Criteo.events = window.Criteo.events || [], googletag.pubads().disableInitialLoad(); var s = function () { googletag.cmd.push(function () { Criteo.SetDFPKeyValueTargeting(), googletag.pubads().refresh() }) }; Criteo.events.push(function () { Criteo.SetLineItemRanges("0.50..150.00:0.50"), Criteo.RequestBids(t, s, 2e3) }) } }(); googletag.enableServices(); }); }]); </script><meta name="alexaVerifyID" content="boi3S3jgq4MUulG4x97ZaZ1dpDQ" />  <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-26553497-1', 'auto'); </script> <link href="https://plus.google.com/+Rappler" rel="publisher" /><style>@font-face {font-family: 'Roboto Condensed';font-style: normal;font-weight: 700;src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://static.rappler.com/templates/rappler3_default/fonts/roboto-bold-condensed.woff) format('woff')}</style>
+</head>
+<body>
+<script> window.dataLayer = window.dataLayer || []; var pubDate = new Date('2016-06-29 12:30:00'); pubDate = new Date(Date.UTC(pubDate.getFullYear(), pubDate.getMonth(), pubDate.getDate(), pubDate.getHours(), pubDate.getMinutes(), pubDate.getSeconds())); var timeDiff = Math.abs(new Date().getTime() - pubDate); var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)) - 1; dataLayer.push({ AuthorName: "Patricia Evangelista", PublishedDt: '2016-06-29 12:30:00', RevisedDt: '2016-06-29 10:43:13', AuthorTags: "Sergio Osmeña III, Serge Osmeña, #PHVote, politics, Philippine Senate, senators, elections", ArticleId: '138019', ArticleTitle: "The last session: Serge Osmeña leaves the building", ArticleAge: diffDays });</script> <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-LCSN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-LCSN');</script>  <noscript><img src="https://static.rappler.com/plugins/system/lazyload/blank.png" data-original="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Jv+uf1agkf00Of" style="display:none" height="1" width="1" alt="" /></noscript>
+<div id='Rappler_Scripts' style='height:1px; width:1px;'>
+</div>
+<div id="page" style="overflow: hidden;">
+<div id="askedition" style="background-color:#000;color:#fff;font-size:14px;padding:10px 10px 10px 10px;display:none">
+Welcome to Rappler, please select your default country:&nbsp;&nbsp;
+<a id="editionPhilippines" href="javascript:void(0)" style="font-weight:normal;padding:10px">Philippines</a>&nbsp;&nbsp;
+<a id="editionIndonesia" href="javascript:void(0)" style="font-weight:normal;padding:10px">Indonesia</a>
+</div>
+<div id="masthead" class="navbar hidden-lg box-shadow-2" style="padding:0px;">
+<div class="form-inline" style="margin-bottom:0px; padding:8px 10px;">
+<div class="form-addon padding right text-left">
+<div class="form-inline">
+<div class="form-addon padding right">
+<a href="#menu" id="mobile-menu-trigger"><i class="fa fa-bars fa-fw light"></i></a>
+</div>
+<div class="form-input">
+<a href="/"><img src="https://static.rappler.com/templates/rappler3_default/img/rapplerlogosvg.svg" style="width:100px!important; max-width:none!important;"></a>
+</div>
+</div>
+</div>
+<div class="dropdown mobile-search-dropdown form-input text-right">
+<a id="menuIcoPhilippines" href="/" class="white link padding left"><img src="https://static.rappler.com/templates/rappler3_default/img/phl-30x30.png" class="nolazy" style="width:20px;"></a>
+<a id="menuIcoIndonesia" href="/indonesia/" class="white link padding left right"><img src="https://static.rappler.com/templates/rappler3_default/img/ina-30x30.png" class="nolazy" style="width:20px;"></a>
+<a role="button" data-toggle="dropdown" data-target="#" href="#" class="padding left"><i class="fa fa-search fa-fw light"></i></a>
+<ul class="side-nav no-padding dropdown-menu menu-dropdown col-xs-12 rappler-light-gray">
+<li class="row">
+<div class="col-xs-12 col-sm-12 col-md-12">
+<form class="form-inline" role="search" method="GET" action="/">
+<div class="form-input padding right">
+<input type="hidden" name="option" value="com_rappler">
+<input type="hidden" name="task" value="search">
+<input type="hidden" name="language" value="english">
+<input type="text" name="q" placeholder="Search">
+</div>
+<div class="form-addon">
+<button class="rappler-orange bg" type="submit" >Go!</button>
+</div>
+</form>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div> 
+<div class="menu-trigger nav-full">
+<header class="navbar navbar-rappler-top visible-lg" role="banner">
+<a class="navbar-brand-top" href="/"><img src="https://static.rappler.com/templates/rappler3_default/img/rappler-basic-logo.svg"></a>
+<div class="mdd-wrapper">
+<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+<ul class="nav navbar-nav navbar-left">
+<li>
+<a href="/?mdd=1" id="menuPhilippines" style="display:inline-block;">Philippines</a><a id="menuIndonesia"  style="display:inline-block;" href="/indonesia/" class="padding left">Indonesia</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="http://coupons.rappler.com" target="_blank">
+Coupons                                </a>
+</li>
+<li>
+<a href="http://shop.rappler.com" target="_blank">
+<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Rappler Shop</a>
+</li>
+<li><a href="https://www.facebook.com/rapplerdotcom" target="_blank"><i class="fa fa-facebook padding left"></i></a></li>
+<li><a href="http://twitter.com/rapplerdotcom" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="http://instagram.com/rappler" target="_blank"><i class="fa fa-instagram"></i></a></li>
+<li><a href="http://feeds.feedburner.com/rappler/" target="_blank"><i class="fa fa-rss padding right"></i></a></li>
+<li>
+<a id="rpl_auth_container" href="javascript:void(0)" data-toggle="popover">
+<i id="login_user_icon" class="fa fa-user margin right"></i><span id="login_user_firstname" class="caption">Login to Rappler</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="login-content hide">
+<span class="clickover-txt caption">Login to Rappler using your social account:</span>
+<div id="pop_loginui"></div>
+<span class="clickover-txt caption">
+Already have a Rappler Account?
+<a href="javascript:fnLogin();$('.login-content').find('.close').click();"><b>Login</b></a>
+or <a href="javascript:fnRegister(null);$('.login-content').find('.close').click();"><b>Register</b></a> to create one.
+</span>
+</div>
+</header>
+<nav id="menu" class="mm-menu">
+<ul>
+<li class="selected"><a href="/">Home</a></li>
+<li class="item-5260 parent" deeper><a href="/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:News"  >News</a><ul><li><li class="item-5261 active"><a href="/nation"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Philippines"  >Philippines</a></li><li class="item-5691"><a href="/nation/politics/elections/2016"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#PHvote 2016"  >#PHvote 2016</a></li><li class="item-5262 parent"><a href="/world"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:World"  >World</a></li><li class="item-5272"><a href="/move-ph/balikbayan"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#BalikBayan"  >#BalikBayan</a></li><li class="item-5273 parent"><a href="/science-nature"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Science &amp; Nature"  >Science &amp; Nature</a></li></ul></li><li class="item-5282 parent" deeper><a href="/video"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Video"  >Video</a><ul><li><li class="item-5283"><a href="/video/newscast"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Newscast"  >Newscast</a></li><li class="item-5285"><a href="/video/shows"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Shows"  >Shows</a></li><li class="item-5286"><a href="/video/reports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Reports"  >Reports</a></li><li class="item-5287"><a href="/video/documentary"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Documentary"  >Documentary</a></li><li class="item-5288"><a href="/video/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li></ul></li><li class="item-5289 parent" deeper><a href="/business"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Business"  >Business</a><ul><li><li class="item-5290"><a href="/business/economy-watch"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Economy"  >Economy</a></li><li class="item-5433"><a href="/brandrap/brighter-life"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Brighter Life"  >Brighter Life</a></li><li class="item-5291"><a href="/business/industries"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Industries"  >Industries</a></li><li class="item-5292"><a href="/business/personal-finance"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Money"  >Money</a></li><li class="item-5294"><a href="/business/features"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Features"  >Features</a></li><li class="item-5295"><a href="/business/infographics"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li></ul></li><li class="item-5296 parent" deeper><a href="/newsbreak"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Newsbreak"  >Newsbreak</a><ul><li><li class="item-5298"><a href="/newsbreak/investigative"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Investigative"  >Investigative</a></li><li class="item-5492"><a href="/newsbreak/in-depth"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:In-depth"  >In-depth</a></li><li class="item-5299"><a href="/newsbreak/iq"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rappler IQ"  >Rappler IQ</a></li><li class="item-5300"><a href="/newsbreak/inside-track"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Inside Track"  >Inside Track</a></li><li class="item-5301"><a href="/newsbreak/flashback"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Flashback"  >Flashback</a></li><li class="item-5523"><a href="/newsbreak/rich-media"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rich Media"  >Rich Media</a></li></ul></li><li class="item-5341 parent" deeper><a href="/move-ph"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:MovePH"  >MovePH</a><ul><li><li class="item-5343"><a href="/move-ph/issues"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Issues"  >Issues</a></li><li class="item-5342"><a href="/move-ph/issues/disasters"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#Agos"  >#Agos</a></li><li class="item-5344"><a href="/move-ph/issues/budget-watch"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#BudgetWatch"  >#BudgetWatch</a></li><li class="item-5345"><a href="/move-ph/issues/hunger"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#HungerProject"  >#HungerProject</a></li><li class="item-5346"><a href="/bulletin-board"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Community"  >Community</a></li><li class="item-5520"><a href="/views/imho"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:IMHO"  >IMHO</a></li></ul></li><li class="item-5303 parent" deeper><a href="/views"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Views"  >Views</a><ul><li><li class="item-5304"><a href="/thought-leaders"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Thought Leaders"  >Thought Leaders</a></li><li class="item-5305"><a href="/move-ph/ispeak"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:iSpeak"  >iSpeak</a></li><li class="item-5434"><a href="/rappler-blogs"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rappler Blogs"  >Rappler Blogs</a></li><li class="item-5455"><a href="/views/animated"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#AnimatED"  >#AnimatED</a></li></ul></li><li class="item-5306 parent" deeper><a href="/life-and-style"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Life &amp; Style"  >Life &amp; Style</a><ul><li><li class="item-5307"><a href="/life-and-style/best-eats"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Food"  >Food</a></li><li class="item-5308"><a href="/life-and-style/career"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Career"  >Career</a></li><li class="item-5309"><a href="/life-and-style/travel"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Travel"  >Travel</a></li><li class="item-5310"><a href="/life-and-style/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li><li class="item-5311"><a href="/pugad-baboy"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#PugadBaboy"  >#PugadBaboy</a></li></ul></li><li class="item-5312 parent" deeper><a href="/entertainment"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Entertainment"  >Entertainment</a><ul><li><li class="item-5314"><a href="/entertainment/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Entertainment News"  >Entertainment News</a></li><li class="item-5315"><a href="/entertainment/movies"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Movies"  >Movies</a></li><li class="item-5316"><a href="/entertainment/music"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Music"  >Music</a></li><li class="item-5317"><a href="/entertainment/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Special Coverage"  >Special Coverage</a></li></ul></li><li class="item-5318 parent" deeper><a href="/sports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Sports"  >Sports</a><ul><li><li class="item-5319"><a href="/sports/by-sport/boxing-mma"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Boxing"  >Boxing</a></li><li class="item-5320"><a href="/sports/by-sport/basketball"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Basketball"  >Basketball</a></li><li class="item-5321"><a href="/sports/by-sport/football"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Football"  >Football</a></li><li class="item-5322"><a href="/sports/by-sport/other-sports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Other Sports"  >Other Sports</a></li><li class="item-5323"><a href="/sports/university"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:University Sports"  >University Sports</a></li></ul></li><li class="item-5325 parent" deeper><a href="/technology"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Tech"  >Tech</a><ul><li><li class="item-5326"><a href="/technology/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:News"  >News</a></li><li class="item-5327"><a href="/technology/features"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Features"  >Features</a></li><li class="item-5328"><a href="/technology/reviews"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Reviews"  >Reviews</a></li><li class="item-5329"><a href="/technology/video/hands-on"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Hands on"  >Hands on</a></li><li class="item-5331"><a href="/technology/social-media"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Social Media"  >Social Media</a></li></ul></li><li class="item-5335 parent" deeper><a href="/brandrap"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:BrandRap"  >BrandRap</a><ul><li><li class="item-5347"><a href="/brandrap/finance-and-industries"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Finance &amp; Industries"  >Finance &amp; Industries</a></li><li class="item-5336"><a href="/brandrap/health-and-self"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Health &amp; Self"  >Health &amp; Self</a></li><li class="item-5337"><a href="/brandrap/travel-food-and-lifestyle"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Lifestyle"  >Lifestyle</a></li><li class="item-5338"><a href="/brandrap/tech-and-innovation"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Tech &amp; Innovation"  >Tech &amp; Innovation</a></li><li class="item-5741"><a href="http://www.rappler.com/advertise"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Advertise"  >Advertise</a></li></ul></li><li class="item-5652"><a href="http://x.rappler.com"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:X"  >X</a></li>                <li class="selected"><a href="http://jobs.rappler.com">Jobs</a></li>
+<li class="selected"><a href="http://coupons.rappler.com">Coupons</a></li>
+<li class="selected"><a href="http://shop.rappler.com">Rappler Shop</a></li>
+</ul>
+</nav>
+</div>
+<div class="header-menu">
+<div class="menu-trigger Xheader nav-mini">
+<header class="navbar navbar-rappler visible-lg" role="banner">
+<div class="mdd-wrapper box-shadow-2">
+<div class="navbar-header">
+<a href="/"><img src="https://static.rappler.com/templates/rappler3_default/img/Rappler-Logo-SVG.svg" id="logo-rappler"></a>
+</div>
+<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+<ul class="menu nav navbar-nav">
+<li class="mdd-item item-5260 parent" deeper><a href="/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:News"  >News</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5261 active"><a href="/nation"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Philippines"  >Philippines</a></li><li class="mdd-item item-5691"><a href="/nation/politics/elections/2016"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#PHvote 2016"  >#PHvote 2016</a></li><li class="mdd-item item-5262 parent"><a href="/world"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:World"  >World</a></li><li class="mdd-item item-5272"><a href="/move-ph/balikbayan"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#BalikBayan"  >#BalikBayan</a></li><li class="mdd-item item-5273 parent"><a href="/science-nature"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Science &amp; Nature"  >Science &amp; Nature</a></li>
+</ul></li><li class="mdd-item item-5282 parent" deeper><a href="/video"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Video"  >Video</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5283"><a href="/video/newscast"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Newscast"  >Newscast</a></li><li class="mdd-item item-5285"><a href="/video/shows"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Shows"  >Shows</a></li><li class="mdd-item item-5286"><a href="/video/reports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Reports"  >Reports</a></li><li class="mdd-item item-5287"><a href="/video/documentary"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Documentary"  >Documentary</a></li><li class="mdd-item item-5288"><a href="/video/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li>
+</ul></li><li class="mdd-item item-5289 parent" deeper><a href="/business"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Business"  >Business</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5290"><a href="/business/economy-watch"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Economy"  >Economy</a></li><li class="mdd-item item-5433"><a href="/brandrap/brighter-life"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Brighter Life"  >Brighter Life</a></li><li class="mdd-item item-5291"><a href="/business/industries"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Industries"  >Industries</a></li><li class="mdd-item item-5292"><a href="/business/personal-finance"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Money"  >Money</a></li><li class="mdd-item item-5294"><a href="/business/features"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Features"  >Features</a></li><li class="mdd-item item-5295"><a href="/business/infographics"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li>
+</ul></li><li class="mdd-item item-5296 parent" deeper><a href="/newsbreak"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Newsbreak"  >Newsbreak</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5298"><a href="/newsbreak/investigative"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Investigative"  >Investigative</a></li><li class="mdd-item item-5492"><a href="/newsbreak/in-depth"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:In-depth"  >In-depth</a></li><li class="mdd-item item-5299"><a href="/newsbreak/iq"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rappler IQ"  >Rappler IQ</a></li><li class="mdd-item item-5300"><a href="/newsbreak/inside-track"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Inside Track"  >Inside Track</a></li><li class="mdd-item item-5301"><a href="/newsbreak/flashback"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Flashback"  >Flashback</a></li><li class="mdd-item item-5523"><a href="/newsbreak/rich-media"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rich Media"  >Rich Media</a></li>
+</ul></li><li class="mdd-item item-5341 parent" deeper><a href="/move-ph"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:MovePH"  >MovePH</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5343"><a href="/move-ph/issues"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Issues"  >Issues</a></li><li class="mdd-item item-5342"><a href="/move-ph/issues/disasters"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#Agos"  >#Agos</a></li><li class="mdd-item item-5344"><a href="/move-ph/issues/budget-watch"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#BudgetWatch"  >#BudgetWatch</a></li><li class="mdd-item item-5345"><a href="/move-ph/issues/hunger"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#HungerProject"  >#HungerProject</a></li><li class="mdd-item item-5346"><a href="/bulletin-board"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Community"  >Community</a></li><li class="mdd-item item-5520"><a href="/views/imho"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:IMHO"  >IMHO</a></li>
+</ul></li><li class="mdd-item item-5303 parent" deeper><a href="/views"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Views"  >Views</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5304"><a href="/thought-leaders"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Thought Leaders"  >Thought Leaders</a></li><li class="mdd-item item-5305"><a href="/move-ph/ispeak"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:iSpeak"  >iSpeak</a></li><li class="mdd-item item-5434"><a href="/rappler-blogs"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rappler Blogs"  >Rappler Blogs</a></li><li class="mdd-item item-5455"><a href="/views/animated"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#AnimatED"  >#AnimatED</a></li>
+</ul></li><li class="mdd-item item-5306 parent" deeper><a href="/life-and-style"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Life &amp; Style"  >Life &amp; Style</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5307"><a href="/life-and-style/best-eats"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Food"  >Food</a></li><li class="mdd-item item-5308"><a href="/life-and-style/career"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Career"  >Career</a></li><li class="mdd-item item-5309"><a href="/life-and-style/travel"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Travel"  >Travel</a></li><li class="mdd-item item-5310"><a href="/life-and-style/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li><li class="mdd-item item-5311"><a href="/pugad-baboy"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#PugadBaboy"  >#PugadBaboy</a></li>
+</ul></li><li class="mdd-item item-5312 parent" deeper><a href="/entertainment"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Entertainment"  >Entertainment</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5314"><a href="/entertainment/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Entertainment News"  >Entertainment News</a></li><li class="mdd-item item-5315"><a href="/entertainment/movies"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Movies"  >Movies</a></li><li class="mdd-item item-5316"><a href="/entertainment/music"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Music"  >Music</a></li><li class="mdd-item item-5317"><a href="/entertainment/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Special Coverage"  >Special Coverage</a></li>
+</ul></li><li class="mdd-item item-5318 parent" deeper><a href="/sports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Sports"  >Sports</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5319"><a href="/sports/by-sport/boxing-mma"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Boxing"  >Boxing</a></li><li class="mdd-item item-5320"><a href="/sports/by-sport/basketball"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Basketball"  >Basketball</a></li><li class="mdd-item item-5321"><a href="/sports/by-sport/football"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Football"  >Football</a></li><li class="mdd-item item-5322"><a href="/sports/by-sport/other-sports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Other Sports"  >Other Sports</a></li><li class="mdd-item item-5323"><a href="/sports/university"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:University Sports"  >University Sports</a></li>
+</ul></li><li class="mdd-item item-5325 parent" deeper><a href="/technology"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Tech"  >Tech</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5326"><a href="/technology/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:News"  >News</a></li><li class="mdd-item item-5327"><a href="/technology/features"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Features"  >Features</a></li><li class="mdd-item item-5328"><a href="/technology/reviews"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Reviews"  >Reviews</a></li><li class="mdd-item item-5329"><a href="/technology/video/hands-on"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Hands on"  >Hands on</a></li><li class="mdd-item item-5331"><a href="/technology/social-media"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Social Media"  >Social Media</a></li>
+</ul></li><li class="mdd-item item-5335 parent" deeper><a href="/brandrap"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:BrandRap"  >BrandRap</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5347"><a href="/brandrap/finance-and-industries"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Finance &amp; Industries"  >Finance &amp; Industries</a></li><li class="mdd-item item-5336"><a href="/brandrap/health-and-self"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Health &amp; Self"  >Health &amp; Self</a></li><li class="mdd-item item-5337"><a href="/brandrap/travel-food-and-lifestyle"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Lifestyle"  >Lifestyle</a></li><li class="mdd-item item-5338"><a href="/brandrap/tech-and-innovation"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Tech &amp; Innovation"  >Tech &amp; Innovation</a></li><li class="mdd-item item-5741"><a href="http://www.rappler.com/advertise"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Advertise"  >Advertise</a></li>
+</ul></li><li class="mdd-item item-5652"><a href="http://x.rappler.com"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:X"  >X</a></li>                        </ul>
+<ul class="menu nav navbar-nav navbar-right">
+<li class="mdd-info"><a href="#"><i class="fa fa-info-circle"></i></a>
+<ul class="side-nav no-padding menu-dropdown">
+<li>
+<div class="main-wrapper">
+<div class="custom"  >
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-dark-gray bg">ABOUT RAPPLER</div>
+</div>
+<p class="caption">Welcome to Rappler, a social news network where stories inspire community engagement and digitally fuelled actions for social change. Rappler comes from the root words "rap" (to discuss) + "ripple" (to make waves).</p>
+<p class="caption"><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/385-about-rappler">Read more</a></p>
+<div class="row">
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+<div class="caption">
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/25724-2013-board-of-directors">Rappler's 2013 Board</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/10941-rappler-privacy-statement">Privacy Statement</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-us/1557-contact-us">Contact Us</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/6677-the-people-behind-rappler">Rappler's Founding Board</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/19840-rappler-community-and-site-use-rules">Terms of Use</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/21739-advertise-with-us">Advertise With Us</a></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+<div class="caption">
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/21743-rappler-team">Rappler Team</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/indonesia/tentang-kami">Rappler Indonesia Team</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/27506-comment-moderation-policy">Comment Moderation Policy</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles">Archives</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/bulletin-board/30113-job-openings-rappler">Job Openings</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-orange bg"><a class="bg-rappler-orange">OTHER CONTENT</a></div>
+</div>
+<div class="caption"> <a class="rappler-paragraph link" href="http://ph.rappler.com/people">#PHVote 2016</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/">Philippine News</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/nation/special-coverage/weather-alert">Weather Forecast Philippines</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/pugad-baboy/">Pugad Baboy</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/disasters/typhoon-yolanda">Typhoon Haiyan (Yolanda)</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://rappler.com/move-ph/issues/budget-watch/pork-barrel">Pork Barrel Scam</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/disasters/preparedness">Disaster Preparedness</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/disasters/response">Disaster Response</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/disasters/recovery">Disaster Recovery</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/sports/by-sport/boxing-mma/pacquiao/">Manny Pacquiao</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/hunger">The Hunger Project</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/life-and-style/travel/ph-travel">Travel Philippines</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/sports/university">UAAP</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterCategory53ec14fb29572_0=-1&amp;filterCategory=&amp;filterTitle=&amp;filterMeta=FOI+bill&amp;filterDateFrom=&amp;filterDateTo=&amp;option=com_dmarticlesfilter&amp;view=articles&amp;Itemid=1404&amp;userSearch=1">FOI bill</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterCategory53ec116e9e968_0=-1&amp;filterCategory=&amp;filterTitle=&amp;filterMeta=Charter+Change&amp;filterDateFrom=&amp;filterDateTo=&amp;option=com_dmarticlesfilter&amp;view=articles&amp;Itemid=1404&amp;userSearch=1">Charter Change</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/world/regions/asia-pacific/indonesia">Indonesia News</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/sports/by-sport/basketball/gilas-pilipinas/">Gilas Pilipinas</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterMeta=jejomar+binay">Jejomar Binay</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterMeta=makati+city">Makati City</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/disasters">#ProjectAgos</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterMeta=typhoon+ruby">Typhoon Ruby (Hagupit)</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterMeta=airasia+flight+QZ8501">AirAsia flight QZ8501</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/specials/pope-francis-ph/philippines-visit-quotes">Pope Francis Quotes</a> <span class="h-spacer" style="opacity: 0.2!important;">• </span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterMeta=Miss+Universe">Miss Universe</a><span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterCategory54c748d36aef8_0=-1&amp;filterCategory=&amp;filterTitle=&amp;filterMeta=Facebook+down&amp;filterDateFrom=&amp;filterDateTo=&amp;option=com_dmarticlesfilter&amp;view=articles&amp;Itemid=1404&amp;userSearch=1">Facebook down</a> <span class="h-spacer" style="opacity: 0.2!important;">• </span> <a class="rappler-paragraph link" href="http://www.rappler.com/life-and-style/travel/ph-travel">Travel in the Philippines</a> <span class="h-spacer" style="opacity: 0.2!important;">• </span> <a class="rappler-paragraph link" href="http://www.rappler.com/life-and-style/travel/shareph">Places to visit in the Philippines</a> <span class="h-spacer" style="opacity: 0.2!important;">• </span> <a class="rappler-paragraph link" href="http://www.rappler.com/nation/64192-ph-2015-holidays">Philippine holidays</a> <span class="h-spacer" style="opacity: 0.2!important;">• </span> <a class="rappler-paragraph link" href="http://phvote.rappler.com">Join the #PHVote Challenge!</a></div>
+</div></div>                                        </div>
+</li>
+</ul>
+</li>
+<li class="mdd-search">
+<a href="#"><i class="fa fa-search"></i></a>
+<ul class="side-nav no-padding menu-dropdown">
+<li id="search-dropdown">
+<div class="main-wrapper">
+<div class="row">
+<div class="col-xs-12 col-sm-4 pull-right">
+<form class="form-inline" role="search" method="GET" action="/">
+<div class="form-input padding right">
+<input type="hidden" name="option" value="com_rappler">
+<input type="hidden" name="task" value="search">
+<input type="hidden" name="language" value="english">
+<input type="text" name="q" placeholder="Search">
+</div>
+<div class="form-addon">
+<button class="rappler-orange bg" type="submit" >Go!</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+</div>
+</div>
+<div class="wrapper mega-menu-offset header-news-slider">
+<div class="rappler-light-gray bg">
+<div class="main-wrapper">
+<div class="latest-header-slider">
+<div class="controls-container">
+<a class="details rappler-headline link hidden-xs track-header-slider" href="/previous-articles" class="link">LATEST NEWS</a>
+<div class="left-nav-arrow"></div>
+<div class="right-nav-arrow"></div>
+</div>
+<div class="thumbs-container">
+<div id="common-header-slider">
+<div class="owl-parent">
+<div class="col-xs-4 img-container">
+<div class="flex-video square"><a class="track-header-slider" href="/entertainment/news/176441-ben-affleck-denies-replacement-batman-justice-league" title="Ben Affleck denies being dropped as Batman"><img class="lazyOwl" data-src="https://assets.rappler.com/C696801193BF4ED9AD6397B3BE222D59/img/47FDA0B17C1844918865737E25C2BFBA/063_820968008_1_47FDA0B17C1844918865737E25C2BFBA.jpg"></a></div>
+</div>
+<div class="col-xs-8" style="padding-left:0px;">
+<h6 class="no-margin small">
+<a href="/entertainment/news/176441-ben-affleck-denies-replacement-batman-justice-league" class="rappler-headline link ellipsis track-header-slider" style="word-wrap: break-word;" title="Ben Affleck denies being dropped as Batman">
+Ben Affleck denies being dropped as Batman</a>
+</h6>
+<span class="details" style="text-transform: uppercase;">
+<a href="/entertainment/news" class="rappler-paragraph link track-header-slider">
+Entertainment News                                        </a>
+</span>
+</div>
+</div>
+<div class="owl-parent">
+<div class="col-xs-4 img-container">
+<div class="flex-video square"><a class="track-header-slider" href="/nation/176442-robredo-reaction-martial-law-extension" title="After martial law extension, Robredo wants gov’t attention on abuse claims"><img class="lazyOwl" data-src="https://assets.rappler.com/EFCBEAD8BE4143DD8949524205018164/img/DA8A0CD23F6B4DC8B96AE25368884078/robredo-bangsamoro-women-marawi-july-20-2017-001_DA8A0CD23F6B4DC8B96AE25368884078.jpg"></a></div>
+</div>
+<div class="col-xs-8" style="padding-left:0px;">
+<h6 class="no-margin small">
+<a href="/nation/176442-robredo-reaction-martial-law-extension" class="rappler-headline link ellipsis track-header-slider" style="word-wrap: break-word;" title="After martial law extension, Robredo wants gov’t attention on abuse claims">
+After martial law extension, Robredo wants gov’t attention on abuse claims</a>
+</h6>
+<span class="details" style="text-transform: uppercase;">
+<a href="/nation" class="rappler-paragraph link track-header-slider">
+Philippines                                        </a>
+</span>
+</div>
+</div>
+<div class="owl-parent">
+<div class="col-xs-4 img-container">
+<div class="flex-video square"><a class="track-header-slider" href="/world/regions/latin-america/176446-venezuelan-opposition-readies-another-strike" title="Venezuelan opposition readies another strike"><img class="lazyOwl" data-src="https://assets.rappler.com/787EC60DF86045699C48A777A502AA07/img/0733FCA143354488B7578FC8074869DF/afp-20170722-venezuela-protests-supreme-court_0733FCA143354488B7578FC8074869DF.jpg"></a></div>
+</div>
+<div class="col-xs-8" style="padding-left:0px;">
+<h6 class="no-margin small">
+<a href="/world/regions/latin-america/176446-venezuelan-opposition-readies-another-strike" class="rappler-headline link ellipsis track-header-slider" style="word-wrap: break-word;" title="Venezuelan opposition readies another strike">
+Venezuelan opposition readies another strike</a>
+</h6>
+<span class="details" style="text-transform: uppercase;">
+<a href="/world/regions/latin-america" class="rappler-paragraph link track-header-slider">
+Latin America                                        </a>
+</span>
+</div>
+</div>
+<div class="owl-parent">
+<div class="col-xs-4 img-container">
+<div class="flex-video square"><a class="track-header-slider" href="/move-ph/issues/road-safety/176440-road-projects-schedule-rainy-season" title="Why are road projects scheduled during rainy season?"><img class="lazyOwl" data-src="https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/1D1D622EE143442B808D1B07F30E69AB/iloilo-roads-07232017_1D1D622EE143442B808D1B07F30E69AB.jpg"></a></div>
+</div>
+<div class="col-xs-8" style="padding-left:0px;">
+<h6 class="no-margin small">
+<a href="/move-ph/issues/road-safety/176440-road-projects-schedule-rainy-season" class="rappler-headline link ellipsis track-header-slider" style="word-wrap: break-word;" title="Why are road projects scheduled during rainy season?">
+Why are road projects scheduled during rainy season?</a>
+</h6>
+<span class="details" style="text-transform: uppercase;">
+<a href="/move-ph/issues/road-safety" class="rappler-paragraph link track-header-slider">
+Road Safety                                        </a>
+</span>
+</div>
+</div>
+<div class="owl-parent">
+<div class="col-xs-4 img-container">
+<div class="flex-video square"><a class="track-header-slider" href="/indonesia/berita/nasional/176445-hari-anak-presiden-jokowi-pertunjukkan-sulap" title="Hari Anak: Presiden Jokowi adakan pertunjukkan sulap"><img class="lazyOwl" data-src="https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/4CBE2899377E437A94CAFA4BF27FBA5C/screen-shot-2017-07-23-at-10_4CBE2899377E437A94CAFA4BF27FBA5C.jpg"></a></div>
+</div>
+<div class="col-xs-8" style="padding-left:0px;">
+<h6 class="no-margin small">
+<a href="/indonesia/berita/nasional/176445-hari-anak-presiden-jokowi-pertunjukkan-sulap" class="rappler-headline link ellipsis track-header-slider" style="word-wrap: break-word;" title="Hari Anak: Presiden Jokowi adakan pertunjukkan sulap">
+Hari Anak: Presiden Jokowi adakan pertunjukkan sulap</a>
+</h6>
+<span class="details" style="text-transform: uppercase;">
+<a href="/indonesia/berita/nasional" class="rappler-paragraph link track-header-slider">
+Nasional                                        </a>
+</span>
+</div>
+</div>
+<div class="owl-parent">
+<div class="col-xs-4 img-container">
+<div class="flex-video square"><a class="track-header-slider" href="/nation/176407-full-text-martial-law-extension-vote-francis-pangilinan" title="Pangilinan fears for nationwide martial law"><img class="lazyOwl" data-src="https://assets.rappler.com/1ABA80E7555A4CA89A443D92D41D96B4/img/7BA01D08C3004AFBAFDD3993B9603AA6/joint-hearing-pangilinan_7BA01D08C3004AFBAFDD3993B9603AA6.jpg"></a></div>
+</div>
+<div class="col-xs-8" style="padding-left:0px;">
+<h6 class="no-margin small">
+<a href="/nation/176407-full-text-martial-law-extension-vote-francis-pangilinan" class="rappler-headline link ellipsis track-header-slider" style="word-wrap: break-word;" title="Pangilinan fears for nationwide martial law">
+Pangilinan fears for nationwide martial law</a>
+</h6>
+<span class="details" style="text-transform: uppercase;">
+<a href="/nation" class="rappler-paragraph link track-header-slider">
+Philippines                                        </a>
+</span>
+</div>
+</div>
+<div class="owl-parent">
+<div class="col-xs-4 img-container">
+<div class="flex-video square"><a class="track-header-slider" href="/nation/176429-sona-2017-duterte-promise-tracker" title="SONA 2017 Promise Tracker: Duterte gets started on most vows"><img class="lazyOwl" data-src="https://assets.rappler.com/577371FCBE654D5F8EC845C9EED37B07/img/D1A6DF8ED26943B6B98DC4B918246F7B/Duterte-cabinet-meeting-july-3-2017-003_D1A6DF8ED26943B6B98DC4B918246F7B.jpg"></a></div>
+</div>
+<div class="col-xs-8" style="padding-left:0px;">
+<h6 class="no-margin small">
+<a href="/nation/176429-sona-2017-duterte-promise-tracker" class="rappler-headline link ellipsis track-header-slider" style="word-wrap: break-word;" title="SONA 2017 Promise Tracker: Duterte gets started on most vows">
+SONA 2017 Promise Tracker: Duterte gets started on most vows</a>
+</h6>
+<span class="details" style="text-transform: uppercase;">
+<a href="/nation" class="rappler-paragraph link track-header-slider">
+Philippines                                        </a>
+</span>
+</div>
+</div>
+<div class="owl-parent">
+<div class="col-xs-4 img-container">
+<div class="flex-video square"><a class="track-header-slider" href="/indonesia/the-wrap/176439-berita-hari-ini-minggu-23-juli-2017" title="Berita hari ini: Minggu, 23 Juli 2017"><img class="lazyOwl" data-src="https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/090D19B1FC1245BAA44719F7AF5E7B33/berita-hari-ini_fb3db1950a5b4c5e83cb10f6c009bb63_090D19B1FC1245BAA44719F7AF5E7B33.jpg"></a></div>
+</div>
+<div class="col-xs-8" style="padding-left:0px;">
+<h6 class="no-margin small">
+<a href="/indonesia/the-wrap/176439-berita-hari-ini-minggu-23-juli-2017" class="rappler-headline link ellipsis track-header-slider" style="word-wrap: break-word;" title="Berita hari ini: Minggu, 23 Juli 2017">
+Berita hari ini: Minggu, 23 Juli 2017</a>
+</h6>
+<span class="details" style="text-transform: uppercase;">
+<a href="/indonesia/the-wrap" class="rappler-paragraph link track-header-slider">
+The wRap                                        </a>
+</span>
+</div>
+</div>
+<div class="owl-parent">
+<div class="col-xs-4 img-container">
+<div class="flex-video square"><a class="track-header-slider" href="/nation/176422-yarnbombing-baguio-city-street-art" title="Yarnbombers warm Baguio City streets with cuddly graffiti"><img class="lazyOwl" data-src="https://assets.rappler.com/8B2391F070AC415BAA0861C27A1F0B43/img/511C7347B4A54A8D841B08130413F617/yarn-bombing-baguio-july-22-2017-03_511C7347B4A54A8D841B08130413F617.jpg"></a></div>
+</div>
+<div class="col-xs-8" style="padding-left:0px;">
+<h6 class="no-margin small">
+<a href="/nation/176422-yarnbombing-baguio-city-street-art" class="rappler-headline link ellipsis track-header-slider" style="word-wrap: break-word;" title="Yarnbombers warm Baguio City streets with cuddly graffiti">
+Yarnbombers warm Baguio City streets with cuddly graffiti</a>
+</h6>
+<span class="details" style="text-transform: uppercase;">
+<a href="/nation" class="rappler-paragraph link track-header-slider">
+Philippines                                        </a>
+</span>
+</div>
+</div>
+<div class="owl-parent">
+<div class="col-xs-4 img-container">
+<div class="flex-video square"><a class="track-header-slider" href="/world/regions/us-canada/176437-white-house-mueller-quiet-russia-probe" title="White House on edge as Mueller quietly pursues Russia probe"><img class="lazyOwl" data-src="https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/730189AE02CD4EF6B93BAB4851DBD6EA/robert-mueller_730189AE02CD4EF6B93BAB4851DBD6EA.jpg"></a></div>
+</div>
+<div class="col-xs-8" style="padding-left:0px;">
+<h6 class="no-margin small">
+<a href="/world/regions/us-canada/176437-white-house-mueller-quiet-russia-probe" class="rappler-headline link ellipsis track-header-slider" style="word-wrap: break-word;" title="White House on edge as Mueller quietly pursues Russia probe">
+White House on edge as Mueller quietly pursues Russia probe</a>
+</h6>
+<span class="details" style="text-transform: uppercase;">
+<a href="/world/regions/us-canada" class="rappler-paragraph link track-header-slider">
+U.S. & Canada                                        </a>
+</span>
+</div>
+</div>
+<div style="display: table;">
+<div style="display:table-cell; vertical-align:middle;">
+<h6 class="no-margin small">
+<a href="/previous-articles/" class="rappler-headline link track-header-slider">
+<i class="fa fa-fw fa-arrow-circle-right"></i>View more stories
+</a>
+</h6>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content" class="main-wrapper">
+<div class="row">
+<div id="infinite-container" class="col-xs-12 col-sm-8 col-md-8 col-lg-8 infinite-container waypoint print-main-area">
+<div class="infinite-item" id="item-138019">
+<div id="sas_44269"></div>
+<noscript>
+<a href="https://adnetwork.adasiaholdings.com/ac?jump=1&nwid=2060&siteid=122850&pgname=rappler_outstream&fmtid=44269&visit=m&tmstp=[timestamp]&out=nonrich" target="_blank">
+<img src="https://static.rappler.com/plugins/system/lazyload/blank.png" data-original="https://adnetwork.adasiaholdings.com/ac?out=nonrich&nwid=2060&siteid=122850&pgname=rappler_outstream&fmtid=44269&visit=m&tmstp=[timestamp]" border="0" alt="" />
+</a>
+</noscript>
+<div class="wrapper">
+<div id="story-area-138019" class="story-area cXenseParse"
+data-article_categories="21,696,41,854,855,118,157"
+data-article_url="http://www.rappler.com/nation/138019-last-session-serge-osmena"
+data-article_via="@rapplerdotcom"
+data-article_pubdate="2016-06-29 12:30:00"
+data-article_modifieddate="2016-06-29 10:43:13"
+data-article_authors="Patricia Evangelista"
+data-article_parenttitle="ROOT"
+data-article_cattitle="Philippines"
+data-article_metakey="Sergio Osmeña III, Serge Osmeña, #PHVote, politics, Philippine Senate, senators, elections"
+data-article_title="The last session: Serge Osmeña leaves the building">
+<div class="blob-inline"><div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/OFXtr_od0XE" frameborder="0" width="100%" height="480"></iframe></div></div>    
+<div class="form-inline select-cat-tooltip" style="width:100%;">
+<div class="form-addon text-left margin padding right">
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-dark-gray bg" style="text-transform:uppercase">
+<a href="/nation" class="white link" style="white-space: nowrap;text-overflow: ellipsis;">
+Philippines                    </a>
+</div>
+</div>
+</div>
+</div>
+<h1 class="select-headline">The last session: Serge Osmeña leaves the building</h1>
+<p class="select-metadesc">
+Senator Serge Osmeña III, three-time senator, self-proclaimed liberal, martial law detainee, 14th in the senatorial race, speaks to Rappler reporter Patricia Evangelista on what it means to say goodbye    </p>
+<div class="storypage-divider desktop">
+<div class="author-box">
+<div class="flex-reverse wrapper">
+<div class="flex-child">
+<div class="portrait">
+<a href="/authorprofile/patricia-evangelista">
+<div class="default-profile-pic" style="background-image:url('https://assets.rappler.com/98BCF3B34C9D4DB8B58A466B4746C906/img/E510DDF44F934D5DBF7F8C90BD548E8C/patricia-evangelista-80x80.png');"></div>
+</a>
+</div>
+</div>
+<div class="flex-child">
+<div class="flex-reverse byline-container">
+<div class="flex-child">
+<h6 class="byline">
+<a class="rappler-headline link" href="/authorprofile/patricia-evangelista">
+Patricia Evangelista                                    </a>
+</h6> 
+</div>
+<div class="flex-child">
+<div class="twitter-follow">
+<a class="rappler-paragraph link" target="_blank" href="https://twitter.com/intent/user?screen_name=patevangelista">
+@patevangelista                                    </a>
+</div>
+</div>
+</div>
+<div style="width:auto;">
+<div>
+<div class="published">
+Published 8:30 PM, June 29, 2016                                    </div>
+<div class="updated">
+Updated 8:30 PM, June 29, 2016                                                                             </div>
+</div>
+</div>                       
+</div>                        
+</div>
+<div class="storypage-share" id="storypageShare-138019"></div>
+</div>
+<p><strong id="ext-gen3778"><img id="AC5C8F68E7224542A579A5130721E718"     src="https://static.rappler.com/plugins/system/lazyload/blank.png" data-original="https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/99E10C0E1D3343A8A419F9EF5A681D5A/last-session_99E10C0E1D3343A8A419F9EF5A681D5A.jpg" class="rappler_asset"   alt="LAST SESSION. Senator Sergio OsmeÃ±a III in his office before his last senate session. Photo by Patricia Evangelista " data-parentid=""   /><p class="caption">LAST SESSION. Senator Sergio OsmeÃ±a III in his office before his last senate session. Photo by Patricia Evangelista </p></strong></p>
+<p><strong>I am Serge Osmeña</strong>. I’m 72 years old, and I’m about to be a former senator.</p>
+<p><strong>I grew up with politics</strong>. My grandfather, Sergio Osmeña Sr. was in public service for 42 years. He was the first speaker the Philippine national assembly at the age of 29 and rose to the ranks, became a senator, and later on secretary, the first secretary of education, vice president, and then president. My father became governor, congressman, mayor of Cebu and eventually a senator.</p>
+<p><strong>There were several options for me other than becoming a politician</strong>. As a matter of fact my first economic exercise was farming. And that was pretty interesting to me. Also had some trading, construction, small small businesses here and there. So we had options, unfortunately, those options were cut off when I was arrested and thrown into detention when I was 28.</p>
+<p><strong>They never told me why I was arrested.</strong> There was no arrest order and after two years of having been in detention, my roommate (then) Geny Lopez and I went on a hunger strike. Because we insisted that the charges be filed and given to us.</p>
+<p><strong>Remember, we had no access to lawyers.</strong> So, after the hunger strike they finally came up with a set of charges and said we were accused of attempting to murder the president. So I said “Why don’t you take me to court? You’ve had me here for two years, you won’t allow me to see a lawyer”. And they said no we won’t take you to court we will re-investigate. You’re going to re-investigate something that you’ve investigated to death? And they said “Yes, we will do that”. So they did, another two years then they came up with a different decision, decided to charge us with rebellion, which is a political crime.</p>
+<p><strong>My father had run against Ferdinand Marcos for the presidency in 1969</strong>, so they were were political enemies. Unfortunately he was abroad. I suspect that in order to keep him quiet, they had to take someone hostage, and the same thing with my roommate, Geny Lopez.</p>
+<p><strong>That was a very smart political move on the part of the dictator</strong> because what he was saying is, to the people is, “You guys better behave. Look I’ve got Ninoy Aquino, your political idol, I’ve got the scion of the Lopez group here, in prison. If I can do that to them, I can do that to any of you. So it was a smart move.</p>
+<p><strong>My roommate and I decided that I’m not gonna say sorry for something we didn’t do.</strong> We were just gonna get out of here and escape. So we planned an escape from maximum security in Fort Bonifacio and by the grace of God we got lucky and we went to Hong Kong, Japan, and L.A. so it was the fastest escape. I think we landed in L.A. in 33 hours after we broke out of our window. And I had to live in exile for about 14 years.</p>
+<p><strong>95% of the Filipinos who’ve been interviewed with regards to martial law say martial law never touched their lives. </strong>Which is true, there are only a few maybe 70,000, hundred thousand people who were arrested, beaten up, tortured, killed, salvaged. The rest were not touched so they were right. It’s the morality of the whole thing that is in question.</p>
+<p><strong>I think the whole world acknowledges that Marcos is one of the worse plunderers in world history. </strong>He’s in the Guiness Book of World records, his name is always mentioned. I just read his name again the day before yesterday, when I was one of the international opinion columns. This is something we don’t want our kids to ever forget.</p>
+<p><strong>I would not be pleased with another Marcos as president. </strong>Well, I am just trying to be honest because he (Ferdinand “Bong-Bong” Marcos) was a very personable fellow and we were together in the Senate. We served together and he was very nice to me. But because of the position he has taken that he would not apologize for the sins of his father, and he would not admit that they were wrong, and then it goes to speak about his value system. If that was okay, then he’ll do it again. That disturbs me.</p>
+<p><strong>The philosopher George Santayana said, “those who do not remember the lessons in the past are condemned to repeat them.”</strong> And we should not repeat them. It would be awfully dumb if we were to repeat the same mistake.</p>
+<p><strong>Does make us awfully dumb? </strong>A few of us, yes.</p>
+<p align="center">***</p>
+<p><strong>I was at home when they started coming out with the results of the elections</strong> and I was coming in number 14. It was about 7 o’clock at night or 8 o’clock at night (that) I said, “Uh oh, they done me in.”</p>
+<p><strong>The next day when I woke up I felt good.</strong> I said, now I don’t have to work so hard anymore. See, there are plus and minuses. I looked at the plus – what’s the plus – I don’t have to work so hard anymore. Legislative work for me was very difficult.</p>
+<p><strong>I didn’t lose</strong> and I’d like to tell those who voted for me that we didn’t lose.</p>
+<p><strong>I don’t think my campaign failed in any phase whatsoever except in the anti-cheating phase.</strong> Alright? I was steady number 6 to number 9 all throughout all surveys. All surveys! And I was pretty comfortable with where I was.</p>
+<p><strong>It is easier to win a national campaign than a local campaign. </strong>Why? Because we can discuss issues, we can discuss policy, and the local campaign is a totally different value system. See, the Filipino voter votes on two levels, and people don’t realize this, so this is another myth. (At) the local level, they vote culture and debts of gratitude. So whether you’re a naughty man or a good man, all the father has to say is, “You know, we need to support the mayor, because when your mother was sick last year, he was the one who paid for the hospital. We have a debt of gratitude to him.”</p>
+<p><strong>At the national level, we don’t have the opportunity to do those types of favors</strong>. That’s 54 million voters for goodness’ sake. So, they tend to see the way you are as you project yourself in the media. And they’ll say, “Okay, he’s saying the right thing, I like what he’s saying,” or, “He seems to be a decent guy,” and that’s why they’ll vote for you.</p>
+<p><strong>What stands for political parties in this country are nothing but political cliques</strong>, and I don’t know why people are surprised when they see a say Congressman jumping now from the Liberal Party to the PDP-Laban. That’s the way it’s always been. Since the start.</p>
+<p>T<strong>he speakership has always been an appointive position in our system</strong> because the Congressmen are under the control of the president, because of the president’s control over the pork barrel.</p>
+<p><strong>We pretend it’s an elective position</strong>, but you can see it right now that it’s not.</p>
+<p><strong>I remember there was one newly-elected president who broached to me an idea of making somebody from the opposite party to be Speaker. </strong>So I told him, “Mr. President if you want your personal driver to be speaker he will be speaker.” And he thought I was kidding and he said “Are you serious or are you kidding?” “No, I’m serious. That’s an appointive position. The president appoints the speaker. So go ahead and select the one you want to be speaker and watch everybody fall in line.” And that’s what happened.</p>
+<p><strong>There’s so many myths about political campaigning about name recognition.</strong> That’s not the way voters make their selection. You have to take the voter through a series of phases before he will actually be convinced to vote for you.</p>
+<p><strong>The first phase is called the awareness phase.</strong> “Do you know Serge?” If you don’t know Serge, if they don’t know Serge, how can they vote for Serge? That’s what you call your introductory phase, awareness phase.</p>
+<p><strong>The second phase, after they get to know you, is the endearment phase. </strong>Do I like Serge? <em>Baka sabihin nila</em>, “<em>Oo kilala ko nga si </em>Serge <em>pero medyo mayabang</em>.” <em>Ah wala ka na, tapos ka na</em>. “Oh, <em>okay si</em> Serge <em>mukhang mabait, mukhang simpatico naman, mukhang may alam</em>.” That’s the endearment side. Do I like Serge?</p>
+<p><strong>The last part is “Why should I vote for Serge?”</strong> <strong>That’s the acceptance.</strong> What does he stand for? What’s his program? What’s his history, on various issues? So when they say “<em>Eh nanalo ka kasi meron kang pangalan, kilala na</em>.” I said no. There have been, including me now, 36 senators who have not been re-elected to the Senate. There goes name recognition argument. So that’s another myth. As a matter of fact in this country, endearment is more important even than acceptance.</p>
+<p><strong>I’m also the sort of person that if I have time, if I have energy, I’ll devote some of my time and energy to other candidates</strong>. I like to develop young people. So I like to help them, I like to teach them. This is the way you should campaign. This how you formulate your message. This is the way you should handle certain things and certain issues as they crop up. So, I helped Leni Robredo. I helped Grace Poe.</p>
+<p><strong>If I did nothing but concentrate on my own candidacy I would have gotten 5% higher </strong>but I didn’t because I felt that it’s worth the sacrifice.</p>
+<p><strong>I also made maybe a tactical error </strong>in devoting so much time to the hearings on the anti-money laundering issue, the one that involved the $81 million, but I felt as chair of the banking committee it was an opportunity to explain to the Filipino people the danger of having an anti-money laundering law so full of loopholes. We have been warning about that for the past 15 years.</p>
+<p><strong>That took up half of my campaign time. </strong>But I was still winning that’s the whole point. Being a student of political campaigning management, [I think that] if you’re in the winning column, you’re not just going to drop.</p>
+<p><strong>Of course I could have increased my margin. </strong>But still, you’re not supposed to be cheated. That’s what happened.</p>
+<p><strong>I’m not going to file a protest</strong>. It’s gonna take too long. What I like to see is for Congress to make the corrections, amendments to the automation law to make it more transparent.</p>
+<p><strong>Transparency means credibility of the election process.</strong></p>
+<p><strong>Political endorsements will only work if the personality endorsing is related to the issue involved in the campaign</strong>. Otherwise, they’re just merely celebrities. It does’t work.</p>
+<p><strong>Political campaign managers in other countries are not candidates themselves and never have been candidates.</strong> They just know the process. An advertising fellow has never been a candidate, but he knows advertising. So that’s the way that works.</p>
+<p><strong>I think that I know maybe more about political campaign management than the average politician. </strong></p>
+<p>***</p>
+<p><strong>I would consider myself a liberal. </strong></p>
+<p><strong>If the government recognizes annulment, why don’t they just call it divorce</strong> instead of pretending, “I was not psychologically qualified to get married to you.” That’s a bit of – in the words of (President-elect Rodrigo) Duterte – is bullshit.</p>
+<p><strong>I am not for the death penalty.</strong> I was glad when we finally voted against it. I did some homework on it, and it shows that there is no relationship between death penalty and bringing crime down. For example, how many states in the United States still have death penalty? They still have drugs and murder and fraud, etc, so there’s no connection.</p>
+<p><strong>We</strong> <strong>have to make sure that we are aware that mistakes that can be made</strong> and one innocent life is not worth the whole sacrifice.</p>
+<p><strong>I am for LGBT rights</strong>. <strong>Why is it wrong?</strong> It’s the church who’s saying it’s wrong, but you know, they’re not always correct.</p>
+<p><strong>They just have different preferences—why would I blame them for that?</strong> Why would I penalize them for that? They have the same right to fall in love as any human being does.</p>
+<p><strong>I don’t even consider myself part of a dynasty</strong> because we don’t coordinate with each other, we don’t protect each other, we fight with each other most of the time, except for my brother. I don’t fight with my brother.</p>
+<p><strong>I am not against the anti-dynasty provision of the Constitution</strong> but what I’m saying is that, define it. </p>
+<p><strong>Where I am able to affect the outcome of the elections, </strong>that I would consider a dynasty. </p>
+<p><strong>I’m not trying to project a certain image of Serge Osmeña, I never have.</strong> I’ve got so many things to do I don’t really the time to bother with that.</p>
+<p><strong>I’ll take positions that sometimes are not too popular. But, okay, that’s what I believe in.</strong> Like for example, I suppose many groups don’t agree that I support the RH law, and many groups were not agreeing that I’m in favor of legalizing divorce. Many groups will not agree that I’m in favor of abolishing the death penalty. I mean those can be really very controversial issues. I remember, the one who filed the RH law; about 10, 15 years ago, a fellow senator, his cellphone was clogged with the worst most poisonous text messages like, “you are the son of satan,” (or) “you’re a devil from hell.” And I knew what we had to go through to get that bill passed. Eventually it took us ten years but we did get to pass that into law.</p>
+<p align="center">•••</p>
+<p><strong>I stand for a lot of things.</strong> I stand for democracy, I stand for liberty, I stand for freedom, I stand for honesty, and lots of things that we don’t have now.</p>
+<p><strong>I do feel very strongly</strong> that more Filipinos should get more actively involved in politics.</p>
+<p><strong>A statesman is somebody who puts the welfare of the nation ahead of his own or that of his political party.</strong> That to me is the definition of a statesman, he puts the State ahead of everything else.</p>
+<p><strong>There are lots of statesmen in government.</strong> Maybe not as many as we would want, and that’s because of the system that we have allowed to develop in our country. We have no real political parties here, except the Communist Party.</p>
+<p><strong>I’ll let historians judge if I’m a statesman.</strong> I’d be flattering myself if I thought so, but be that as it may I will say that I always tried to handle myself in the same manner that my grandfather would have handled himself. And I hope that, I think that has guided me in the right direction and I hope that future historians will be able to recognise that.</p>
+<p><strong>Anything I’ll miss? </strong>I don’t know. I felt that there were still laws that I had to sponsor, pending in my committee, which were the committees on energy and the committees on banks. For example, the anti-money laundering amendment, the nth time I would sponsor it again if I were there. So, yeah, there was some unfinished business that I wanted to take care of.</p>
+<p><strong>My only son has always shown interest in politics for the past ten years</strong>. He asked if he could help with my office campaign, I said no. Pay attention to your career. And later on, when I’m gone, and you’re 40 years old, and you’re financially independent, and will not be tempted – there’s a big temptation in the government – and you will not allow yourself to be tempted in any shenanigans, then go for it if you can serve your people.</p>
+<p><strong>I named him Jose Lorenzo.</strong>  Jose Diokno Lorenzo Tañada Osmena. I named him after ka-Pepe and ka-Tani. People thought I named him after Jose Rizal and and St. Lorenzo, but I said no, these are two other saints. Diokno and Tañada.</p>
+<p><strong>He’s only in his 20’s</strong>. He’s not going to be earning enough to support himself and the lifestyle that he’s gotten used to. So I said, “Focus on one thing at a time. First, focus on your career, on your business career. And when you’re comfortable, and when you feel you have enough assets to sustain you, because politics is net out – for an honest person, in politics you spend more than you earn. So, I said I don’t want you tempted, and I want to be sure that when you join, you’re really there to help the country.</p>
+<p><strong>Be involved – that’s what I’m telling him.</strong> Be involved, you don’t have to join electoral politics, you don’t have to run for a position, but be active, be involved, because it’s your country, and you’ve got to let your voice be heard.</p>
+<p><strong>I did say that that the Aquino administration and President Aquino himself was incompetent.</strong> I did say that but I gave examples of problems that could never be resolved. First was Terminal 1, being the worst airport in the world. Six years and they could not even solve that. They worse was the traffic situation in Metro Manila. Exacerbated in the middle of his administration, by the port congestion. Then the MRT not being able to maintain its trains properly and ran them on time, inconveniencing hundreds of thousands of commuters every day, every morning, every night, up to this day. Then you have other situations like the Mamasapano and the Yolanda. So it was one disaster, management disaster after another.</p>
+<p><strong>When Digong Duterte came in</strong> and said, “I can fix all that. I’ll solve criminality, I’ll solve corruption,” people believed him because he had done in Davao.</p>
+<p><strong>I can’t predict what will happen in the next six years</strong>. I only know that the whole country is hopeful that Mayor Duterte or President-elect Duterte will able to resolve many of the problems that have been so intractable all these years. First is peace and order, particularly the drug problem. Second is general criminality. Third is corruption in the bureaucracy. You know when he gave the order that, “<em>Hoy </em>I want to see any applications approved in three days,” that’s what happens in Davao. First, he knows because he’s done it already. And if he’s able to do it, then everybody should be able to do it.</p>
+<p><strong>No, he can’t eliminate crime in 3 to 6 months. </strong>That would be an exaggeration but if he just brings it down by 30 to 50 % within the next 3-6 months that will be a fantastic result. Then if he brings it down by 70% in the next 6 years, I think people are going to nominate him to be saint. In an election candidates do tend to exaggerate. And there’s a reason for that. It is to create deeper contrast between what is and what should be. I’m not saying that he’s lying but I’m saying he’s trying to emphasize he is in a position and he has the political will to exercise what has to be done.</p>
+<p><strong>I will not be afraid to speak up. </strong>I think that we have to be careful that if we bring back the death penalty, we may be executing the innocent. So we don’t want to show that we are barbaric, in order to be able to supress crime. What is important in our country is the certainty of punishment.<em> Halimbawa, dito sa mga racketeering sino bang nabibilanggo dyan na mga mayayaman? Wala po.</em></p>
+<p><strong>But I will say this.</strong> You know that it was a very good bargaining tool for Mayor Duterte vis-à-vis the drug lords he’s trying to supress or drive out from our society. So I won’t begrudge him using that threat, but at the same time we’re going to ask those who are for espousing the death penalty again, to prove that it is effective.</p>
+<p align="center">***</p>
+<p><strong>I’ve been in the Senate for 18 years, three terms. </strong>And so my normal day would be I’d go to sleep at around 2 in the morning and wake up at 8, six hours sleep. Then right away, well, first wash up and then read the newspapers. Have breakfast. Go to the internet. Look for the latest news here and abroad, especially abroad because I use the internet to read the newspapers, <em>The New York Times</em>, <em>Wall Street Journal</em>, find out what’s going on. If we have a hearing I’ll be there at 9 o’clock. If we don’t have hearings I’d continue to read and study at home where it is quieter. And then I’d go to the Senate about lunch time. And then in the Senate, there are appointments. People who want to see you. People who want to argue for and against a certain bill. We entertain them. And sessions begin at around 3 to 3:30. And after that I’ll go back to my office and I wind up for the day. I leave my office at about 8 o’clock at night. I’ll be home by 9 depending upon traffic. Have dinner, take a shower. Then I’d go back to reading and studying because I bring home about 3 or 4 bags of files to prepare for bills that will be taken up say in the next week. So that’s a typical day. Very boring.</p>
+<p><strong>I remember something the late senator Soc Rodrigo once told me</strong>. He said “You know, we are human beings so we feel we have to accomplish everything in our lifetimes.”</p>
+<p><strong>We shouldn’t think that way.</strong> We should try to contribute what we can during our lifetimes knowing that this work will never be finished and we must be able to train the younger generation to be able to take our places and go on and continue building and making a stronger country, during their lifetimes. And to remember that they too will have to live, will have to die and the next generation will take over.</p>
+<p><strong>People tend to listen more if you are a senator. </strong>But it also depends on what you’re trying to say.</p>
+<p><strong>You have to believe that the generation that is to come will be better than your generation.</strong> You know when I first ran for the Senate, I was telling our friends that you know there must be around a hundred thousand Filipinos who would be better qualified to be senator than I, but if I’m chosen then I’ll have do the job. But believe me there are still a hundred thousand Filipinos out there who are make better senators than Serge Osmena.</p>
+<p><strong>Are the 24 senators who will be sitting in the next senate better qualified than Serge Osmena?</strong> I think they all are. No exceptions.</p>
+<p><strong>I think every Filipino should involve themselves in politics.</strong> The moment that they stay away, that’s the moment they allow the abuses to continue.</p>
+<p><strong>What I’m worried about is that President Digong might not reach out enough beyond his immediate circle of Davao and Mindanao to pick the best and the brightest</strong> <strong>for the positions that have to be run by professional managers. </strong>That’s what I’m afraid of. He might limit himself to <em>kung sinong kilala nya, sino magiging </em>roommate <em>nya</em>, <em>sino magiging kaklase nya</em>, etc so we would have the same Noynoy Aquino syndrome again, and that will not be good for our country. There are many gifted Filipinos and he should really go out and have a real search for the best and the brightest, not because they were his classmates, but because they simply are recognized by sectors as being outstanding managers or outstanding thinkers, or outstanding policy-makers, and we’d like to see that.</p>
+<p><strong>The Senate is an institution wherein the members can work or don’t have to work. </strong>We don’t have a party system. In other countries, the parties are the ones that watch you, and they have what they call the senate whip, and the house whip. <em>Ito yung nag-aassign sa inyo ng</em> bills, house bills, ikaw ang bahala rito. <em>Sa ating wala eh</em>. Zero. So, you can work if you want to work, or you can goof off if you want to goof off. And that’s not good for our country because if you are elected, you’re supposed to give it your all. And maybe I can say I tried to give it my all.</p>
+<p><strong>The Senate is an institution that will continue to do its job,</strong> and that I’m confident about.</p>
+<p><strong>I know that nation-building can continue</strong> even if I’m no longer a member of the senate, and I will continue to try to build this nation. </p>
+<p><strong><strong>I don't get emotionally attached to a job or to a building or to an office, no.</strong> </strong>I knew that it would end.</p>
+<p><strong>You have to understand what I’ve been through</strong>. I’ve been uprooted. I had a nice, comfortable job as gentlemen farmer, then I was put in jail for five years, then I had to undertake an escape, then I had to live in exile for 14 years. So all of these things, these are nothing to me.</p>
+<p><strong>The sacrifices are always worth it. </strong>Especially if you can walk away and say, I did my best. I couldn’t have accomplished a hundred percent, that was unrealistic, and I hope that whatever we left behind other people will build on, and continue the building until it reaches to the sky. We have to realize that we’ll never be able to finish building that edifice. We can only contribute a few rocks to putting up that building, but others also have to come forward and contribute their share in building that edifice.</p>
+<p><strong>We are a society that is quite imperfect and I think we know that. But the thing is we don’t know why. </strong>I'm trying to study now the why.</p>
+<p><strong>Are my children proud of me?</strong> Well, you have to ask them. But I think that I can be assured myself that I’m leaving them a good name. I always tell my children it takes a lifetime to build an honorable name and a good reputation, and it can be torn down in a few seconds. So, you always have to be very watchful. And I may not be able to give you much money, but I want to leave you a good name.</p>
+<p><strong style="line-height: 1.5;">I think you’re asking somebody what he wants his epitaph to be. </strong><span style="line-height: 1.5;">I want to be remembered as a decent man. A man who made sacrifices for his country a man who tried to do his best every step of the way, a man who never surrendered or buckled down in his principles and a man who loved this country. </span></p>
+<p><strong>I never have thought of retiring.</strong> I will retire when I die<strong>. </strong>– <strong>Rappler.com</strong></p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>    </div>
+<div class="wrapper" style="text-align:center">
+</div>
+</div>
+<div id="story-ad-bottom-138019"></div>
+<div id="metakeyword_content-138019" style="display:none"><div class="rappler3-metakey"><b>Filed under:</b><a href="/previous-articles?filterMeta=%22%23PHVote%22" title="#PHVote">#PHVote</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22Philippine%20Senate%22" title="Philippine Senate">Philippine Senate</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22Serge%20Osme%C3%B1a%22" title="Serge Osmeña">Serge Osmeña</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22elections%22" title="elections">elections</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22politics%22" title="politics">politics</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22senators%22" title="senators">senators</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22Sergio%20Osme%C3%B1a%20III%22" title="Sergio Osmeña III">Sergio Osmeña III</a></div></div>
+</div>
+<div id="comments-tag-area-138019" class="wrapper">
+<div class="form-block">
+<div class="form-input">
+<div class="visible-lg">
+<div id="rappler3-metakey-wrapper-138019"></div>
+</div>
+</div>
+<div class="form-button">
+<button id="countbtn" style="min-width:180px" class="rappler-orange bg block" type="button" data-toggle="collapse" data-target="#comments-container_138019" aria-expanded="false" aria-controls="comments-container">
+<i class="fa-angle-down fa"></i>
+<span id="contcount_138019"></span>
+</button>
+</div>
+</div>
+<div class="collapse" id="comments-container_138019">
+<div id="article_comments_138019" class="collapse" style="margin-top:16px;"></div>
+</div>
+</div>
+<div id="story-separator-ads" class="wrapper" style="text-align:center;">
+<div class="text-center wrapper" style="min-height:50px; max-height:100px; min-width:320px; width: 100%;" id="rappler3-common-desktop-tablet-bottom-ad">
+<div id='Rappler_Bottom'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 print-invisible" style="position: relative;">
+<div id="sidebar-upper">
+<div class="text-center wrapper" style="min-height:200px; min-width:320px;" id="rappler3-common-desktop-top-ad">
+<div id='Rappler_Top'>
+</div>
+</div>
+<div class="wrapper text-center">
+</div>
+</div>
+<div style="position:relative; width: 100%;">
+<div id="sidebar-others" style="width:100% !important;">
+<div class="flip-container">
+<div class="flipper">
+<div class="front">
+<div class="rappler-light-gray bg box-shadow-1 wrapper">
+<div class="mm-new wrapper" data-article_id="138019">
+<div id="mood-meter-title" class="rappler-label rappler-orange bg" style="text-transform:uppercase;">
+HOW DOES THIS STORY MAKE YOU FEEL?</div>
+<div id="mood-clicked" style="display:none;"></div>
+<div class="text-center mm-circle-container padding all" style="max-width: 360px; margin: 0 auto;">
+<div style="margin: 0 auto;" id="dot-mm">
+<div class="dot_mmm_circle happy bg active" rel="1">
+<br><strong class="happy bg"></strong>
+<br>Happy</div>
+<div class="dot_mmm_circle sad bg active" rel="2">
+<br><strong class="sad bg"></strong>
+<br>Sad</div>
+<div class="dot_mmm_circle angry bg active" rel="3">
+<br><strong class="angry bg"></strong>
+<br>Angry</div>
+<div class="dot_mmm_circle dontcare bg active" rel="4">
+<br><strong class="dontcare bg"></strong>
+<br>Don't Care</div>
+<div class="dot_mmm_circle inspired bg active" rel="5">
+<br><strong class="inspired bg"></strong>
+<br>Inspired</div>
+<div class="dot_mmm_circle afraid bg active" rel="6">
+<br><strong class="afraid bg"></strong>
+<br>Afraid</div>
+<div class="dot_mmm_circle amused bg active" rel="7">
+<br><strong class="amused bg"></strong>
+<br>Amused</div>
+<div class="dot_mmm_circle annoyed bg active" rel="8">
+<br><strong class="annoyed bg"></strong>
+<br>Annoyed</div>
+</div>
+<div id='mood-all' style='width:336px; margin:16px auto 0 auto;' class="mm-preloader">
+<div id='Rappler_Moods' style='height:280px; width:336px;'>
+</div>
+</div>
+</div>
+<div id="mood-meter-dominant" class="rappler-label-top bg" style="text-transform:uppercase;display:block;">
+</div>
+</div>
+</div>
+</div>
+<div class="back">
+<div class="rappler-light-gray bg box-shadow-1 padding all">
+<div class="form-inline" style="width:100%;">
+<div class="form-addon padding right">
+<button class="rappler-dark-gray bg" id="mood-back">
+<i class="fa fa-angle-left"></i> Back
+</button>
+</div>
+<div id="voteshare" class="form-addon" style="float:right;"></div>
+</div>
+<hr>
+<div>
+<p style="font-size:18px;" class="no-margin">
+These stories made other people <b id="mood-clicked-after"></b>
+</p>
+<label>Check them out!</label>
+</div>
+<div class="padding all mm-preloader" id="mood-sponsorship" style="display: none;">
+</div>
+<span id="latestmoodstories"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="mmm_popup_thanks" class="text-left modal fade" tabindex="-1" role="dialog" aria-labelledby="popupmodal" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<br>
+<h4 id="mmm_thankyou_title" class="modal-title" style="text-align:center"></h4>
+<h6 style="text-align:center">Would you like to share your vote?</h6>
+</div>
+<div class="modal-body" style="padding-left:0; padding-right:0; padding-bottom:16px;">
+<div id="mmm_thankyou_share" style="margin:0 auto 16px auto;width:155px;"></div>
+<div id="mobile-mood-sponsorship" class="mm-preloader" style="margin: 0 auto 0 auto; display: none;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer-wrapper" class="wrapper footer padding print-invisible">
+<div class="main-wrapper">
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="custom"  >
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-orange bg"><a class="white link" href="#">ABOUT RAPPLER</a></div>
+</div>
+<p class="caption light">Welcome to Rappler, a social news network where stories inspire community engagement and digitally fuelled actions for social change. Rappler comes from the root words "rap" (to discuss) + "ripple" (to make waves).</p>
+<p class="caption light"><a class="white link" href="http://www.rappler.com/about-rappler/about-us/385-about-rappler">Read more</a></p>
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<ul class="caption light side-nav2">
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/6677-the-people-behind-rappler">Rappler's Founding Board</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/98278-2014-2016-board-of-directors">Rappler's 2014-2016 Board</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/21743-rappler-team">Rappler Team</a></li>
+<li><a class="white link" href="http://www.rappler.com/indonesia/tentang-kami">Rappler Indonesia Team</a></li>
+<li><a class="white link" href="http://www.rappler.com/bulletin-board/30113-job-openings-rappler">Job Openings</a></li>
+<li><a class="white link" href="http://www.rappler.com/previous-articles">Archives</a></li>
+<li><a class="white link" href="http://x.rappler.com">X</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<ul class="caption light side-nav2">
+<li><a class="white link" href="http://phvote.rappler.com">Join The #PHVote Challenge!</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/10941-rappler-privacy-statement">Privacy statement</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/19840-rappler-community-and-site-use-rules">Terms of Use</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/27506-comment-moderation-policy">Comment moderation Policy</a></li>
+<li><a class="white link" href="http://www.rappler.com/advertise">Advertise With Us</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-us/1557-contact-us">Contact Us</a></li>
+</ul>
+</div>
+</div></div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="custom"  >
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 hidden-xs">
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-orange bg"><a class="white link">SECTIONS</a></div>
+</div>
+<ul class="caption light side-nav2">
+<li><a class="white link" href="http://ph.rappler.com/people">#PHvote 2016</a></li>
+<li><a class="white link" href="http://www.rappler.com/news">News</a></li>
+<li><a class="white link" href="http://www.rappler.com/video">Video</a></li>
+<li><a class="white link" href="http://www.rappler.com/business">Business</a></li>
+<li><a class="white link" href="http://www.rappler.com/newsbreak">Newsbreak</a></li>
+<li><a class="white link" href="http://www.rappler.com/move-ph">MovePH</a></li>
+<li><a class="white link" href="http://www.rappler.com/views">Views</a></li>
+<li><a class="white link" href="http://www.rappler.com/life-and-style">Life &amp; Style </a></li>
+<li><a class="white link" href="http://www.rappler.com/entertainment">Entertainment</a></li>
+<li><a class="white link" href="http://www.rappler.com/sports">Sports</a></li>
+<li><a class="white link" href="http://www.rappler.com/technology">Tech</a></li>
+<li><a class="white link" href="http://live.rappler.com">Live</a></li>
+<li><a class="white link" href="http://www.rappler.com/brandrap">BrandRap</a></li>
+<li><a class="white link" href="http://www.rappler.com/nation/special-coverage/weather-alert" target="_blank"><span>Weather in the Philippines</span></a></li>
+<li><a class="white link" href="http://www.rappler.com/move-ph/issues/disasters" target="_blank">Disasters</a></li>
+<li><a class="white link" href="http://www.rappler.com/life-and-style/travel" target="_blank">Travel destinations</a></li>
+<li><a class="white link" href="http://coupons.rappler.com" target="_blank" rel="nofollow">Coupons</a></li>
+<li><a class="white link" href="http://jobs.rappler.com" target="_blank">Jobs</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 hidden-xs">
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-orange bg"><a class="white link">COMMUNITY</a></div>
+</div>
+<ul class="caption light side-nav2">
+<li><a class="white link" href="https://www.facebook.com/rapplerdotcom">Facebook</a></li>
+<li><a class="white link" href="https://twitter.com/rapplerdotcom">Twitter</a></li>
+<li><a class="white link" href="https://plus.google.com/+Rappler/posts">Google+</a></li>
+<li><a class="white link" href="https://www.youtube.com/rappler">Youtube</a></li>
+<li><a class="white link" href="https://storify.com/rapplerdotcom">Storify</a></li>
+<li><a class="white link" href="https://www.flickr.com/photos/rappler/">Flickr</a></li>
+<li><a class="white link" href="http://instagram.com/rappler">Instagram</a></li>
+<li><a class="white link" href="https://play.google.com/store/apps/details?id=com.rappler.RapplerMobile">Android</a></li>
+<li><a class="white link" href="https://itunes.apple.com/ph/app/rappler/id600797927?mt=8&amp;ign-mpt=uo%3D4">iOS</a></li>
+<li><a class="white link" href="http://apps.microsoft.com/windows/en-us/app/rappler/1edda496-4198-4f68-bf2a-104593ee13f5">Windows</a></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div> 
+<style>
+#userlogin_modal .form-addon {
+width:20% !important;
+}
+#userupd_modal .form-addon,
+#userreg_modal .form-addon {
+width:30% !important;
+}
+#userreg_modal .subscription_chk .form-addon,
+#userreg_modal .terms_chk .form-addon {
+width:100px !important;
+}
+</style>
+<div id="userlogin_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="userlogin_modal_header" class="thin-margin">Log In with your Rappler Account</h3>
+</div>
+<div class="modal-body">
+<form id="frm_login" role="form">
+<div id="frm_login_error" class="alert alert-danger hide" style="text-align:center"></div>
+<fieldset>
+<div class="form-inline">
+<div class="form-addon">
+Email:
+</div>
+<div class="form-input">
+<input type="text" id="login_id" class="usr_text" name="login_id" value="" placeholder="Enter Email" required="required" autocomplete="on">
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Password:
+</div>
+<div class="form-input">
+<input type="password" id="login_password" class="usr_text" name="login_password" value="" placeholder="Enter Password" required="required" autocomplete="on" />
+</div>
+</div>
+</fieldset>
+</form>
+</div>
+<div class="modal-footer">
+<img id="frm_login_loader" src="https://static.rappler.com/templates/rappler3_default/img/AjaxLoader.gif" class="hide nolazyload">
+<button id="btn_login_cancel" class="rappler-red bg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+<button id="btn_login_submit" class="rappler-orange bg" type="button">Submit</button>
+</div>
+</div>
+</div>
+</div>
+<div id="userreg_modal" class="fade modal" tabindex="-1" role="dialog" aria-labelledby="registration" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<span id="userreg_modal_header_container">
+<h3 id="userreg_modal_header" class="thin-margin">Register for a RAPPLER Account</h3>
+<p class="details">Fields with <b>*</b> are required.</p>
+</span>
+</div>
+<div class="modal-body">
+<div id="reg_thankyou" class="hero-unit hide" style="text-align:center">
+<p>Thank You.
+<span id="reg_custommsg"></span>
+<br>View your profile page
+<a href="/index.php?option=com_rappler&task=userprofile&layout=userprofile">here</a> OR
+<br>Click close to continue.
+</p>
+</div>
+<form id="frm_register" role="form">
+<div id="frm_register_error" class="alert alert-error hide"></div>
+<fieldset>
+<div class="form-inline">
+<div class="form-addon">
+Email:
+</div>
+<div class="form-input">
+<input type="email" id="reg_email" class="usr_text" name="email" value="" placeholder="Enter Email*" required="required" autocomplete="on">
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Password:
+</div>
+<div class="form-input">
+<input type="password" id="reg_password" class="usr_text" name="password" value="" placeholder="Enter Password*" required="required" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+First Name:
+</div>
+<div class="form-input">
+<input type="text" id="reg_first_name" class="usr_text" name="first_name" value="" placeholder="Enter First Name*" required="required" autocomplete="on" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Last Name:
+</div>
+<div class="form-input">
+<input type="text" id="reg_last_name" class="usr_text" name="last_name" value="" placeholder="Enter Last Name*" required="required" autocomplete="on" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Birthday: <br>(YYYY-MM-DD)
+</div>
+<div class="form-input">
+<input type="text" id="reg_birthdate" class="usr_text" name="birthdate" value="" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+City/Municipality:
+</div>
+<div class="form-input">
+<input type="text" id="reg_city" class="usr_text" name="city" value="" autocomplete="on" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Province:
+</div>
+<div class="form-input">
+<input type="text" id="reg_province" class="usr_text" name="province" value="" autocomplete="on" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Gender:
+</div>
+<div class="form-input">
+<select id="reg_gender" name="gender" class="usr_select" style="width:100%;">
+<option value="select">Select gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Contact Number:
+</div>
+<div class="form-input">
+<input type="text" id="reg_contactno" class="usr_text" name="contactno" value="" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+School/Work:
+</div>
+<div class="form-input">
+<input type="text" id="reg_org" class="usr_text" name="org" value="" autocomplete="off" />
+</div>
+</div>
+<h3 class="thin-margin margin top padding">Subscriptions</h3>
+<div class="subscription_chk">
+<div class="form-inline">
+<div class="form-addon">
+<input type="checkbox" id="chk_thewrap" name="chk_thewrap" value="YES" />
+</div>
+<div class="form-input padding left">
+I want to subscribe to the Rappler daily wRap
+</div>
+</div>
+<input type="hidden" id="chk_moveph" name="chk_moveph" value="NO" />
+<div class="form-inline">
+<div class="form-addon">
+<input type="checkbox" id="chk_agos" name="chk_agos" value="YES" />
+</div>
+<div class="form-input padding left">
+I want to be a Project Agos volunteer
+</div>
+</div>
+</div>
+<h3 class="thin-margin margin top padding">Terms & Conditions</h3>
+<div class="terms_chk">
+<div class="form-inline">
+<div class="form-addon">
+<input type="checkbox" name="agree" id="agree" value="YES" />
+</div>
+<div id="reg_agree_text" class="form-input padding left">
+I agree to the Rappler terms and conditions below:
+</div>
+</div>
+</div>
+<div>
+<ul>
+<li><a href="http://www.rappler.com/about-rappler/about-us/10941-rappler-privacy-statement">Privacy Statement</a></li>
+<li><a href="http://www.rappler.com/about-rappler/about-us/19840-rappler-community-and-site-use-rules">Site Use Policy</a></li>
+<li><a href="http://www.rappler.com/about-rappler/about-us/27506-comment-moderation-policy">Comment Moderation Policy</a></li>
+</ul>
+</div>
+</fieldset>
+</form>
+</div>
+<div class="modal-footer">
+<img id="frm_register_loader" src="https://static.rappler.com/plugins/system/lazyload/blank.png" data-original="/templates/rappler3_default/img/AjaxLoader.gif" class="hide">
+<button id="btn_usr_cancel" class="rappler-red bg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+<button id="btn_usr_submit" class="rappler-orange bg" type="button">Submit</button>
+</div>
+</div>
+</div>
+</div>
+<div id="userupd_modal" class="rappler_bmodal modal" tabindex="-1" role="dialog" aria-labelledby="registration" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+<span id="userupd_modal_header_container">
+<h3 id="userupd_modal_header" class="thin-margin">Update your information</h3>
+<p id="userupd_modal_subheader" class="details"> Fields with <b>*</b> are required. </p>
+</span>
+</div>
+<div class="modal-body">
+<div id="upd_thankyou" class="jumbotron hide" style="text-align:center">
+<p>Thank You.<br>You have successfully updated your account.</p>
+</div>
+<form id="frm_update">
+<input type="hidden" id="upd_sendconfirm" name="sendconfirmation" value="0" />
+<div id="frm_update_error" class="alert alert-error hide"></div>
+<fieldset>
+<div class="form-inline">
+<div class="form-addon">
+First Name:
+</div>
+<div class="form-input">
+<input type="text" id="upd_first_name" class="usr_text" name="first_name" value="" placeholder="Enter First Name*" required="required" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Last Name:
+</div>
+<div class="form-input">
+<input type="text" id="upd_last_name" class="usr_text" name="last_name" value="" placeholder="Enter Last Name" required="required" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Email:
+</div>
+<div class="form-input">
+<input type="email" id="upd_email" class="usr_text" name="email" value="" placeholder="Enter Email*" required="required" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Birthday: <br>(YYYY-MM-DD)
+</div>
+<div class="form-input">
+<input type="text" id="upd_birthdate" class="usr_text" name="birthdate" value="" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+City/Municipality:
+</div>
+<div class="form-input">
+<input type="text" id="upd_city" class="usr_text" name="city" value="" autocomplete="off">
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Province:
+</div>
+<div class="form-input">
+<input type="text" id="upd_province" class="usr_text" name="province" value="" autocomplete="off">
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Gender:
+</div>
+<div class="form-input">
+<select id="upd_gender" name="gender" class="usr_select" style="width:100%;">
+<option value="select">Select gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Contact Number:
+</div>
+<div class="form-input">
+<input type="text" id="upd_contactno" class="usr_text" name="contactno" value="">
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+School/Work:
+</div>
+<div class="form-input">
+<input type="text" id="upd_org" class="usr_text" name="org" value="" autocomplete="off">
+</div>
+</div>
+</fieldset>
+</form>
+</div>
+<div class="modal-footer">
+<img id="frm_update_loader" src="https://static.rappler.com/templates/rappler3_default/img/AjaxLoader.gif" class="hide nolazyload">
+<button id="btn_usrupd_cancel" class="rappler-red bg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+<button id="btn_usrupd_submit" class="rappler-orange bg" type="button">Submit</button>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var mm_server = 'https://mm.rappler.com';
+var isSharingImageTextEnabled = 1; </script>
+<script src="https://cdn.boomtrain.com/analyticstrain/1a1e951c0be6ac5f7a57c617f1160972/analyticstrain.min.js" type="text/javascript"></script>
+<script src="https://ced.sascdn.com/tag/2060/smart.js" type="text/javascript"></script>
+<script src="https://static.rappler.com/cache/assets/1500477660-32b343e3e981e23650d7df24de08cf80.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() { if(typeof(setInitialContentId)=='function'&&typeof(initContentId)=='undefined') { setInitialContentId( '138019', "http://www.rappler.com/nation/138019-last-session-serge-osmena", "The last session: Serge Osmeña leaves the building", "Senator Serge Osmeña III, three-time senator, self-proclaimed liberal, martial law detainee, 14th in the senatorial race, speaks to Rappler reporter Patricia Evangelista on what it means to say goodbye"); } });
+$(document).ready(function() {
+if($("div.js-megamenu img").length>0) {
+$("div.js-megamenu img").lazyload({event:"megamenu"});
+}
+if($("#latest-news-carousel img").length>0) {
+$("#latest-news-carousel img").lazyload({event:"latestnewscarousel"});
+}
+if($("#rappler3-related-carousel img").length>0) {
+$("#rappler3-related-carousel img").lazyload({event:"relatedcarousel"});
+}
+$("img").lazyload({effect:"fadeIn",skip_invisible:false,failure_limit:50});
+});
+var gbl_iscomponent       = false;
+var user_agent            = 'Amazon CloudFront';
+var isAndroid = user_agent.toLowerCase().indexOf('android') > -1;
+//gamification
+var gm_view = 'article';
+var deviceType = 'desktop';
+var adInlineWordCount = 400;
+_atrk_opts = { atrk_acct:"Jv+uf1agkf00Of", domain:"rappler.com",dynamic: true}; (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+var sas = sas || {};
+sas.cmd = sas.cmd || [];
+sas.cmd.push(function() {
+sas.setup({ networkid: 2060, domain: "https://adnetwork.adasiaholdings.com", async: true });
+});
+wrapDFPWithCxsense('Rappler_Scripts');
+$(document).ready(function() {
+var owl = $("#common-header-slider");
+owl.owlCarousel({
+items : 5,
+itemsDesktop : [1400,4],
+itemsDesktopSmall : [1100,3],
+itemsTablet: [768,2],
+itemsMobile : [480,1],
+lazyLoad : true,
+rewindNav : false
+});
+// Custom Navigation Events
+$(".right-nav-arrow").click(function(){
+owl.trigger('owl.next');
+})
+$(".left-nav-arrow").click(function(){
+owl.trigger('owl.prev');
+})
+});
+sas.cmd.push(function() {
+sas.call("std", {
+siteId: 122850, //
+pageId: 716856, // Page : PH_RAPPLER/rappler_outstream
+formatId: 44269, // Format : Video-Read 1x1
+target: '' // Targeting
+});
+});
+var _ain = {};
+$(document).ready(function () {
+// Render sharebars
+rapplerCreateSharebar({
+title      : 'The last session: Serge Osmeña leaves the building',
+url        : 'http://www.rappler.com/nation/138019-last-session-serge-osmena',
+showpin    : 'https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/AC5C8F68E7224542A579A5130721E718/last-session.-sergio-osmena-iii--photo--by-patricia-evangelista0.jpg',
+container  : 'storypageShare-138019',
+orientation: 'vertical',
+showcount  : 'top',
+via        : '@rapplerdotcom'
+}, true, true, 138019)
+rapplerCreateSharebar({
+title      : 'The last session: Serge Osmeña leaves the building',
+url        : 'http://www.rappler.com/nation/138019-last-session-serge-osmena',
+showpin    : 'https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/AC5C8F68E7224542A579A5130721E718/last-session.-sergio-osmena-iii--photo--by-patricia-evangelista0.jpg',
+container  : 'gysharebarh-2-138019',
+orientation: 'horizontal',
+showcount  : 'top',
+via        : '@rapplerdotcom'
+}, true, true, 138019)
+rapplerCreateSharebar({
+title      : 'The last session: Serge Osmeña leaves the building',
+url        : 'http://www.rappler.com/nation/138019-last-session-serge-osmena',
+showpin    : 'https://assets.rappler.com/612F469A6EA84F6BAE882D2B94A4B421/img/AC5C8F68E7224542A579A5130721E718/last-session.-sergio-osmena-iii--photo--by-patricia-evangelista0.jpg',
+container  : 'gysharebarh-138019',
+orientation: 'horizontal',
+showcount  : 'none',
+via        : '@rapplerdotcom'
+}, true)
+// metakeys
+$('#rappler3-metakey-wrapper-138019').empty().html($('#metakeyword_content-138019').html());
+// - show comments
+showComments('http://www.rappler.com/nation/138019-last-session-serge-osmena', 138019, 'The last session: Serge Osmeña leaves the building');
+// - add the comment button with number of shares
+var fn = function(r) {
+/* CONFIGURATION START */
+_ain = {
+id: "1258",
+postid: "138019",
+url: "http://www.rappler.com/nation/138019-last-session-serge-osmena",
+title: "The last session: Serge Osmeña leaves the building",
+pubdate: "2016-06-29 12:30:00",
+authors: "Patricia Evangelista",
+sections: "Philippines",
+tags: "Sergio Osmeña III, Serge Osmeña, #PHVote, politics, Philippine Senate, senators, elections",
+comments: r.streamInfo.commentCount.toString()
+};
+/* CONFIGURATION END */
+(function (d, s) {
+var sf = d.createElement(s);
+sf.type = 'text/javascript'; sf.async = true;
+sf.src = (('https:' == d.location.protocol) ? 'https://d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com' : 'http://t.contentinsights.com')+'/stf.js';
+var t = d.getElementsByTagName(s)[0];
+t.parentNode.insertBefore(sf, t);
+})(document, 'script');
+}
+getCommentCount('138019',fn);
+});
+if(!initContentId) { var initContentId; } if(!contentMoodId) { var contentMoodId; } $(document).ready(function() { if(gigya) { gigya.comments.showCommentsUI({ categoryID: 'General', streamID: '5005ab2147_id138019', streamURL:'http://www.rappler.com/nation/138019-last-session-serge-osmena', containerID: 'article_comments', width:'100%', deviceType:'auto', cid:'', version:2, onLoad: function(){ $('#article_comments').addClass("clearfix"); }, onCommentSubmitted:function(e) { var params = { 'content_id': initContentId, 'content_mood_id': contentMoodId, 'comment_data':JSON.stringify(e.comment) }; $.post('/?option=com_rappler&task=moodmeter.write_gigya_comment', params, function(data) { socialize.refreshUI(); },'json'); recordCommunityAction('comment',{ contentId:'138019', contentUrl:'http://www.rappler.com/nation/138019-last-session-serge-osmena' }); } }) } });
+wrapDFPWithCxsense('Rappler_Bottom');
+wrapDFPWithCxsense('Rappler_Top');
+wrapDFPWithCxsense('Rappler_Moods');
+$(document).ready(function(a) {
+console.log('Doc ready')
+let mmMaxWidth = $('#sidebar-upper').width();
+$('.flip-container').css('max-width',mmMaxWidth);
+});
+// auto executed when the article loads for the first time
+function setInitialContentId(id, url, title, description) {
+setMoods(id);
+}
+// reset mm to before user voted
+function resetMM() {
+$('#mood-meter-title').html("HOW DOES THIS STORY MAKE YOU FEEL?").attr('class','rappler-label bg rappler-orange');
+$('#mobile-mood-meter-title').html("HOW DOES THIS STORY MAKE YOU FEEL?").attr('class','rappler-label bg rappler-orange');
+$('#mood-clicked').html("");
+}
+// callback function after share is done
+function gyShareCallback(e) {
+}
+//sets the mood values given the id
+function setMoods(item_id, noreset) {
+$('.mm-new').attr('data-article_id', item_id);
+$.get('https://mm.rappler.com/moodmeter/ranking?rsort=1&content_id=' + item_id, {}, function (data) {
+var mood_el = $('#dot-mm'),
+mobile_mood_el = $('#dot-mobile-mm-' + item_id);
+if (mood_el.length > 0) {
+$('.mm-new').css('opacity', 0);
+mood_el.find('strong.happy').html(data.moods.happy + '%');
+mood_el.find('strong.sad').html(data.moods.sad + '%');
+mood_el.find('strong.angry').html(data.moods.angry + '%');
+mood_el.find('strong.dontcare').html(data.moods.dont_care + '%');
+mood_el.find('strong.inspired').html(data.moods.inspired + '%');
+mood_el.find('strong.afraid').html(data.moods.afraid + '%');
+mood_el.find('strong.amused').html(data.moods.amused + '%');
+mood_el.find('strong.annoyed').html(data.moods.annoyed + '%');
+window.setTimeout(function () {
+$('.mm-new').css('opacity', 1);
+}, 100);
+}
+if (mobile_mood_el.length > 0) {
+mobile_mood_el.find('strong.happy').html(data.moods.happy + '%');
+mobile_mood_el.find('strong.sad').html(data.moods.sad + '%');
+mobile_mood_el.find('strong.angry').html(data.moods.angry + '%');
+mobile_mood_el.find('strong.dontcare').html(data.moods.dont_care + '%');
+mobile_mood_el.find('strong.inspired').html(data.moods.inspired + '%');
+mobile_mood_el.find('strong.afraid').html(data.moods.afraid + '%');
+mobile_mood_el.find('strong.amused').html(data.moods.amused + '%');
+mobile_mood_el.find('strong.annoyed').html(data.moods.annoyed + '%');
+}
+// console.log(data);
+var topmood,
+largest = 0,
+cls = 'rappler-orange',
+txt = 'People are divided on this issue';
+for(var i in data.moods) {
+if(data.moods[i] > largest) {
+topmood = i;
+largest = data.moods[i];
+}
+}
+var storymakespeople = 'THIS STORY MAKES PEOPLE';
+switch (topmood) {
+case 'afraid':
+txt = storymakespeople + ' Afraid';
+break;
+case 'amused':
+txt = storymakespeople + ' Amused';
+break;
+case 'annoyed':
+txt = storymakespeople + ' Annoyed';
+break;
+case 'angry':
+txt = storymakespeople + ' Angry';
+break;
+case 'dont_care':
+txt = "People do not care about this story";
+break;
+case 'happy':
+txt = storymakespeople + ' Happy';
+break;
+case 'inspired':
+txt = storymakespeople + ' Inspired';
+break;
+case 'sad':
+txt = storymakespeople + ' Sad';
+break;
+}
+if(topmood == 'dont_care') {
+cls = 'dontcare'
+} else {
+if(typeof(topmood)!='undefined') {
+cls = topmood;
+}
+}
+resetMM();
+$('#mood-meter-dominant').attr('class','');
+$('#mood-meter-dominant').addClass('rappler-label-top bg '+cls);
+$('#mood-meter-dominant').html(txt)
+$('#mobile-mood-meter-dominant').attr('class','');
+$('#mobile-mood-meter-dominant').addClass('rappler-label-top bg '+cls);
+$('#mobile-mood-meter-dominant').html(txt)
+});
+}
+//set moodmeter language
+function setMoodMeterLanguage(url){
+if((url.indexOf('/world/regions/asia-pacific/indonesia') > -1 || url.indexOf('/indonesia') > -1) && url.indexOf('/englishedition') == -1){
+} else{
+}
+$(".happy .bg").each(function() {
+$(this).nextAll("br").get(0).nextSibling.nodeValue = "Happy";
+});
+$(".sad .bg").each(function() {
+$(this).nextAll("br").get(0).nextSibling.nodeValue = "Sad";
+});
+$(".angry .bg").each(function() {
+$(this).nextAll("br").get(0).nextSibling.nodeValue = "Angry";
+});
+$(".dontcare .bg").each(function() {
+$(this).nextAll("br").get(0).nextSibling.nodeValue = "Don't Care";
+});
+$(".inspired .bg").each(function() {
+$(this).nextAll("br").get(0).nextSibling.nodeValue = "Inspired";
+});
+$(".afraid .bg").each(function() {
+$(this).nextAll("br").get(0).nextSibling.nodeValue = "Afraid";
+});
+$(".amused .bg").each(function() {
+$(this).nextAll("br").get(0).nextSibling.nodeValue = "Amused";
+});
+$(".annoyed .bg").each(function() {
+$(this).nextAll("br").get(0).nextSibling.nodeValue = "Annoyed";
+});
+}
+// execute this once a new story is added to the page
+function initStoryItem(id, url, title, pubdate, authors, sections, tags, previousUrl) {
+// reset moodmeter
+$('.flip-container').removeClass('hover');
+// do we have an x module ?
+// initialize if we do
+if($('#item-'+id).find('.x_stories_module').length>0) {
+var m = $('#item-'+id).find('.x_stories_module')[0];
+m_id = $(m).attr('data-module_id');
+head.js("https://static.rappler.com/modules/mod_rappler3_x_stories/assets/js/mod_rappler3_x_stories.js", function () {
+if(typeof(getXStories)!=='undefined') {
+getXStories(m_id);
+createXLink(m_id);
+}
+});
+}
+// do we have a scrolly slider (aka owl carousel) ?
+if($('#item-'+id).find('.rappler-scrolly-slider').length>0) {
+head.load("https://static.rappler.com/templates/rappler3_default/js/owl-carousel/owl.carousel.css",
+"https://static.rappler.com/templates/rappler3_default/js/owl-carousel/owl.theme.css",
+"https://static.rappler.com/templates/rappler3_default/js/owl-carousel/owl.transitions.css",
+"https://static.rappler.com/templates/rappler3_default/css/scrollyslider.css",
+"https://static.rappler.com/templates/rappler3_default/js/owl-carousel/owl.carousel.js",
+"https://static.rappler.com/templates/rappler3_default/js/scrollyslider.js", function () {
+if(typeof(initOwlSlider)!=='undefined') {
+initOwlSlider($('#item-'+id).find('.rappler-scrolly-slider'));
+}
+});
+}
+// resetMM();
+// fetch moods
+setMoods(id);
+// create sharebar for new story
+rapplerCreateSharebar({
+title: title,
+url: url,
+showpin: 1,
+container: 'storypageShare-' + id,
+orientation: 'vertical',
+showcount: 'top',
+via: '@rapplerdotcom'
+}, true, true, id)
+// - meta keywords
+$('#rappler3-metakey-wrapper-' + id).empty().html($('#metakeyword_content-' + id).html());
+// - show comments
+showComments(url, id, title);
+// - add the comment button with number of shares
+getCommentCount(id);
+// NOTE : updating of the url needs to be done in initScrolly inside storypage.php
+//  because that's where we detect the direction of the scroll
+//  detecting the direction is crucial so we know when
+//  to update the url and moodmeter
+// - load twitter again
+twttr.widgets.load()
+// HAM : content insights after we get comments
+var fn = function(r) {
+_ain.id = "1258";
+_ain.postid = id;
+_ain.url = url;
+_ain.title = title;
+_ain.pubdate = pubdate;
+_ain.authors = authors;
+_ain.sections = sections;
+_ain.tags = tags;
+_ain.maincontent = "#story-area-" + id;
+_ain.comments = r.streamInfo.commentCount.toString();
+_ain.track();
+}
+rapplerGetCommentcount(id,fn);
+// TODO : only execute if this article is brandrap
+}
+// listen to mood votes
+head.js("https://static.rappler.com/components/com_rappler/js/jquery.cookie.min.js",
+"https://static.rappler.com/modules/mod_rappler3_moods/js/moodmeter.min.js",
+"https://static.rappler.com/modules/mod_rappler3_moods/js/moodmeter_client.min.js", function () {
+moodMeterClient = new MoodMeterClient({domain: "https://mm.rappler.com"});
+moodMeterClient.initClient(function (isExists, hash) {
+// listen to vote clicks
+$(document).click(function (e) {
+if ($(e.target).hasClass('dot_mmm_circle')) {
+var mood_type_id = $(e.target).attr('rel'),
+mood = '',
+moodClicked = '',
+moodText = '',
+moodClass = $('#mood-clicked').attr('class'),
+contentId = $(e.target).parents('div.mm-new').attr('data-article_id'),
+mobile_parent = $(e.target).parents('#dot-mobile-mm-' + contentId);
+// console.log(contentId);
+// console.log(mood);
+// console.log(mood_type_id);
+if ($(e.target).hasClass('happy')) {
+mood = "Happy";
+moodText = 'Happy';
+}
+if ($(e.target).hasClass('sad')) {
+mood = "Sad";
+moodText = 'Sad';
+}
+if ($(e.target).hasClass('angry')) {
+mood = "Angry";
+moodText = 'Angry';
+}
+if ($(e.target).hasClass('inspired')) {
+mood = "Inspired";
+moodText = 'Inspired';
+}
+if ($(e.target).hasClass('afraid')) {
+mood = "Afraid";
+moodText = 'Afraid';
+}
+if ($(e.target).hasClass('amused')) {
+mood = "Amused";
+moodText = 'Amused';
+}
+if ($(e.target).hasClass('dontcare')) {
+mood = "Don't Care";
+moodText = "Don't Care";
+}
+if ($(e.target).hasClass('annoyed')) {
+mood = "Annoyed";
+moodText = 'Annoyed';
+}
+moodClicked = mood.toLowerCase()
+if (moodClicked == "don't care") {
+mood = 'dontcare';
+moodText = "Don't Care";
+}
+var prefix = "I am";
+if (mood_type_id == 4) {
+prefix = "I";
+}
+//printMoodSponsorship(mood);
+// record the vote
+$.post('https://mm.rappler.com/moodmeter/vote', {
+hash: hash,
+mood_type_id: mood_type_id,
+mood_type_name: mood,
+content_id: contentId,
+cookies_enabled: 1
+}, function (data) {
+var moodTypeId = 0;
+if (!data.content_mood_id) {
+if (mobile_parent.length == 1) {
+// voting on mobile
+$('#mmm_thankyou_title').html('You have already voted <span class="' + moodClicked + '">' + moodText + '</span>')
+$('#mmm_popup_thanks').modal('show');
+rapplerCreateSharebar({
+title: prefix + ' ' + mood + ' - ' + document.title,
+url: window.location.href,
+showpin: 0,
+container: 'mmm_thankyou_share',
+orientation: 'horizontal',
+showcount: 'none',
+via: 'rapplerdotcom'
+}, false, false, contentId)
+} else {
+// update share this vote
+rapplerCreateSharebar({
+title: prefix + ' ' + mood + ' - ' + document.title,
+url: window.location.href,
+showpin: 0,
+container: 'voteshare',
+orientation: 'horizontal',
+showcount: 'none',
+via: 'rapplerdotcom'
+}, false, false, contentId)
+// update the mood counts
+setMoods(contentId);
+// do the flip
+$('.flip-container').toggleClass('hover');
+// update the flip panel text
+$('#mood-meter-title').html('You already voted ' + moodText).attr('class','rappler-label bg '+ moodClicked);
+$('#mobile-mood-meter-title').html('You already voted ' + moodText).attr('class','rappler-label bg '+ moodClicked);
+$("#mood-clicked").html(moodText).attr('class','').addClass(moodClicked);
+$("#mood-clicked-after").html(moodText).attr('class','').addClass(moodClicked);
+var oldMoodClicked = moodClicked;
+$( "#mood-back" ).one( "click", function() {
+switch(data.mood_type_slug) {
+case 'happy':
+moodClicked = 'Happy';
+moodText = 'Happy';
+break;
+case 'sad':
+moodClicked = 'Sad';
+moodText = 'Sad';
+break;
+case 'angry':
+moodClicked = 'Angry';
+moodText = 'Angry';
+break;
+case 'dontcare':
+moodClicked = "Don't Care";
+moodText = "Don't Care";
+break;
+case 'amused':
+moodClicked = 'Amused';
+moodText = 'Amused';
+break;
+case 'afraid':
+moodClicked = 'Afraid';
+moodText = 'Afraid';
+break;
+case 'annoyed':
+moodClicked = 'Annoyed';
+moodText = 'Annoyed';
+break;
+}
+$('#mood-meter-title').html('You already voted ' + moodText).attr('class','rappler-label bg '+ data.mood_type_slug);
+$('#mobile-mood-meter-title').html('You already voted ' + moodText).attr('class','rappler-label bg '+ data.mood_type_slug);
+$("#mood-clicked").html(moodText).attr('class','').addClass(data.mood_type_slug);
+$("#mood-clicked-after").html(moodText).attr('class','').addClass(data.mood_type_slug);
+//$("#mood-sponsorship").html('');
+});
+var relatedmood = "";
+if (moodClicked == "Don't Care") {
+relatedmood = 'Dont+care';
+} else {
+relatedmood = moodClicked;
+}
+$.getJSON('https://mm.rappler.com/api/votes/voted-top-in-moods', {type: relatedmood}, function (data) {
+$('#latestmoodstories').html('');
+$.each(data.results, function (index, entry) {
+if (index < 5) {
+var b = '1px solid #eaeaea';
+if (index == (data.length - 1)) {
+b = '';
+}
+$('#latestmoodstories').append(
+$('<div>').append(
+$('<h6>').append(
+$('<a>').addClass('rappler-headline link').attr('href', '/?option=com_rappler&task=mobileapi.rdir&id=' + entry.contentId).html(entry.title)
+)
+)
+).append('<hr>');
+}
+});
+});
+}
+} else {
+if (mobile_parent.length == 1) {
+$('#mmm_thankyou_title').html('Thank you for voting <span class="' + moodClicked + '">' + moodText + '</span>')
+$('#mmm_popup_thanks').modal('show');
+rapplerCreateSharebar({
+title: prefix + ' ' + mood + ' - ' + document.title,
+url: window.location.href,
+showpin: 0,
+container: 'mmm_thankyou_share',
+orientation: 'horizontal',
+showcount: 'none',
+via: 'rapplerdotcom'
+}, false, false, contentId)
+} else {
+// update share this vote
+rapplerCreateSharebar({
+title: prefix + ' ' + mood + ' - ' + document.title,
+url: window.location.href,
+showpin: 0,
+container: 'voteshare',
+orientation: 'horizontal',
+showcount: 'none',
+via: 'rapplerdotcom'
+}, false, false, contentId)
+// update the mood counts
+setMoods(contentId);
+// do the flip
+$('.flip-container').toggleClass('hover');
+// update the flip panel text
+window.setTimeout(function () {
+$("#mood-clicked-after").html(moodText).attr('class','').addClass(moodClicked);
+}, 100);
+$('#mood-meter-title').html('<?echo $mood_name["youalreadyvoted"]; ?> ' + moodText).attr('class','rappler-label bg '+ moodClicked);
+$('#mobile-mood-meter-title').html('<?echo $mood_name["youalreadyvoted"]; ?> ' + moodText).attr('class','rappler-label bg '+ moodClicked);
+// fetch related news
+var relatedmood = "";
+if (moodClicked == "Don't Care") {
+relatedmood = 'Dont+care';
+} else {
+relatedmood = moodClicked;
+}
+$.getJSON('https://mm.rappler.com/api/votes/voted-top-in-moods', {type: relatedmood}, function (data) {
+$('#latestmoodstories').html('');
+$.each(data.results, function (index, entry) {
+if (index < 5) {
+var b = '1px solid #eaeaea';
+if (index == (data.length - 1)) {
+b = '';
+}
+$('#latestmoodstories').append(
+$('<div>').addClass('stats').append(
+$('<h6>').addClass('top-in-moods-title').append(
+$('<a>').addClass('rappler-headline link').attr('href', '/?option=com_rappler&task=mobileapi.rdir&id=' + entry.contentId).html(entry.title)
+)
+)
+).append('<hr>');
+}
+});
+});
+}
+recordGigAction('mood_vote',{
+content_id:contentId,
+mood_type_id:mood_type_id,
+mood_type_name:mood
+});
+recordCommunityAction('mood_vote', {
+content_id:contentId,
+mood_type_id:mood_type_id,
+mood_type_name:mood
+});
+}
+})
+}
+})
+})
+})
+$('#mood-back').click(function () {
+$('.flip-container').removeClass('hover');
+});
+var id = 138019;
+var title = $("#story-area-" + id).attr("data-article_title");
+$("#now-reading-title").html(title);
+//gamification
+var gm_id = '138019';
+var gm_cats = $('#story-area-'+gm_id).attr('data-article_categories');
+var gm_title = "The last session: Serge Osmeña leaves the building";
+var lw_device = 'desktop';
+if (gigya) {
+gigya.socialize.getUserInfo({
+callback: function (r) {
+if (r.user.isLoggedIn) {
+if (r.user.isSiteUID) {
+//record read actions
+recordCommunityAction('read', {
+contentId:gm_id,
+contentTitle:gm_title,
+contentUrl:window.location.href
+});
+//show notification
+gigya.gm.showNotifications({
+excludeChallenges: 'Overall Rank',
+onNewLevel: function(event) {
+publishToFeed('newLevel', { levelTitle:event.challenge.levelTitle });
+}
+});
+}
+}
+}
+});
+}
+// Render Ads Last
+//renderLeaderboardAd();
+//renderNativeAd();
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"77a19f2746","applicationID":"36625530","transactionName":"ZVdWNhZWDUFWU0EPXFwddQEQXgxcGHNaCEdXXEAhC1kXQFhcWQNBHVZdERRbAks=","queueTime":0,"applicationTime":1228,"atts":"SRBVQF5MHk8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

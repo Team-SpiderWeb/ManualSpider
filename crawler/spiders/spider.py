@@ -12,7 +12,7 @@ from urllib.parse import urlparse
 import urllib
 import pymysql
 
-db = pymysql.connect("localhost","root","belle","thsst_v2" )
+db = pymysql.connect("localhost","root","belle","thsst_db" )
 
 class Spider(scrapy.Spider):
 
@@ -21,14 +21,15 @@ class Spider(scrapy.Spider):
     html_ctr = 0
 
     cursor = db.cursor()
-    cursor.execute("SELECT link FROM link WHERE link NOT IN (SELECT url FROM page)")
+    cursor.execute("SELECT distinct(link) FROM link WHERE link NOT IN (SELECT url FROM page)")
+    db.commit()
 
     for row in cursor.fetchall():
         urls.append("".join(row))
 
-    start_urls = urls
-
     cursor.close()
+
+    start_urls = urls
 
     def getLastId(self):
         cursor = db.cursor()
@@ -80,11 +81,14 @@ class Spider(scrapy.Spider):
                 content = re.sub('fulltext', '', cleantext, 1)
                 content = re.sub('[^A-Za-z0-9\.]+', ' ', content)
                 item["content"] = content
+                # item["content"] = bytes(content, 'utf-8').decode('utf-8', 'ignore')
+
             except:
                 try:
                     #content located in <p> (scripts not included) or <p><span> 
                     content = response.xpath('//div[starts-with(@class,"story-area")]//p//text()[not(ancestor::script|ancestor::style|ancestor::noscript)] | //div[starts-with(@class,"story-area")]//p/span//text()').extract()
                     item["content"] = u','.join(content)
+                    # item["content"] = bytes(item["content"], 'utf-8').decode('utf-8', 'ignore')
 
                 except:
                     item["content"] = ""  

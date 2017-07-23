@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="http://www.rappler.com/nation/134741-becoming-leni-robredo" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="keywords" content="Leni Robredo, Maria Leonora Robredo, 2016 Philippine elections, 2016 elections, Philippine elections, vice presidential race, vice president, #PHVote, Aquino-Duterte transition" />
+<meta name="rights" content="All rights reserved by Rappler, Inc.   " />
+<meta name="news_keywords" content="Leni Robredo, Maria Leonora Robredo, 2016 Philippine elections, 2016 elections, Philippine elections, vice presidential race, vice president, #PHVote, Aquino-Duterte transition" />
+<meta name="description" content="The Philippines' newly elected vice president is more than the story she loves to tell on the campaign trail " />
+<title>Becoming Leni Robredo</title>
+<link rel="stylesheet" href="https://static.rappler.com/cache/assets/1496927425-50688d4145392f52f06330569e4d2349.css" type="text/css" />
+<script src="https://www.googletagservices.com/tag/js/gpt.js" type="text/javascript"></script>
+<script src="https://cdns.gigya.com/js/gigya.js?apiKey=3_ao3WNnqtFDhSjgAe1TC-0ykqEbogOlYXE1kYr0LoFxTDRzrwrGJkZpdnR_XEn3D5" type="text/javascript">{ siteName: "rappler.com", enabledProviders: "facebook,twitter,google,linkedin,yahoo,messenger,myspace,aol,foursquare,orkut,vkontakte,renren,QQ,Sina,kaixin",connectWithoutLoginBehavior: "alwaysLogin", me_server: "https://me.rappler.com"}</script>
+<script src="https://static.rappler.com/cache/assets/1440183726-d42e171172ff949812e4bfb6f8ab1e9c.js" type="text/javascript"></script>
+<link href="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/79D75FD097BA4CCEB7950CC1DE6B2596/leni-share-image.jpg" rel="image_src" />
+<link href="https://static.rappler.com/templates/rappler3_default/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<link href="http://feeds.feedburner.com/rappler/" rel="alternate" type="application/rss+xml" title="RAPPLER" />
+<link href="http://feeds.feedburner.com/elections-2013" rel="alternate" type="application/rss+xml" title="Elections-2013" />
+<link href="http://feeds.feedburner.com/" rel="alternate" type="application/rss+xml" title="Project Agos + #WeatherAlert feed" />
+<meta property="fb:admins" content="659407145" />
+<meta property="fb:app_id" content="129650183806730" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.rappler.com/nation/134741-becoming-leni-robredo" />
+<meta property="og:title" content="Becoming Leni Robredo" />
+<meta name="cXenseParse:recs:articleid" content="134741"/>
+<meta name="cXenseParse:pageclass" content="article" />
+<meta name="cXenseParse:recs:publishtime" content="2016-05-30T07:00:21+0800"/>
+<meta name="bt:id" content="134741"/>
+<meta name="bt:pubDate" content="2016-05-30T07:00:21+0800"/>
+<meta name="bt:modDate" content="2016-06-29T03:52:40+0800"/>
+<meta name="bt:keywords" content="Leni Robredo, Maria Leonora Robredo, 2016 Philippine elections, 2016 elections, Philippine elections, vice presidential race, vice president, #PHVote, Aquino-Duterte transition"/>
+<meta name="bt:author" content="Bea Cupin"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:app:country" content="PH">
+<meta name="twitter:site" content="@rapplerdotcom">
+<meta name="twitter:app:id:iphone" content="600797927" />
+<meta name="twitter:app:id:ipad" content="600797927" />
+<meta name="twitter:app:id:googleplay" content="com.rappler.RapplerMobile" />
+<meta property="al:ios:url" content="fb129650183806730://nation/134741-becoming-leni-robredo" />
+<meta name="twitter:app:url:iphone" content="rappler://nation/134741-becoming-leni-robredo" />
+<meta name="twitter:app:url:ipad" content="rappler://nation/134741-becoming-leni-robredo" />
+<meta name="twitter:app:url:googleplay" content="rappler://nation/134741-becoming-leni-robredo" />
+<meta property="al:android:url" content="fb129650183806730://nation/134741-becoming-leni-robredo">
+<link rel="canonical" href="http://www.rappler.com/nation/134741-becoming-leni-robredo" />
+<meta name="twitter:image" content="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/79D75FD097BA4CCEB7950CC1DE6B2596/leni-share-image.jpg" />
+<meta property="og:image" content="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/79D75FD097BA4CCEB7950CC1DE6B2596/leni-share-image.jpg" />
+<meta name="twitter:image" content="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/E29D5AE547A44A209836912183590A4A/leni-robredo-file-photos.jpg" />
+<meta property="og:image" content="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/E29D5AE547A44A209836912183590A4A/leni-robredo-file-photos.jpg" />
+<meta name="twitter:image" content="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/EFF047C23F904C5983AA28897EB79CFC/leni-robredo-file-photos.jpg" />
+<meta property="og:image" content="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/EFF047C23F904C5983AA28897EB79CFC/leni-robredo-file-photos.jpg" />
+<meta name="twitter:image" content="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/39B85B79AF3B47B786A03181D967A3FA/leni-robredo-file-photos-20160528-001.jpg" />
+<meta property="og:image" content="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/39B85B79AF3B47B786A03181D967A3FA/leni-robredo-file-photos-20160528-001.jpg" />
+<meta name="twitter:image" content="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/E03879569E5543978EDABA9EB59EAF65/leni-robredo-ateneo-20160515-021.jpg" />
+<meta property="og:image" content="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/E03879569E5543978EDABA9EB59EAF65/leni-robredo-ateneo-20160515-021.jpg" />
+<meta property="og:description" content="The Philippines' newly elected vice president is more than the story she loves to tell on the campaign trail " />
+<meta name="twitter:description" content="The Philippines' newly elected vice president is more than the story she loves to tell on the campaign trail " />
+<meta property="og:site_name" content="Rappler" />
+<meta name="cXenseParse:recs:image" content="https://assets.rappler.com/0871DFBB68B041AE8ECB7854E14E9870/img/E421BB74B9FE418A9450A733EB447D83/leni-robredo-rappler-interview-20160507-008_E421BB74B9FE418A9450A733EB447D83.jpg"/>
+<meta property="article:author" content="https://www.facebook.com/francesbea" />
+<meta name="alexaVerifyID" content="boi3S3jgq4MUulG4x97ZaZ1dpDQ" />  <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-26553497-1', 'auto'); </script>  <script> function wrapDFPWithCxsense(adSlot) { cX.callQueue.push(["invoke", function () { googletag.cmd.push(function () { googletag.display(adSlot); }); }]); } var googleSlots = []; var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; var TopMrecMap = googletag.sizeMapping().addSize([1024, 300], [336, 280]).addSize([900, 300], [300, 250]).addSize([768, 300], [728, 90]).addSize([0, 0], [300, 250]).build(); var MidMrecMap = googletag.sizeMapping().addSize([1024, 300], [336, 280]).addSize([900, 300], [300, 250]).addSize([768, 300], [728, 90]).addSize([0, 0], [300, 250]).build(); var leaderboardMap = googletag.sizeMapping().addSize([1024, 300], [728, 90]).addSize([768, 300], [728, 90]).addSize([640, 300], [468, 60]).addSize([0, 0], [300, 250]).build(); var cX = cX || {}; cX.callQueue = cX.callQueue || []; cX.callQueue.push(["invoke", function () { console.log(cX.getUserSegmentIds({ persistedQueryId: "82ef547962d8ecd598da83a1543cb91a6670175e" })); googletag.cmd.push(function () { googleSlot1 = googletag.defineSlot("/15125093/Rappler_Top", [[300, 250], [336, 280], [728, 90], [300, 100][320, 50]], "Rappler_Top").addService(googletag.pubads()) .setTargeting("category", "nation") .setTargeting("articleId", "134741") .setTargeting("keywords", ['']) .defineSizeMapping(TopMrecMap); googleSlot2 = googletag.defineSlot("/15125093/Rappler_Mid", [[468, 60], [728, 90], [320, 50], [336, 280], [300, 250]], "Rappler_Mid").addService(googletag.pubads()) .setTargeting("category", "nation") .setTargeting("articleId", "134741") .setTargeting("keywords", ['']) .defineSizeMapping(MidMrecMap); googleSlot3 = googletag.defineSlot("/15125093/Rappler_Bottom", [[728, 90], [468, 60], [336, 280], [320, 50]], "Rappler_Bottom").addService(googletag.pubads()) .setTargeting("category", "nation") .setTargeting("articleId", "134741") .setTargeting("keywords", ['']) .defineSizeMapping(leaderboardMap); googleSlot4 = googletag.defineSlot("/15125093/Rappler_Scripts", [1, 1], "Rappler_Scripts").addService(googletag.pubads()) .setTargeting("category", "nation") .setTargeting("articleId", "134741") .setTargeting("keywords", ['']); googleSlot5 = googletag.defineSlot("/15125093/Rappler_Moods", [[300, 250], [336, 280]], "Rappler_Moods").addService(googletag.pubads()) .setTargeting("category", "nation") .setTargeting("articleId", "134741") .setTargeting("keywords", ['']); googletag.pubads().enableAsyncRendering(); googletag.pubads().collapseEmptyDivs(); googletag.pubads().setTargeting("CxSegments", cX.getUserSegmentIds({ persistedQueryId: "82ef547962d8ecd598da83a1543cb91a6670175e" })); !function () { var e = { "300x250": 803911, "300x600": 803912, "320x50": 803914, "320x100": 803915, "728x90": 803913 }, t = { placements: [] }; for (var o in googletag.pubads().getSlots()) { var i = googletag.pubads().getSlots()[o]; for (var n in i.getSizes()) { var g = i.getSizes()[n], a = e[g.getWidth() + "x" + g.getHeight()] || null; if (a) { t.placements.push({ slotid: i.getSlotElementId(), zoneid: a }); break } } } if (t.placements.length > 0) { window.Criteo = window.Criteo || {}, window.Criteo.events = window.Criteo.events || [], googletag.pubads().disableInitialLoad(); var s = function () { googletag.cmd.push(function () { Criteo.SetDFPKeyValueTargeting(), googletag.pubads().refresh() }) }; Criteo.events.push(function () { Criteo.SetLineItemRanges("0.50..150.00:0.50"), Criteo.RequestBids(t, s, 2e3) }) } }(); googletag.enableServices(); }); }]); </script><link href="https://plus.google.com/+Rappler" rel="publisher" /><style>@font-face {font-family: 'Roboto Condensed';font-style: normal;font-weight: 700;src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url(https://static.rappler.com/templates/rappler3_default/fonts/roboto-bold-condensed.woff) format('woff')}</style>
+</head>
+<body>
+<script> window.dataLayer = window.dataLayer || []; var pubDate = new Date('2016-05-30 07:00:21'); pubDate = new Date(Date.UTC(pubDate.getFullYear(), pubDate.getMonth(), pubDate.getDate(), pubDate.getHours(), pubDate.getMinutes(), pubDate.getSeconds())); var timeDiff = Math.abs(new Date().getTime() - pubDate); var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)) - 1; dataLayer.push({ AuthorName: "Bea Cupin", PublishedDt: '2016-05-30 07:00:21', RevisedDt: '2016-06-29 03:52:40', AuthorTags: "Leni Robredo, Maria Leonora Robredo, 2016 Philippine elections, 2016 elections, Philippine elections, vice presidential race, vice president, #PHVote, Aquino-Duterte transition", ArticleId: '134741', ArticleTitle: "Becoming Leni Robredo", ArticleAge: diffDays });</script> <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-LCSN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-LCSN');</script>  <noscript><img src="https://static.rappler.com/plugins/system/lazyload/blank.png" data-original="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=Jv+uf1agkf00Of" style="display:none" height="1" width="1" alt="" /></noscript>
+<div id="page" class="container-fluid navbar-spacing" style="overflow-x: hidden;">
+<div id="askedition" style="background-color:#000;color:#fff;font-size:14px;padding:10px 10px 10px 10px;display:none">
+Welcome to Rappler, please select your default country:&nbsp;&nbsp;
+<a id="editionPhilippines" href="javascript:void(0)" style="font-weight:normal;padding:10px">Philippines</a>&nbsp;&nbsp;
+<a id="editionIndonesia" href="javascript:void(0)" style="font-weight:normal;padding:10px">Indonesia</a>
+</div>
+<div id="masthead" class="navbar hidden-lg box-shadow-2" style="padding:0px;">
+<div class="form-inline" style="margin-bottom:0px; padding:8px 10px;">
+<div class="form-addon padding right text-left">
+<div class="form-inline">
+<div class="form-addon padding right">
+<a href="#menu" id="mobile-menu-trigger"><i class="fa fa-bars fa-fw light"></i></a>
+</div>
+<div class="form-input">
+<a href="/"><img src="https://static.rappler.com/templates/rappler3_default/img/rapplerlogosvg.svg" style="width:100px!important; max-width:none!important;"></a>
+</div>
+</div>
+</div>
+<div class="dropdown mobile-search-dropdown form-input text-right">
+<a id="menuIcoPhilippines" href="/" class="white link padding left"><img src="https://static.rappler.com/templates/rappler3_default/img/phl-30x30.png" class="nolazy" style="width:20px;"></a>
+<a id="menuIcoIndonesia" href="/indonesia/" class="white link padding left right"><img src="https://static.rappler.com/templates/rappler3_default/img/ina-30x30.png" class="nolazy" style="width:20px;"></a>
+<a role="button" data-toggle="dropdown" data-target="#" href="#" class="padding left"><i class="fa fa-search fa-fw light"></i></a>
+<ul class="side-nav no-padding dropdown-menu menu-dropdown col-xs-12 rappler-light-gray">
+<li class="row">
+<div class="col-xs-12 col-sm-12 col-md-12">
+<form class="form-inline" role="search" method="GET" action="/">
+<div class="form-input padding right">
+<input type="hidden" name="option" value="com_rappler">
+<input type="hidden" name="task" value="search">
+<input type="hidden" name="language" value="english">
+<input type="text" name="q" placeholder="Search">
+</div>
+<div class="form-addon">
+<button class="rappler-orange bg" type="submit" >Go!</button>
+</div>
+</form>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div> 
+<div class="menu-trigger nav-full">
+<header class="navbar navbar-rappler-top visible-lg" role="banner">
+<a class="navbar-brand-top" href="/"><img src="https://static.rappler.com/templates/rappler3_default/img/rappler-basic-logo.svg"></a>
+<div class="mdd-wrapper">
+<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+<ul class="nav navbar-nav navbar-left">
+<li>
+<a href="/?mdd=1" id="menuPhilippines" style="display:inline-block;">Philippines</a><a id="menuIndonesia"  style="display:inline-block;" href="/indonesia/" class="padding left">Indonesia</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="http://coupons.rappler.com" target="_blank">
+Coupons                                </a>
+</li>
+<li>
+<a href="http://shop.rappler.com" target="_blank">
+<i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;Rappler Shop</a>
+</li>
+<li><a href="https://www.facebook.com/rapplerdotcom" target="_blank"><i class="fa fa-facebook padding left"></i></a></li>
+<li><a href="http://twitter.com/rapplerdotcom" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="http://instagram.com/rappler" target="_blank"><i class="fa fa-instagram"></i></a></li>
+<li><a href="http://feeds.feedburner.com/rappler/" target="_blank"><i class="fa fa-rss padding right"></i></a></li>
+<li>
+<a id="rpl_auth_container" href="javascript:void(0)" data-toggle="popover">
+<i id="login_user_icon" class="fa fa-user margin right"></i><span id="login_user_firstname" class="caption">Login to Rappler</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="login-content hide">
+<span class="clickover-txt caption">Login to Rappler using your social account:</span>
+<div id="pop_loginui"></div>
+<span class="clickover-txt caption">
+Already have a Rappler Account?
+<a href="javascript:fnLogin();$('.login-content').find('.close').click();"><b>Login</b></a>
+or <a href="javascript:fnRegister(null);$('.login-content').find('.close').click();"><b>Register</b></a> to create one.
+</span>
+</div>
+</header>
+<nav id="menu" class="mm-menu">
+<ul>
+<li class="selected"><a href="/">Home</a></li>
+<li class="item-5260 parent" deeper><a href="/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:News"  >News</a><ul><li><li class="item-5261 active"><a href="/nation"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Philippines"  >Philippines</a></li><li class="item-5691"><a href="/nation/politics/elections/2016"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#PHvote 2016"  >#PHvote 2016</a></li><li class="item-5262 parent"><a href="/world"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:World"  >World</a></li><li class="item-5272"><a href="/move-ph/balikbayan"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#BalikBayan"  >#BalikBayan</a></li><li class="item-5273 parent"><a href="/science-nature"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Science &amp; Nature"  >Science &amp; Nature</a></li></ul></li><li class="item-5282 parent" deeper><a href="/video"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Video"  >Video</a><ul><li><li class="item-5283"><a href="/video/newscast"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Newscast"  >Newscast</a></li><li class="item-5285"><a href="/video/shows"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Shows"  >Shows</a></li><li class="item-5286"><a href="/video/reports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Reports"  >Reports</a></li><li class="item-5287"><a href="/video/documentary"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Documentary"  >Documentary</a></li><li class="item-5288"><a href="/video/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li></ul></li><li class="item-5289 parent" deeper><a href="/business"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Business"  >Business</a><ul><li><li class="item-5290"><a href="/business/economy-watch"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Economy"  >Economy</a></li><li class="item-5433"><a href="/brandrap/brighter-life"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Brighter Life"  >Brighter Life</a></li><li class="item-5291"><a href="/business/industries"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Industries"  >Industries</a></li><li class="item-5292"><a href="/business/personal-finance"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Money"  >Money</a></li><li class="item-5294"><a href="/business/features"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Features"  >Features</a></li><li class="item-5295"><a href="/business/infographics"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li></ul></li><li class="item-5296 parent" deeper><a href="/newsbreak"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Newsbreak"  >Newsbreak</a><ul><li><li class="item-5298"><a href="/newsbreak/investigative"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Investigative"  >Investigative</a></li><li class="item-5492"><a href="/newsbreak/in-depth"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:In-depth"  >In-depth</a></li><li class="item-5299"><a href="/newsbreak/iq"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rappler IQ"  >Rappler IQ</a></li><li class="item-5300"><a href="/newsbreak/inside-track"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Inside Track"  >Inside Track</a></li><li class="item-5301"><a href="/newsbreak/flashback"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Flashback"  >Flashback</a></li><li class="item-5523"><a href="/newsbreak/rich-media"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rich Media"  >Rich Media</a></li></ul></li><li class="item-5341 parent" deeper><a href="/move-ph"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:MovePH"  >MovePH</a><ul><li><li class="item-5343"><a href="/move-ph/issues"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Issues"  >Issues</a></li><li class="item-5342"><a href="/move-ph/issues/disasters"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#Agos"  >#Agos</a></li><li class="item-5344"><a href="/move-ph/issues/budget-watch"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#BudgetWatch"  >#BudgetWatch</a></li><li class="item-5345"><a href="/move-ph/issues/hunger"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#HungerProject"  >#HungerProject</a></li><li class="item-5346"><a href="/bulletin-board"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Community"  >Community</a></li><li class="item-5520"><a href="/views/imho"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:IMHO"  >IMHO</a></li></ul></li><li class="item-5303 parent" deeper><a href="/views"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Views"  >Views</a><ul><li><li class="item-5304"><a href="/thought-leaders"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Thought Leaders"  >Thought Leaders</a></li><li class="item-5305"><a href="/move-ph/ispeak"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:iSpeak"  >iSpeak</a></li><li class="item-5434"><a href="/rappler-blogs"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rappler Blogs"  >Rappler Blogs</a></li><li class="item-5455"><a href="/views/animated"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#AnimatED"  >#AnimatED</a></li></ul></li><li class="item-5306 parent" deeper><a href="/life-and-style"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Life &amp; Style"  >Life &amp; Style</a><ul><li><li class="item-5307"><a href="/life-and-style/best-eats"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Food"  >Food</a></li><li class="item-5308"><a href="/life-and-style/career"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Career"  >Career</a></li><li class="item-5309"><a href="/life-and-style/travel"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Travel"  >Travel</a></li><li class="item-5310"><a href="/life-and-style/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li><li class="item-5311"><a href="/pugad-baboy"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#PugadBaboy"  >#PugadBaboy</a></li></ul></li><li class="item-5312 parent" deeper><a href="/entertainment"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Entertainment"  >Entertainment</a><ul><li><li class="item-5314"><a href="/entertainment/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Entertainment News"  >Entertainment News</a></li><li class="item-5315"><a href="/entertainment/movies"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Movies"  >Movies</a></li><li class="item-5316"><a href="/entertainment/music"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Music"  >Music</a></li><li class="item-5317"><a href="/entertainment/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Special Coverage"  >Special Coverage</a></li></ul></li><li class="item-5318 parent" deeper><a href="/sports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Sports"  >Sports</a><ul><li><li class="item-5319"><a href="/sports/by-sport/boxing-mma"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Boxing"  >Boxing</a></li><li class="item-5320"><a href="/sports/by-sport/basketball"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Basketball"  >Basketball</a></li><li class="item-5321"><a href="/sports/by-sport/football"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Football"  >Football</a></li><li class="item-5322"><a href="/sports/by-sport/other-sports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Other Sports"  >Other Sports</a></li><li class="item-5323"><a href="/sports/university"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:University Sports"  >University Sports</a></li></ul></li><li class="item-5325 parent" deeper><a href="/technology"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Tech"  >Tech</a><ul><li><li class="item-5326"><a href="/technology/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:News"  >News</a></li><li class="item-5327"><a href="/technology/features"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Features"  >Features</a></li><li class="item-5328"><a href="/technology/reviews"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Reviews"  >Reviews</a></li><li class="item-5329"><a href="/technology/video/hands-on"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Hands on"  >Hands on</a></li><li class="item-5331"><a href="/technology/social-media"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Social Media"  >Social Media</a></li></ul></li><li class="item-5335 parent" deeper><a href="/brandrap"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:BrandRap"  >BrandRap</a><ul><li><li class="item-5347"><a href="/brandrap/finance-and-industries"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Finance &amp; Industries"  >Finance &amp; Industries</a></li><li class="item-5336"><a href="/brandrap/health-and-self"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Health &amp; Self"  >Health &amp; Self</a></li><li class="item-5337"><a href="/brandrap/travel-food-and-lifestyle"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Lifestyle"  >Lifestyle</a></li><li class="item-5338"><a href="/brandrap/tech-and-innovation"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Tech &amp; Innovation"  >Tech &amp; Innovation</a></li><li class="item-5741"><a href="http://www.rappler.com/advertise"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Advertise"  >Advertise</a></li></ul></li><li class="item-5652"><a href="http://x.rappler.com"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:X"  >X</a></li>                <li class="selected"><a href="http://jobs.rappler.com">Jobs</a></li>
+<li class="selected"><a href="http://coupons.rappler.com">Coupons</a></li>
+<li class="selected"><a href="http://shop.rappler.com">Rappler Shop</a></li>
+</ul>
+</nav>
+</div>
+<div class="header-menu">
+<div class="menu-trigger Xheader nav-mini">
+<header class="navbar navbar-rappler visible-lg" role="banner">
+<div class="mdd-wrapper box-shadow-2">
+<div class="navbar-header">
+<a href="/"><img src="https://static.rappler.com/templates/rappler3_default/img/Rappler-Logo-SVG.svg" id="logo-rappler"></a>
+</div>
+<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+<ul class="menu nav navbar-nav">
+<li class="mdd-item item-5260 parent" deeper><a href="/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:News"  >News</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5261 active"><a href="/nation"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Philippines"  >Philippines</a></li><li class="mdd-item item-5691"><a href="/nation/politics/elections/2016"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#PHvote 2016"  >#PHvote 2016</a></li><li class="mdd-item item-5262 parent"><a href="/world"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:World"  >World</a></li><li class="mdd-item item-5272"><a href="/move-ph/balikbayan"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#BalikBayan"  >#BalikBayan</a></li><li class="mdd-item item-5273 parent"><a href="/science-nature"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Science &amp; Nature"  >Science &amp; Nature</a></li>
+</ul></li><li class="mdd-item item-5282 parent" deeper><a href="/video"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Video"  >Video</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5283"><a href="/video/newscast"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Newscast"  >Newscast</a></li><li class="mdd-item item-5285"><a href="/video/shows"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Shows"  >Shows</a></li><li class="mdd-item item-5286"><a href="/video/reports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Reports"  >Reports</a></li><li class="mdd-item item-5287"><a href="/video/documentary"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Documentary"  >Documentary</a></li><li class="mdd-item item-5288"><a href="/video/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li>
+</ul></li><li class="mdd-item item-5289 parent" deeper><a href="/business"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Business"  >Business</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5290"><a href="/business/economy-watch"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Economy"  >Economy</a></li><li class="mdd-item item-5433"><a href="/brandrap/brighter-life"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Brighter Life"  >Brighter Life</a></li><li class="mdd-item item-5291"><a href="/business/industries"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Industries"  >Industries</a></li><li class="mdd-item item-5292"><a href="/business/personal-finance"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Money"  >Money</a></li><li class="mdd-item item-5294"><a href="/business/features"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Features"  >Features</a></li><li class="mdd-item item-5295"><a href="/business/infographics"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li>
+</ul></li><li class="mdd-item item-5296 parent" deeper><a href="/newsbreak"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Newsbreak"  >Newsbreak</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5298"><a href="/newsbreak/investigative"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Investigative"  >Investigative</a></li><li class="mdd-item item-5492"><a href="/newsbreak/in-depth"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:In-depth"  >In-depth</a></li><li class="mdd-item item-5299"><a href="/newsbreak/iq"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rappler IQ"  >Rappler IQ</a></li><li class="mdd-item item-5300"><a href="/newsbreak/inside-track"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Inside Track"  >Inside Track</a></li><li class="mdd-item item-5301"><a href="/newsbreak/flashback"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Flashback"  >Flashback</a></li><li class="mdd-item item-5523"><a href="/newsbreak/rich-media"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rich Media"  >Rich Media</a></li>
+</ul></li><li class="mdd-item item-5341 parent" deeper><a href="/move-ph"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:MovePH"  >MovePH</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5343"><a href="/move-ph/issues"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Issues"  >Issues</a></li><li class="mdd-item item-5342"><a href="/move-ph/issues/disasters"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#Agos"  >#Agos</a></li><li class="mdd-item item-5344"><a href="/move-ph/issues/budget-watch"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#BudgetWatch"  >#BudgetWatch</a></li><li class="mdd-item item-5345"><a href="/move-ph/issues/hunger"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#HungerProject"  >#HungerProject</a></li><li class="mdd-item item-5346"><a href="/bulletin-board"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Community"  >Community</a></li><li class="mdd-item item-5520"><a href="/views/imho"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:IMHO"  >IMHO</a></li>
+</ul></li><li class="mdd-item item-5303 parent" deeper><a href="/views"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Views"  >Views</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5304"><a href="/thought-leaders"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Thought Leaders"  >Thought Leaders</a></li><li class="mdd-item item-5305"><a href="/move-ph/ispeak"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:iSpeak"  >iSpeak</a></li><li class="mdd-item item-5434"><a href="/rappler-blogs"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Rappler Blogs"  >Rappler Blogs</a></li><li class="mdd-item item-5455"><a href="/views/animated"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#AnimatED"  >#AnimatED</a></li>
+</ul></li><li class="mdd-item item-5306 parent" deeper><a href="/life-and-style"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Life &amp; Style"  >Life &amp; Style</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5307"><a href="/life-and-style/best-eats"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Food"  >Food</a></li><li class="mdd-item item-5308"><a href="/life-and-style/career"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Career"  >Career</a></li><li class="mdd-item item-5309"><a href="/life-and-style/travel"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Travel"  >Travel</a></li><li class="mdd-item item-5310"><a href="/life-and-style/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Specials"  >Specials</a></li><li class="mdd-item item-5311"><a href="/pugad-baboy"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:#PugadBaboy"  >#PugadBaboy</a></li>
+</ul></li><li class="mdd-item item-5312 parent" deeper><a href="/entertainment"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Entertainment"  >Entertainment</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5314"><a href="/entertainment/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Entertainment News"  >Entertainment News</a></li><li class="mdd-item item-5315"><a href="/entertainment/movies"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Movies"  >Movies</a></li><li class="mdd-item item-5316"><a href="/entertainment/music"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Music"  >Music</a></li><li class="mdd-item item-5317"><a href="/entertainment/specials"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Special Coverage"  >Special Coverage</a></li>
+</ul></li><li class="mdd-item item-5318 parent" deeper><a href="/sports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Sports"  >Sports</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5319"><a href="/sports/by-sport/boxing-mma"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Boxing"  >Boxing</a></li><li class="mdd-item item-5320"><a href="/sports/by-sport/basketball"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Basketball"  >Basketball</a></li><li class="mdd-item item-5321"><a href="/sports/by-sport/football"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Football"  >Football</a></li><li class="mdd-item item-5322"><a href="/sports/by-sport/other-sports"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Other Sports"  >Other Sports</a></li><li class="mdd-item item-5323"><a href="/sports/university"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:University Sports"  >University Sports</a></li>
+</ul></li><li class="mdd-item item-5325 parent" deeper><a href="/technology"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Tech"  >Tech</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5326"><a href="/technology/news"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:News"  >News</a></li><li class="mdd-item item-5327"><a href="/technology/features"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Features"  >Features</a></li><li class="mdd-item item-5328"><a href="/technology/reviews"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Reviews"  >Reviews</a></li><li class="mdd-item item-5329"><a href="/technology/video/hands-on"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Hands on"  >Hands on</a></li><li class="mdd-item item-5331"><a href="/technology/social-media"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Social Media"  >Social Media</a></li>
+</ul></li><li class="mdd-item item-5335 parent" deeper><a href="/brandrap"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:BrandRap"  >BrandRap</a>
+<ul class="side-nav min-height menu-dropdown box-shadow-2">
+<li class="thumb-story row">
+<li class="mdd-item item-5347"><a href="/brandrap/finance-and-industries"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Finance &amp; Industries"  >Finance &amp; Industries</a></li><li class="mdd-item item-5336"><a href="/brandrap/health-and-self"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Health &amp; Self"  >Health &amp; Self</a></li><li class="mdd-item item-5337"><a href="/brandrap/travel-food-and-lifestyle"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Lifestyle"  >Lifestyle</a></li><li class="mdd-item item-5338"><a href="/brandrap/tech-and-innovation"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Tech &amp; Innovation"  >Tech &amp; Innovation</a></li><li class="mdd-item item-5741"><a href="http://www.rappler.com/advertise"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:Advertise"  >Advertise</a></li>
+</ul></li><li class="mdd-item item-5652"><a href="http://x.rappler.com"  data-event-category="UX" data-event-action="Navigational Feature Click" data-event-label="Main Menu:X"  >X</a></li>                        </ul>
+<ul class="menu nav navbar-nav navbar-right">
+<li class="mdd-info"><a href="#"><i class="fa fa-info-circle"></i></a>
+<ul class="side-nav no-padding menu-dropdown">
+<li>
+<div class="main-wrapper">
+<div class="custom"  >
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-dark-gray bg">ABOUT RAPPLER</div>
+</div>
+<p class="caption">Welcome to Rappler, a social news network where stories inspire community engagement and digitally fuelled actions for social change. Rappler comes from the root words "rap" (to discuss) + "ripple" (to make waves).</p>
+<p class="caption"><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/385-about-rappler">Read more</a></p>
+<div class="row">
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+<div class="caption">
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/25724-2013-board-of-directors">Rappler's 2013 Board</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/10941-rappler-privacy-statement">Privacy Statement</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-us/1557-contact-us">Contact Us</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/6677-the-people-behind-rappler">Rappler's Founding Board</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/19840-rappler-community-and-site-use-rules">Terms of Use</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/21739-advertise-with-us">Advertise With Us</a></div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+<div class="caption">
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/21743-rappler-team">Rappler Team</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/indonesia/tentang-kami">Rappler Indonesia Team</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/about-rappler/about-us/27506-comment-moderation-policy">Comment Moderation Policy</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles">Archives</a></div>
+<div><a class="rappler-paragraph link" href="http://www.rappler.com/bulletin-board/30113-job-openings-rappler">Job Openings</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-orange bg"><a class="bg-rappler-orange">OTHER CONTENT</a></div>
+</div>
+<div class="caption"> <a class="rappler-paragraph link" href="http://ph.rappler.com/people">#PHVote 2016</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/">Philippine News</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/nation/special-coverage/weather-alert">Weather Forecast Philippines</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/pugad-baboy/">Pugad Baboy</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/disasters/typhoon-yolanda">Typhoon Haiyan (Yolanda)</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://rappler.com/move-ph/issues/budget-watch/pork-barrel">Pork Barrel Scam</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/disasters/preparedness">Disaster Preparedness</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/disasters/response">Disaster Response</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/disasters/recovery">Disaster Recovery</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/sports/by-sport/boxing-mma/pacquiao/">Manny Pacquiao</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/hunger">The Hunger Project</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/life-and-style/travel/ph-travel">Travel Philippines</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/sports/university">UAAP</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterCategory53ec14fb29572_0=-1&amp;filterCategory=&amp;filterTitle=&amp;filterMeta=FOI+bill&amp;filterDateFrom=&amp;filterDateTo=&amp;option=com_dmarticlesfilter&amp;view=articles&amp;Itemid=1404&amp;userSearch=1">FOI bill</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterCategory53ec116e9e968_0=-1&amp;filterCategory=&amp;filterTitle=&amp;filterMeta=Charter+Change&amp;filterDateFrom=&amp;filterDateTo=&amp;option=com_dmarticlesfilter&amp;view=articles&amp;Itemid=1404&amp;userSearch=1">Charter Change</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/world/regions/asia-pacific/indonesia">Indonesia News</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/sports/by-sport/basketball/gilas-pilipinas/">Gilas Pilipinas</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterMeta=jejomar+binay">Jejomar Binay</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterMeta=makati+city">Makati City</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/move-ph/issues/disasters">#ProjectAgos</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterMeta=typhoon+ruby">Typhoon Ruby (Hagupit)</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterMeta=airasia+flight+QZ8501">AirAsia flight QZ8501</a> <span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/specials/pope-francis-ph/philippines-visit-quotes">Pope Francis Quotes</a> <span class="h-spacer" style="opacity: 0.2!important;">• </span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterMeta=Miss+Universe">Miss Universe</a><span class="h-spacer" style="opacity: 0.2!important;">•</span> <a class="rappler-paragraph link" href="http://www.rappler.com/previous-articles?filterCategory54c748d36aef8_0=-1&amp;filterCategory=&amp;filterTitle=&amp;filterMeta=Facebook+down&amp;filterDateFrom=&amp;filterDateTo=&amp;option=com_dmarticlesfilter&amp;view=articles&amp;Itemid=1404&amp;userSearch=1">Facebook down</a> <span class="h-spacer" style="opacity: 0.2!important;">• </span> <a class="rappler-paragraph link" href="http://www.rappler.com/life-and-style/travel/ph-travel">Travel in the Philippines</a> <span class="h-spacer" style="opacity: 0.2!important;">• </span> <a class="rappler-paragraph link" href="http://www.rappler.com/life-and-style/travel/shareph">Places to visit in the Philippines</a> <span class="h-spacer" style="opacity: 0.2!important;">• </span> <a class="rappler-paragraph link" href="http://www.rappler.com/nation/64192-ph-2015-holidays">Philippine holidays</a> <span class="h-spacer" style="opacity: 0.2!important;">• </span> <a class="rappler-paragraph link" href="http://phvote.rappler.com">Join the #PHVote Challenge!</a></div>
+</div></div>                                        </div>
+</li>
+</ul>
+</li>
+<li class="mdd-search">
+<a href="#"><i class="fa fa-search"></i></a>
+<ul class="side-nav no-padding menu-dropdown">
+<li id="search-dropdown">
+<div class="main-wrapper">
+<div class="row">
+<div class="col-xs-12 col-sm-4 pull-right">
+<form class="form-inline" role="search" method="GET" action="/">
+<div class="form-input padding right">
+<input type="hidden" name="option" value="com_rappler">
+<input type="hidden" name="task" value="search">
+<input type="hidden" name="language" value="english">
+<input type="text" name="q" placeholder="Search">
+</div>
+<div class="form-addon">
+<button class="rappler-orange bg" type="submit" >Go!</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+</div>
+</div>
+<div id="content" class="wrapper">
+<script>
+googletag.cmd.push(function() {
+googletag.defineSlot('/15125093/3.0_Others_Bottom_DesktopTablet_728x90_and_468x60', [[468, 60], [728, 90]], 'div-gpt-ad-1453203523513-0').addService(googletag.pubads());
+googletag.defineSlot('/15125093/3.0_Others_Bottom_Mobile_300x250', [300, 250], 'div-gpt-ad-1453203523513-1').addService(googletag.pubads());
+googletag.defineSlot('/15125093/3.0_Others_Top_Desktop_300x250', [300, 250], 'div-gpt-ad-1453203523513-2').addService(googletag.pubads());
+googletag.enableServices();
+});
+</script>
+<div id="story-area-134741" class="story-area cXenseParse"
+data-article_categories="21,696,41,854,855"
+data-article_url="http://www.rappler.com/nation/134741-becoming-leni-robredo"
+data-article_via="@rapplerdotcom"
+data-article_pubdate="2016-05-30 07:00:21"
+data-article_authors="Bea Cupin"
+data-article_cattitle="Philippines"
+data-article_metakey="Leni Robredo, Maria Leonora Robredo, 2016 Philippine elections, 2016 elections, Philippine elections, vice presidential race, vice president, #PHVote, Aquino-Duterte transition"
+data-article_title="Becoming Leni Robredo">
+<div class="special-execution-wrapper" id="cover-area">
+<top-img>
+<bg-img>
+<img src="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/10505740922C49DA9AFC791AF21EFD57/leni-robredo-shadow.jpg" class="nolazy">
+</bg-img>
+<div class="special-execution-wrapper">
+<text-container class="light full">
+<h1 class="spec-exec-headline">Becoming Leni Robredo</h1>
+<span style="display: none;">desktop</span>
+<p class="spec-exec-subhead">The Philippines' newly elected vice president is more than the story she loves to tell on the campaign trail </p>
+<hr style="width:30%;">
+<div class="wrapper">
+<p class="spec-exec-byline no-margin">By <b style="text-transform:uppercase;">Bea Cupin</b></p>
+<p class="spec-exec-byline no-margin">Published 3:00 PM, May 30, 2016</p>
+</div>
+<div id="brandrap-logo-container"></div>
+<div id="gysharebarh-134741" class="spec-exec-share-buttons"></div>
+</text-container>
+</div>
+</top-img>
+</div>
+<div class="special-execution-wrapper">
+<div class="full-text">
+<div class="auto-mood-meter">
+<div class="blob-right" style="position:absolute; float:right; font-family: 'Roboto'; letter-spacing: 0px;">
+<style>
+.box-shadow-1{box-shadow:0 2px 4px rgba(0,0,0,0.02),0 2px 3px rgba(0,0,0,0.1) !important}.box-shadow-2{box-shadow:0 4px 7px rgba(0,0,0,0.04),0 4px 7px rgba(0,0,0,0.1) !important}.box-shadow-3{box-shadow:0 10px 20px rgba(0,0,0,0.06),0 6px 6px rgba(0,0,0,0.1) !important}.box-shadow-4{box-shadow:0 14px 28px rgba(0,0,0,0.08),0 10px 10px rgba(0,0,0,0.1) !important}.box-shadow-5{box-shadow:0 19px 38px rgba(0,0,0,0.08),0 15px 12px rgba(0,0,0,0.1) !important}.margin.top{margin-top:16px}.margin.right{margin-right:16px}.margin.bottom{margin-bottom:16px}.margin.left{margin-left:16px}.margin.all{margin:16px}.padding.top{padding-top:16px}.padding.right{padding-right:16px}.padding.bottom{padding-bottom:16px}.padding.left{padding-left:16px}.padding.all{padding:16px}.mobile-padding.top{padding-top:16px}.mobile-padding.right{padding-right:16px}.mobile-padding.bottom{padding-bottom:16px}.mobile-padding.left{padding-left:16px}@media (min-width:992px){.mobile-padding{padding:0 !important}}#mood-label-main{font-family:'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;font-size:17px}.mood-meter{position:fixed;bottom:120px;right:0;width:320px;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:-ms-flex;display:flex;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;align-items:center;-webkit-justify-content:center;-moz-justify-content:center;-ms-justify-content:center;justify-content:center;-webkit-flex-wrap:wrap;-moz-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}@media (min-width:768px){.mood-meter{position:relative;width:100%;bottom:0}.mood-meter.force-mobile{width:320px;right:8px;bottom:100px;position:fixed}}.mood-meter .mood{display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:-ms-flex;display:flex;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;align-items:center;-webkit-justify-content:center;-moz-justify-content:center;-ms-justify-content:center;justify-content:center;text-align:center;width:65px;height:65px;margin:3px;-webkit-border-radius:40px;-moz-border-radius:40px;border-radius:40px;cursor:pointer;font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;-webkit-transition:all 250ms;-moz-transition:all 250ms;transition:all 250ms;box-shadow:0 2px 4px rgba(0,0,0,0.02),0 2px 3px rgba(0,0,0,0.1) !important;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-ms-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}.mood-meter .mood:hover{-webkit-transition:all 250ms;-moz-transition:all 250ms;transition:all 250ms;box-shadow:0 10px 20px rgba(0,0,0,0.06),0 6px 6px rgba(0,0,0,0.1) !important}.mood-meter .mood .mood-percent{font-size:17px;font-weight:700;font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif}.mood-meter .mood .mood-label{color:#fff;font-family:'Roboto','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;margin:0;display:inline}@media (min-width:768px){.mood-meter .mood{width:70px;height:70px;margin:3px;font-size:12px}}@media (min-width:992px){.mood-meter .mood{width:75px;height:75px;margin:2px}}.new-mood-alert{position:fixed;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-ms-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out;top:-100px;width:100%;background-color:#fff;height:80px;z-index:20046;left:0;right:0;text-align:center!Important;padding:26px;-webkit-transition:all 250ms;-moz-transition:all 250ms;transition:all 250ms;box-shadow:0 2px 4px rgba(0,0,0,0.02),0 2px 3px rgba(0,0,0,0.1) !important}.new-mood-alert.visible{top:0}.mobile-mood-meter .mood-button{position:fixed;bottom:8px;right:8px;z-index:20045;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:-ms-flex;display:flex;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;align-items:center;-webkit-justify-content:center;-moz-justify-content:center;-ms-justify-content:center;justify-content:center;-webkit-transition:all 250ms;-moz-transition:all 250ms;transition:all 250ms;box-shadow:0 19px 38px rgba(0,0,0,0.08),0 15px 12px rgba(0,0,0,0.1) !important;width:70px;height:70px;-webkit-border-radius:45px;-moz-border-radius:45px;border-radius:45px;font-family:'Roboto Condensed','Helvetica Neue',Helvetica,Arial,sans-serif;text-align:center}.mobile-mood-meter .mood-button *{line-height:1.25;font-size:font-size-xsmall;cursor:pointer}@media (min-width:768px){.mobile-mood-meter .mood-button{-webkit-border-radius:55px;-moz-border-radius:55px;border-radius:55px;width:85px;height:85px}}.mobile-mood-meter .mood-meter{z-index:20045}.mobile-mood-meter .mood{display:none;-webkit-transition:all 250ms;-moz-transition:all 250ms;transition:all 250ms;box-shadow:0 10px 20px rgba(0,0,0,0.06),0 6px 6px rgba(0,0,0,0.1) !important;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-ms-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out;opacity:0;transform:scale(0)}.mobile-mood-meter .mood.visible{display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:-ms-flex;display:flex;-webkit-align-items:center;-moz-align-items:center;-ms-align-items:center;align-items:center;-webkit-justify-content:center;-moz-justify-content:center;-ms-justify-content:center;justify-content:center}.mobile-mood-meter .mood.fade{transform:scale(1);opacity:1}.mm-overlay{-webkit-filter:none;-moz-filter:none;-o-filter:none;-ms-filter:none;filter:none;position:fixed;top:0;bottom:0;left:0;right:0;z-index:20044;background-color:rgba(255,255,255,0.75);display:none;opacity:0;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-ms-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}.mm-overlay.visible{display:block}.mm-overlay.fade{opacity:1}.mm-open{overflow:hidden}
+</style>
+<div class="mobile-mood-meter">
+<div class='mood-button' id="mm-button">
+<div>
+<label class='no-margin light mood-percent' id="mood-label-main"></label>
+</div>
+</div>
+<div class='mood-meter force-mobile' id='mood-meter'>
+<div id="moodthanks_134741" class="caption-clean" style="text-align:center;display:none">
+Thank you for voting <span id="moodvote_134741"></span>
+</div>
+<div id="moodloading_134741" class="caption-clean" style="text-align:center;display:none;height:10px">
+<img src="https://static.rappler.com/components/com_rappler/images/loading.gif" class="nolazy">
+</div>
+<div class='mood happy bg' rel='1'>
+<div>
+<p class='no-margin light mood-percent'>%</p>
+<label class="mood-label">Happy</label>
+</div>
+</div>
+<div class='mood sad bg' rel='2'>
+<div>
+<p class='no-margin light mood-percent'>%</p>
+<label class="mood-label">Sad</label>
+</div>
+</div>
+<div class='mood angry bg' rel='3'>
+<div>
+<p class='no-margin light mood-percent'>%</p>
+<label class="mood-label">Angry</label>
+</div>
+</div>
+<div class='mood dontcare bg' rel='4'>
+<div>
+<p class='no-margin light mood-percent'>%</p>
+<label class="mood-label">Dont Care</label>
+</div>
+</div>
+<div class='mood inspired bg' rel='5'>
+<div>
+<p class='no-margin light mood-percent'>%</p>
+<label class="mood-label">Inspired</label>
+</div>
+</div>
+<div class='mood afraid bg' rel='6'>
+<div>
+<p class='no-margin light mood-percent'>%</p>
+<label class="mood-label">Afraid</label>
+</div>
+</div>
+<div class='mood amused bg' rel='7'>
+<div>
+<p class='no-margin light mood-percent'>%</p>
+<label class="mood-label">Amused</label>
+</div>
+</div>
+<div class='mood annoyed bg' rel='8'>
+<div>
+<p class='no-margin light mood-percent'>%</p>
+<label class="mood-label">Annoyed</label>
+</div>
+</div>
+</div>
+<div class="mm-overlay"></div>
+</div>
+<div class="new-mood-alert">
+Hello!
+</div>
+</div>
+<p style="display: none;"><img src="https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/79D75FD097BA4CCEB7950CC1DE6B2596/leni-share-image.jpg" class="nolazy" border="0" /></p>
+<p class="drop-cap">I</p>
+<p> don’t have what it takes, she would often say. But when the situation called for it, Maria Leonor “Leni” Robredo ran a passionate but disciplined campaign for vice president, breaking free from the bottom of the surveys and slaying the vaunted money and machine of the Marcoses.</p>
+<p>Only a few months ago, the Aquino administration’s vice presidential candidate could breeze through airports and public spaces without causing a stir. Upon seeing her, a handful of people would start talking in hushed tones, wondering who the vaguely familiar woman was. Robredo’s alert campaign aides – mostly twenty-somethings – would notice, and she would then approach them and introduce herself. </p>
+<p>“<em>Ako si Leni Robredo</em> (I’m Leni Robredo),” the 51-year-old Bicolana would say.</p>
+<p>The outgoing congressional representative of the 3rd district of Camarines Sur ran against 4 candidates – all incumbent senators – who have run national campaigns and enjoyed the platform and resources that came with a Senate seat.</p>
+<p>Three months before she finally agreed to run in September 2015, <a href="http://www.rappler.com/nation/politics/elections/2016/107199-leni-robredo-vice-president-offer" target="_blank" title="Robredo on VP offer">Robredo’s public opinion ratings </a>were almost nil at one percent.</p>
+<p id="ext-gen69244" class="p2">If she were to be “<a href="http://www.rappler.com/nation/politics/elections/2016/107199-leni-robredo-vice-president-offer" target="_blank">cerebral</a>” about it, the answer to the persistent courtship of the ruling Liberal Party and President Benigno Aquino III would be no, she said a few days before she declared her candidacy.</p>
+<p>“All the odds were against me,” she recalled.</p>
+<p>“Most of the candidates have been planning for this all their lives. <em>May mga organisasyon na in place, naisip na nila kung paano gagawin ang kampanya. Parang ako, lumundag muna bago mag-plano</em> (They already have organizations in place, they already thought about how they’d run their campaigns. I took a leap even before I made plans),” she said on the sidelines of their last provincial rally in her hometown of Naga City. </p>
+<p><span style="font-size: x-large;"><strong style="line-height: 1.5;">Beyond Jesse</strong></span></p>
+<p>When Leni Robredo takes the stage during campaign rallies, it’s not unusual for the audience to fall silent, stay quiet, and at times shed a tear or two. </p>
+<p>Unlike the candidates who speak before and will speak after her, hers is a speech that’s almost always devoid of jokes, barely contains promises, and makes no mention of the gains of the administration, of which she is a part.</p>
+<p>Instead, she tells a story. </p>
+<p>It is part coming-of-age and part love story, as she tells the audience why she joined public service, how she met her late husband Jesse Robredo, about her struggles as a young-mother-slash-lawyer, why she chose to lawyer for the poor, about the pain of losing the love of her life, and eventually, how and why she found herself gunning for an elective post in 2013. </p>
+<p>Jesse, former interior secretary and long-time Naga mayor, is a prominent character in her narrative. After all, Jesse had always been – and was always supposed to be – the lone Robredo in government.</p>
+<p>But those plans changed on August 18, 2012, when the plane he was riding crashed off the coast of Masbate.</p>
+<p><img id="DE0F1C8A3FC744E1AECA45FF1F23B384"   src="https://static.rappler.com/plugins/system/lazyload/blank.png" data-original="https://assets.rappler.com/386CED14389D4E7EBB58D3990322C17E/img/1CE01B22F095461084D3E83A7C849D0C/leni-robredo-file-photos-20160528-006_1CE01B22F095461084D3E83A7C849D0C.jpg" class="rappler_asset"   alt="GRIEF. Leni Robredo with children after the burial ceremony of husband DILG Secretary Jessie Robredo in Naga City on August 2013. Photo from Leni Robredo Facebook " data-parentid=""  /><p class="caption">GRIEF. Leni Robredo with children after the burial ceremony of husband DILG Secretary Jessie Robredo in Naga City on August 2013. Photo from Leni Robredo Facebook </p></p>
+<p id="ext-gen70342" class="p2">“<em>Noong namatay 'yung asawa ko, naging very fatalistic ako eh. Para sa akin, 'thy will be done' na lang parati. 'Di gaya noon na parati na lang planado 'yung buhay ko. Para dati sinasabi ko parati, never. Namatay 'yung asawa ko, parang mag acceptance ako na anything is possible</em>,” Robredo said.</p>
+<p>(When my husband died, I became very fatalistic. For me, it’s always ‘thy will be done.’ Unlike before when my life always had a plan. Before, I’d always say ‘never.’ With my husband’s death came the acceptance that anything is possible.) </p>
+<p>But being Jesse’s widow was both a boon and bane for Robredo during the campaign. </p>
+<p>While the “Robredo brand” offered familiarity, many criticized her for “necro-politics” – or using the death of a loved one for political gain. There were also those who hit her for being “only” Jesse’s widow and for supposedly having nothing else to show.</p>
+<p>Yet, she converted non-believers every step of the way. And there's no better proof of this than the upward trajectory of her survey numbers leading to election day on May 9, 2016.</p>
+<p><span style="font-size: x-large;"><strong style="line-height: 1.5;">Crafting her own narrative</strong></span></p>
+<p>The challenge, Robredo told Rappler in an interview, was to introduce herself while letting people know she was more than just her captivating story. </p>
+<p>The reluctant politician spent the past decades working behind the scenes, helping her husband lead and manage Naga as a mayor. </p>
+<p id="ext-gen74913"><img id="8AD06CD43ED340479A84BD4758809A57"   src="https://static.rappler.com/plugins/system/lazyload/blank.png" data-original="https://assets.rappler.com/386CED14389D4E7EBB58D3990322C17E/img/48BDC39147664670AD30BB3CCAE82EFE/leni-robredo-file-photos-20160528-011_48BDC39147664670AD30BB3CCAE82EFE.jpg" class="rappler_asset"   alt="WITH THE PEOPLE. Meeting with constituents in a remote barangay in Camarines Sur. Photo from Leni Robredo Facebook " style="width: 100%;" data-parentid=""  /><p class="caption">WITH THE PEOPLE. Meeting with constituents in a remote barangay in Camarines Sur. Photo from Leni Robredo Facebook </p></p>
+<p>Yet it was also Jesse who always imagined his wife as an ideal fit in politics and governance. Whenever he’d hit the term limit as Naga City mayor (in the Philippines, you are only allowed a maximum of 3 consecutive mayoralty terms), allies would clamor for Leni Robredo to take over. </p>
+<p>“All those times, <em>parati kong sinasabi sa kanya: hindi ko 'yan kaya. Parati niyang sinasabi sa akin na kulang ang paniniwala mo sa sarili mo na siguro hindi ko naman nagawa itong lahat kung wala ka. Kasi ano talaga, siguro ako talaga 'yung wind beneath his wings</em>,” Robredo said, recalling the two times allies clamored for her to take over city hall. </p>
+<p>(All those times, I’d tell him: I don’t have what it takes. He’d always tell me that I didn’t believe in myself enough. And he’d remind me that he wouldn’t be able to do what he does without me. Maybe I was really the wind beneath his wings.)</p>
+<p>The year 2013 proved Jesse Robredo right.</p>
+<p><span style="font-size: x-large;"><strong>Slaying a dynasty</strong></span></p>
+<p>Barely a year had passed since her husband died when their political allies in Camarines Sur started fighting months before the 2013 senatorial and local elections. Supporters told her only she could end the wrangling – by running.</p>
+<p>At the last minute, Leni Robredo was persuaded to run for Congress against Nelly Villafuerte of the politically entrenched Camarines Sur clan. </p>
+<p>Unlike Villafuerte, Robredo had little campaign funds to speak of. Instead of big rallies, she’d campaign before small groups, bringing with her a ragtag army of campaign volunteers and a portable sound system. Villafuerte would counter by hosting huge gatherings with generous raffle prizes. </p>
+<p>Robredo won that race – and by a landslide.</p>
+<p id="ext-gen70974" class="p2"><img id="31C40623620E4F81B24C83D07334921D"   src="https://static.rappler.com/plugins/system/lazyload/blank.png" data-original="https://assets.rappler.com/386CED14389D4E7EBB58D3990322C17E/img/4CAF8767953C431DAEAC4E4C0E1602B0/leni-robredo-file-photos-20160528-001_4CAF8767953C431DAEAC4E4C0E1602B0.jpg" class="rappler_asset"   alt="NEOPHYTE WINS. Leni Robredo during her proclamation as Camarines Sur 3rd district representative on May 14, 2013. Photo by Allan Camata/Rappler " style="width: 100%;" data-parentid=""  /><p class="caption">NEOPHYTE WINS. Leni Robredo during her proclamation as Camarines Sur 3rd district representative on May 14, 2013. Photo by Allan Camata/Rappler </p></p>
+<p>“That’s when I realized money isn’t everything in politics,” Robredo would say. </p>
+<p><span style="line-height: 1.5;">“<em>Hindi pera ang pinaka importante sa eleksyon, dahil ang tao kahit tinatanggap ang mga pamigay ang binoboto 'yung nasa puso nya pa rin. Ito po ang lagi kong pinag yayabang, kahit saan ako mapunta, doon po sa amin sa Naga, doon sa aming distrito kahit wala kang pera, pwede kang manalo. Sa tingin ko po napakalaking leksyon po ito para palitan na natin ang mukha ng eleksyon, para palitan na natin ang mukha ng pulitika</em>,” she told fellow Nagaueños during the party’s last provincial rally on May 5. </span></p>
+<p>(Money isn’t the most important thing in elections because even if people accept these favors, they’ll vote according to conscience. Everywhere I go, I boast of this: back home in Naga, in my district, even if you don’t have money, you can win. I think this is a valuable lesson for us to change the way elections work, the way politics works.) </p>
+<p><span style="font-size: x-large;"><strong>The comfort of Naga</strong></span></p>
+<p>It’s in Naga and her Camarines Sur district where Robredo feels the most at ease. It’s in Naga where she can arrange quick meets with her high school batchmates in between sorties, it’s in Naga where she can walk into a local salon without fanfare or the slightest bit of attention.</p>
+<p><iframe src="https://www.youtube.com/embed/QXg_ceOITZA" frameborder="0" width="100%" height="360"></iframe></p>
+<p>She was born in the city. It's where she grew up, fell in love, raised a family.</p>
+<p>One of Robredo’s favorite stories told and retold in the campaign involves her first and last pregnancies. </p>
+<p>She was due in a few weeks’ time just as Jesse was campaigning for his first term as Naga City mayor. There was a rally in a far-flung barangay and Robredo herself had to haul the sound system. She even did the heavy lifting by herself. </p>
+<p>“It’s because then, only Jesse and I believed in each other,” she said, laughing. </p>
+<p>Just as soon as she was done driving from the rally venue, Robredo’s water broke. She went to the hospital and gave birth to their eldest daughter, Aika. “When Jesse came, his child was already there,” mused Robredo. </p>
+<p>Years later, Robredo had taken on a job with Saligan, an alternative law group that catered mostly to the poor. During one trip to a far-flung island barangay, a pregnant Robredo had to ride a <em>habal-habal</em> (motorcycle) and a <em>bangka</em> (boat) to reach a community of fisherfolk.</p>
+<p>They were going to hold a seminar to teach locals their rights under the law. They slept inside the fishermen’s boats and moved to nap under coconut trees when the men had to fish early in the morning. </p>
+<p><span style="font-size: x-large;"><strong>'From 1 percent to vice president'</strong></span></p>
+<p>The national stage offered a different terrain, which explains her initial reluctance to conquer it. But when she decided to go for it, Robredo <span style="line-height: 1.5;">embraced all its demands and complexities.</span></p>
+<p>“I may be new in politics,” she said. “But I’m not new to public service.”</p>
+<p>“Many say to be an empowered woman of our society, we always have to stand up and be heard, that all have to listen to our voice at every opportunity. Many say gender equality is all about being as strong as a man [but] in my life at least, it meant knowing when to let go of the limelight and knowing when to step up."</p>
+<p id="ext-gen73580"><img id="88DA25426D89445DA7E8423B05871385"   src="https://static.rappler.com/plugins/system/lazyload/blank.png" data-original="https://assets.rappler.com/AF037D2F418948B0BC2F9FDE6A3F7572/img/DE6047EAC54B49E59F4C55E745C7E3D6/leni-robredo-ateneo-20160515-021_DE6047EAC54B49E59F4C55E745C7E3D6.jpg" class="rappler_asset"   alt="ONSTAGE. Leni Robredo speaks to supporters after a thanksgiving mass at the Ateneo de Manila University, May 15, 2016. Photo by Martin San Diego/Rappler " data-parentid=""  /><p class="caption">ONSTAGE. Leni Robredo speaks to supporters after a thanksgiving mass at the Ateneo de Manila University, May 15, 2016. Photo by Martin San Diego/Rappler </p></p>
+<p>On the campaign trail, she made sure to strike the delicate balance between her personal story and her professional track record. While she’s never hesitated to talk about the pain of losing a husband, she also talked about the years she spent as a young lawyer who assisted people and communities from the “<em>laylayan</em>” (fringes of society). </p>
+<p>Robredo was up against 5 male, incumbent senators in the vice presidential race. Most of them hailed from entrenched political families. </p>
+<div class="blob-left"><hr />
+<blockquote>
+<p class="caption">President-elect Rodrigo Duterte: A profile</p>
+<h3><a href="http://www.rappler.com/newsbreak/in-depth/137583-rodrigo-duterte-philippine-president-profile" target="_blank">Rody Duterte: The man, the mayor, the president</a></h3>
+<p class="caption">If before Rodrigo Duterte would roll in bed thinking about the problems of Davao City, from now on he would think about the problems besetting the entire Philippines.</p>
+<p class="caption"><a href="http://www.rappler.com/newsbreak/in-depth/137583-rodrigo-duterte-philippine-president-profile" target="_blank">Read more</a></p>
+</blockquote>
+<hr /></div>
+<p>There was Senator Alan Peter Cayetano, whose sister and brother are incumbent legislators. Cayetano eventually placed 3rd in the race. Another Bicolano, Senator Francis Escudero, comes from a long line of Sorsogon politicians. He placed 4th in the race. </p>
+<p>Robredo’s chief rival, Senator Ferdinand Marcos Jr, is the only son and namesake of the late dictator. Marcos’ mother is a legislator while his older sister is governor of Ilocos Norte. Robredo defeated Marcos by just over 200,000 votes. </p>
+<p>“<em>Sa anim na kandidato, pang-anim ako. Kaya po nang nakita ko ang unang survey, sabi ko sa sarili ko, ‘Grabe namang lakas ng loob meron ako</em> (I was 6th in a race of 6. So when I saw the first survey I told myself, ‘Wow, I can’t believe my own audacity),” Robredo said in one of her campaign sorties.</p>
+<p>She went to as many towns as she could cover. The hard work paid off as she managed to land in a tie with Marcos in the last pre-election survey. </p>
+<p>At the final campaign rally of the LP in Quezon City, a beaming Robredo told the crowd: <span style="line-height: 1.5;">“<em style="line-height: 1.5;">Handa na akong maging nanay ng ating inang bayan</em> (I’m ready to be the mother of our motherland)." <strong>– Rappler.com</strong> </span></p>
+<wide-image> 
+<bg-image style="background: url('https://assets.rappler.com/8C8B8841397B45908111165BD92439B2/img/6363A35C4A354C94B335D70D31C5D075/Roxas-robredo-miting-de-avance-20160507-010.jpg');"> 
+</bg-image> 
+<text-container class="top light half left"> 
+<blockquote> 
+"Handa na akong maging nanay ng ating inang bayan." 
+<p class="caption">- Leni Robredo</p> 
+</blockquote> 
+</text-container> 
+</wide-image> 
+<p class="caption">Leni Robredo delivers her speech onstage during the liberal party's miting de avance at Quezon City Circle on May 7, 2016. Pat Nabong/Rappler</p>
+<hr width="25%" />
+<p class="caption">Top photo: Leni Robredo speaks to fisherfolk in Tangalan, Aklan, January 2016. Photo from Leni Robredo's Facebook page</p>
+<hr width="25%" />
+<p class="caption"><strong>Bea Cupin</strong>, <em>reporter</em> | <strong>Exxon Ruebe, Franz Lopez</strong>, <em>production specialists</em> | <strong>Glenda M. Gloria</strong>, <em>editor</em> | <strong>Pat Nabong, Martin San Diego, Allan Camata, Malacanang Photo Bureau, Leni Robredo campaign Facebook page</strong>, <em>photos</em> | <strong>KD Suarez</strong>, <em>design</em></p>            </div>
+</div>
+</div>
+<div class="main-wrapper">
+<div id="comments-tag-area" class="wrapper">
+<div class="row">
+<div class="col-xs-12 col-sm-12">
+<div id="cxense-final-yml"></div>
+<div class="rappler3-metakey-wrapper"></div>
+<div id="article_comments"></div>
+</div>
+</div>
+</div>
+<div class="text-center" style="margin: 0 auto;">
+<div class="text-center wrapper" style="min-height:60px; min-width:468px;" id="rappler3-common-desktop-tablet-bottom-ad">
+</div>
+</div>
+</div>
+</div>
+<div id="metakeyword_content-134741" style="display:none"><div class="rappler3-metakey"><b>Filed under:</b><a href="/previous-articles?filterMeta=%22%23PHVote%22" title="#PHVote">#PHVote</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%222016%20Philippine%20elections%22" title="2016 Philippine elections">2016 Philippine elections</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%222016%20elections%22" title="2016 elections">2016 elections</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22Aquino-Duterte%20transition%22" title="Aquino-Duterte transition">Aquino-Duterte transition</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22Maria%20Leonora%20Robredo%22" title="Maria Leonora Robredo">Maria Leonora Robredo</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22Philippine%20elections%22" title="Philippine elections">Philippine elections</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22vice%20president%22" title="vice president">vice president</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22vice%20presidential%20race%22" title="vice presidential race">vice presidential race</a><span class="bullet-list">&#8226;</span><a href="/previous-articles?filterMeta=%22Leni%20Robredo%22" title="Leni Robredo">Leni Robredo</a></div></div>
+</div>
+</div>
+<div id="footer-wrapper" class="wrapper footer padding print-invisible">
+<div class="main-wrapper">
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="custom"  >
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-orange bg"><a class="white link" href="#">ABOUT RAPPLER</a></div>
+</div>
+<p class="caption light">Welcome to Rappler, a social news network where stories inspire community engagement and digitally fuelled actions for social change. Rappler comes from the root words "rap" (to discuss) + "ripple" (to make waves).</p>
+<p class="caption light"><a class="white link" href="http://www.rappler.com/about-rappler/about-us/385-about-rappler">Read more</a></p>
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<ul class="caption light side-nav2">
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/6677-the-people-behind-rappler">Rappler's Founding Board</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/98278-2014-2016-board-of-directors">Rappler's 2014-2016 Board</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/21743-rappler-team">Rappler Team</a></li>
+<li><a class="white link" href="http://www.rappler.com/indonesia/tentang-kami">Rappler Indonesia Team</a></li>
+<li><a class="white link" href="http://www.rappler.com/bulletin-board/30113-job-openings-rappler">Job Openings</a></li>
+<li><a class="white link" href="http://www.rappler.com/previous-articles">Archives</a></li>
+<li><a class="white link" href="http://x.rappler.com">X</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<ul class="caption light side-nav2">
+<li><a class="white link" href="http://phvote.rappler.com">Join The #PHVote Challenge!</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/10941-rappler-privacy-statement">Privacy statement</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/19840-rappler-community-and-site-use-rules">Terms of Use</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-rappler/about-us/27506-comment-moderation-policy">Comment moderation Policy</a></li>
+<li><a class="white link" href="http://www.rappler.com/advertise">Advertise With Us</a></li>
+<li><a class="white link" href="http://www.rappler.com/about-us/1557-contact-us">Contact Us</a></li>
+</ul>
+</div>
+</div></div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="custom"  >
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 hidden-xs">
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-orange bg"><a class="white link">SECTIONS</a></div>
+</div>
+<ul class="caption light side-nav2">
+<li><a class="white link" href="http://ph.rappler.com/people">#PHvote 2016</a></li>
+<li><a class="white link" href="http://www.rappler.com/news">News</a></li>
+<li><a class="white link" href="http://www.rappler.com/video">Video</a></li>
+<li><a class="white link" href="http://www.rappler.com/business">Business</a></li>
+<li><a class="white link" href="http://www.rappler.com/newsbreak">Newsbreak</a></li>
+<li><a class="white link" href="http://www.rappler.com/move-ph">MovePH</a></li>
+<li><a class="white link" href="http://www.rappler.com/views">Views</a></li>
+<li><a class="white link" href="http://www.rappler.com/life-and-style">Life &amp; Style </a></li>
+<li><a class="white link" href="http://www.rappler.com/entertainment">Entertainment</a></li>
+<li><a class="white link" href="http://www.rappler.com/sports">Sports</a></li>
+<li><a class="white link" href="http://www.rappler.com/technology">Tech</a></li>
+<li><a class="white link" href="http://live.rappler.com">Live</a></li>
+<li><a class="white link" href="http://www.rappler.com/brandrap">BrandRap</a></li>
+<li><a class="white link" href="http://www.rappler.com/nation/special-coverage/weather-alert" target="_blank"><span>Weather in the Philippines</span></a></li>
+<li><a class="white link" href="http://www.rappler.com/move-ph/issues/disasters" target="_blank">Disasters</a></li>
+<li><a class="white link" href="http://www.rappler.com/life-and-style/travel" target="_blank">Travel destinations</a></li>
+<li><a class="white link" href="http://coupons.rappler.com" target="_blank" rel="nofollow">Coupons</a></li>
+<li><a class="white link" href="http://jobs.rappler.com" target="_blank">Jobs</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 hidden-xs">
+<div class="label-wrapper">
+<div class="float-rappler-label rappler-orange bg"><a class="white link">COMMUNITY</a></div>
+</div>
+<ul class="caption light side-nav2">
+<li><a class="white link" href="https://www.facebook.com/rapplerdotcom">Facebook</a></li>
+<li><a class="white link" href="https://twitter.com/rapplerdotcom">Twitter</a></li>
+<li><a class="white link" href="https://plus.google.com/+Rappler/posts">Google+</a></li>
+<li><a class="white link" href="https://www.youtube.com/rappler">Youtube</a></li>
+<li><a class="white link" href="https://storify.com/rapplerdotcom">Storify</a></li>
+<li><a class="white link" href="https://www.flickr.com/photos/rappler/">Flickr</a></li>
+<li><a class="white link" href="http://instagram.com/rappler">Instagram</a></li>
+<li><a class="white link" href="https://play.google.com/store/apps/details?id=com.rappler.RapplerMobile">Android</a></li>
+<li><a class="white link" href="https://itunes.apple.com/ph/app/rappler/id600797927?mt=8&amp;ign-mpt=uo%3D4">iOS</a></li>
+<li><a class="white link" href="http://apps.microsoft.com/windows/en-us/app/rappler/1edda496-4198-4f68-bf2a-104593ee13f5">Windows</a></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div> 
+<style>
+#userlogin_modal .form-addon {
+width:20% !important;
+}
+#userupd_modal .form-addon,
+#userreg_modal .form-addon {
+width:30% !important;
+}
+#userreg_modal .subscription_chk .form-addon,
+#userreg_modal .terms_chk .form-addon {
+width:100px !important;
+}
+</style>
+<div id="userlogin_modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h3 id="userlogin_modal_header" class="thin-margin">Log In with your Rappler Account</h3>
+</div>
+<div class="modal-body">
+<form id="frm_login" role="form">
+<div id="frm_login_error" class="alert alert-danger hide" style="text-align:center"></div>
+<fieldset>
+<div class="form-inline">
+<div class="form-addon">
+Email:
+</div>
+<div class="form-input">
+<input type="text" id="login_id" class="usr_text" name="login_id" value="" placeholder="Enter Email" required="required" autocomplete="on">
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Password:
+</div>
+<div class="form-input">
+<input type="password" id="login_password" class="usr_text" name="login_password" value="" placeholder="Enter Password" required="required" autocomplete="on" />
+</div>
+</div>
+</fieldset>
+</form>
+</div>
+<div class="modal-footer">
+<img id="frm_login_loader" src="https://static.rappler.com/templates/rappler3_default/img/AjaxLoader.gif" class="hide nolazyload">
+<button id="btn_login_cancel" class="rappler-red bg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+<button id="btn_login_submit" class="rappler-orange bg" type="button">Submit</button>
+</div>
+</div>
+</div>
+</div>
+<div id="userreg_modal" class="fade modal" tabindex="-1" role="dialog" aria-labelledby="registration" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<span id="userreg_modal_header_container">
+<h3 id="userreg_modal_header" class="thin-margin">Register for a RAPPLER Account</h3>
+<p class="details">Fields with <b>*</b> are required.</p>
+</span>
+</div>
+<div class="modal-body">
+<div id="reg_thankyou" class="hero-unit hide" style="text-align:center">
+<p>Thank You.
+<span id="reg_custommsg"></span>
+<br>View your profile page
+<a href="/index.php?option=com_rappler&task=userprofile&layout=userprofile">here</a> OR
+<br>Click close to continue.
+</p>
+</div>
+<form id="frm_register" role="form">
+<div id="frm_register_error" class="alert alert-error hide"></div>
+<fieldset>
+<div class="form-inline">
+<div class="form-addon">
+Email:
+</div>
+<div class="form-input">
+<input type="email" id="reg_email" class="usr_text" name="email" value="" placeholder="Enter Email*" required="required" autocomplete="on">
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Password:
+</div>
+<div class="form-input">
+<input type="password" id="reg_password" class="usr_text" name="password" value="" placeholder="Enter Password*" required="required" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+First Name:
+</div>
+<div class="form-input">
+<input type="text" id="reg_first_name" class="usr_text" name="first_name" value="" placeholder="Enter First Name*" required="required" autocomplete="on" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Last Name:
+</div>
+<div class="form-input">
+<input type="text" id="reg_last_name" class="usr_text" name="last_name" value="" placeholder="Enter Last Name*" required="required" autocomplete="on" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Birthday: <br>(YYYY-MM-DD)
+</div>
+<div class="form-input">
+<input type="text" id="reg_birthdate" class="usr_text" name="birthdate" value="" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+City/Municipality:
+</div>
+<div class="form-input">
+<input type="text" id="reg_city" class="usr_text" name="city" value="" autocomplete="on" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Province:
+</div>
+<div class="form-input">
+<input type="text" id="reg_province" class="usr_text" name="province" value="" autocomplete="on" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Gender:
+</div>
+<div class="form-input">
+<select id="reg_gender" name="gender" class="usr_select" style="width:100%;">
+<option value="select">Select gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Contact Number:
+</div>
+<div class="form-input">
+<input type="text" id="reg_contactno" class="usr_text" name="contactno" value="" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+School/Work:
+</div>
+<div class="form-input">
+<input type="text" id="reg_org" class="usr_text" name="org" value="" autocomplete="off" />
+</div>
+</div>
+<h3 class="thin-margin margin top padding">Subscriptions</h3>
+<div class="subscription_chk">
+<div class="form-inline">
+<div class="form-addon">
+<input type="checkbox" id="chk_thewrap" name="chk_thewrap" value="YES" />
+</div>
+<div class="form-input padding left">
+I want to subscribe to the Rappler daily wRap
+</div>
+</div>
+<input type="hidden" id="chk_moveph" name="chk_moveph" value="NO" />
+<div class="form-inline">
+<div class="form-addon">
+<input type="checkbox" id="chk_agos" name="chk_agos" value="YES" />
+</div>
+<div class="form-input padding left">
+I want to be a Project Agos volunteer
+</div>
+</div>
+</div>
+<h3 class="thin-margin margin top padding">Terms & Conditions</h3>
+<div class="terms_chk">
+<div class="form-inline">
+<div class="form-addon">
+<input type="checkbox" name="agree" id="agree" value="YES" />
+</div>
+<div id="reg_agree_text" class="form-input padding left">
+I agree to the Rappler terms and conditions below:
+</div>
+</div>
+</div>
+<div>
+<ul>
+<li><a href="http://www.rappler.com/about-rappler/about-us/10941-rappler-privacy-statement">Privacy Statement</a></li>
+<li><a href="http://www.rappler.com/about-rappler/about-us/19840-rappler-community-and-site-use-rules">Site Use Policy</a></li>
+<li><a href="http://www.rappler.com/about-rappler/about-us/27506-comment-moderation-policy">Comment Moderation Policy</a></li>
+</ul>
+</div>
+</fieldset>
+</form>
+</div>
+<div class="modal-footer">
+<img id="frm_register_loader" src="https://static.rappler.com/plugins/system/lazyload/blank.png" data-original="/templates/rappler3_default/img/AjaxLoader.gif" class="hide">
+<button id="btn_usr_cancel" class="rappler-red bg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+<button id="btn_usr_submit" class="rappler-orange bg" type="button">Submit</button>
+</div>
+</div>
+</div>
+</div>
+<div id="userupd_modal" class="rappler_bmodal modal" tabindex="-1" role="dialog" aria-labelledby="registration" data-backdrop="static" data-keyboard="false" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+<span id="userupd_modal_header_container">
+<h3 id="userupd_modal_header" class="thin-margin">Update your information</h3>
+<p id="userupd_modal_subheader" class="details"> Fields with <b>*</b> are required. </p>
+</span>
+</div>
+<div class="modal-body">
+<div id="upd_thankyou" class="jumbotron hide" style="text-align:center">
+<p>Thank You.<br>You have successfully updated your account.</p>
+</div>
+<form id="frm_update">
+<input type="hidden" id="upd_sendconfirm" name="sendconfirmation" value="0" />
+<div id="frm_update_error" class="alert alert-error hide"></div>
+<fieldset>
+<div class="form-inline">
+<div class="form-addon">
+First Name:
+</div>
+<div class="form-input">
+<input type="text" id="upd_first_name" class="usr_text" name="first_name" value="" placeholder="Enter First Name*" required="required" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Last Name:
+</div>
+<div class="form-input">
+<input type="text" id="upd_last_name" class="usr_text" name="last_name" value="" placeholder="Enter Last Name" required="required" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Email:
+</div>
+<div class="form-input">
+<input type="email" id="upd_email" class="usr_text" name="email" value="" placeholder="Enter Email*" required="required" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Birthday: <br>(YYYY-MM-DD)
+</div>
+<div class="form-input">
+<input type="text" id="upd_birthdate" class="usr_text" name="birthdate" value="" autocomplete="off" />
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+City/Municipality:
+</div>
+<div class="form-input">
+<input type="text" id="upd_city" class="usr_text" name="city" value="" autocomplete="off">
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Province:
+</div>
+<div class="form-input">
+<input type="text" id="upd_province" class="usr_text" name="province" value="" autocomplete="off">
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Gender:
+</div>
+<div class="form-input">
+<select id="upd_gender" name="gender" class="usr_select" style="width:100%;">
+<option value="select">Select gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+Contact Number:
+</div>
+<div class="form-input">
+<input type="text" id="upd_contactno" class="usr_text" name="contactno" value="">
+</div>
+</div>
+<div class="form-inline">
+<div class="form-addon">
+School/Work:
+</div>
+<div class="form-input">
+<input type="text" id="upd_org" class="usr_text" name="org" value="" autocomplete="off">
+</div>
+</div>
+</fieldset>
+</form>
+</div>
+<div class="modal-footer">
+<img id="frm_update_loader" src="https://static.rappler.com/templates/rappler3_default/img/AjaxLoader.gif" class="hide nolazyload">
+<button id="btn_usrupd_cancel" class="rappler-red bg" data-dismiss="modal" aria-hidden="true">Cancel</button>
+<button id="btn_usrupd_submit" class="rappler-orange bg" type="button">Submit</button>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var mm_server = 'https://mm.rappler.com';
+var isSharingImageTextEnabled = 1; </script>
+<script src="https://cdn.boomtrain.com/analyticstrain/1a1e951c0be6ac5f7a57c617f1160972/analyticstrain.min.js" type="text/javascript"></script>
+<script src="https://static.rappler.com/cache/assets/1500305705-5e8977fd095c6306b941d6311d57e0a5.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() { if(typeof(setInitialContentId)=='function'&&typeof(initContentId)=='undefined') { setInitialContentId( '134741', "http://www.rappler.com/nation/134741-becoming-leni-robredo", "Becoming Leni Robredo", "The Philippines' newly elected vice president is more than the story she loves to tell on the campaign trail "); } });
+$(document).ready(function() {
+if($("div.js-megamenu img").length>0) {
+$("div.js-megamenu img").lazyload({event:"megamenu"});
+}
+if($("#latest-news-carousel img").length>0) {
+$("#latest-news-carousel img").lazyload({event:"latestnewscarousel"});
+}
+if($("#rappler3-related-carousel img").length>0) {
+$("#rappler3-related-carousel img").lazyload({event:"relatedcarousel"});
+}
+$("img").lazyload({effect:"fadeIn",skip_invisible:false,failure_limit:50});
+});
+var gm_view = 'article';
+var deviceType = 'desktop';
+var adInlineWordCount = 400;
+_atrk_opts = { atrk_acct:"Jv+uf1agkf00Of", domain:"rappler.com",dynamic: true}; (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+function updateAlert(visibility, message, mood) {
+if(visibility === 'show') {
+$('.new-mood-alert').addClass('visible');
+$('.new-mood-alert').html(message);
+setTimeout(function(){
+$('.new-mood-alert').removeClass('visible');    
+}, 2000);
+} else {
+$('.new-mood-alert').removeClass('visible');
+}
+}
+var clickState = false;
+var data = [];
+$('#mm-button, .mood, .mm-overlay').click(function() {
+////console.log(that.state);
+if (clickState) { //already clicked
+$('.mood').removeClass('fade');
+setTimeout(function(){ $('.mood').removeClass('visible'); }, 300);
+$('.mm-overlay').removeClass('fade');
+setTimeout(function(){ $('.mm-overlay').removeClass('visible'); }, 150);
+$('body').removeClass('mm-open');
+clickState = false;    
+} else { //new clicks
+$('.mood').addClass('visible');
+setTimeout(function(){ $('.mood').addClass('fade'); }, 300);
+$('.mm-overlay').addClass('visible');
+setTimeout(function(){ $('.mm-overlay').addClass('fade'); }, 150);
+$('body').addClass('mm-open');
+clickState= true
+}
+});
+$(document).ready(function() {
+rapplerCreateSharebar({
+title:'Becoming Leni Robredo',
+url:'http://www.rappler.com/nation/134741-becoming-leni-robredo',
+showpin:'https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/79D75FD097BA4CCEB7950CC1DE6B2596/leni-share-image.jpg',
+container:'gysharebarh',
+orientation:'horizontal',
+showcount:'none'
+},true);
+//console.log('134741');
+var item_id = '134741',
+content_id = '134741',
+url = 'http://www.rappler.com/nation/134741-becoming-leni-robredo',
+title = 'Becoming Leni Robredo';
+item_init(item_id, content_id, url, title);
+$('[data-toggle="popover"]').popover({
+trigger: 'click focus hover',
+});
+});
+var initialized_items = [];
+function item_init(item_id, content_id, url, title) {
+initialized_items.push(item_id);
+var fullurl = 'http://www.rappler.com' + url;
+var datum = [];
+// fetch moodmeter counts
+$.get('https://mm.rappler.com/moodmeter/ranking?rsort=1&content_id=' + item_id, { }, function (data) {
+//console.log(data);
+if(data.moods) {
+var topmood = '',
+topmoodcnt = 0,
+//r = data,
+clr = '#E76229',
+txt = 'Divided';
+for (var key in data.moods) {
+if (data.moods.hasOwnProperty(key)) {
+if (data.moods[key] > topmoodcnt) {
+topmood = key;
+topmoodcnt = data.moods[key];
+}
+}
+}
+switch (topmood) {
+case 'afraid':
+clr = "#e1ca4c";
+txt = 'Afraid';
+break;
+case 'amused':
+clr = "#74d2e3";
+txt = 'Amused';
+break;
+case 'annoyed':
+clr = "#987989";
+txt = 'Annoyed';
+break;
+case 'angry':
+clr = "#b70002";
+txt = 'Angry';
+break;
+case 'dont_care':
+clr = "#9a9a9a";
+txt = "Don't Care";
+break;
+case 'happy':
+clr = '#acd759';
+txt = 'Happy';
+break;
+case 'inspired':
+clr = "#5fcc5c";
+txt = 'Inspired';
+break;
+case 'sad':
+clr = "#4c6676";
+txt = 'Sad';
+break;
+default:
+clr = '#E76229',
+txt = 'Divided';
+break;
+}
+datum.push({
+dominantMood: {
+color: clr,
+text: txt
+},
+});
+}
+//console.log(datum);
+var mood_el = $('#mood-meter');
+mood_el.find('.mood.happy > div > p').html(data.moods.happy + '%');
+mood_el.find('.mood.sad > div > p').html(data.moods.sad + '%');
+mood_el.find('.mood.angry > div > p').html(data.moods.angry + '%');
+mood_el.find('.mood.dontcare > div > p').html(data.moods.dont_care + '%');
+mood_el.find('.mood.inspired > div > p').html(data.moods.inspired + '%');
+mood_el.find('.mood.afraid > div > p').html(data.moods.afraid + '%');
+mood_el.find('.mood.amused > div > p').html(data.moods.amused + '%');
+mood_el.find('.mood.annoyed > div > p').html(data.moods.annoyed + '%');
+$('#mood-label-main').html(datum[0].dominantMood.text);
+$('#mm-button').css("background-color", datum[0].dominantMood.color);
+});
+}
+head.js("/components/com_rappler/js/jquery.cookie.min.js",
+"/modules/mod_rappler3_moods/js/moodmeter.min.js",
+"/modules/mod_rappler3_moods/js/moodmeter_client.min.js", function () {
+moodMeterClient = new MoodMeterClient({domain: "https://mm.rappler.com"});
+moodMeterClient.initClient(function (isExists, hash) {
+$('.mood').click(function () {
+var mood_type_id = $(this).attr('rel'),
+mood = '',
+contentId = '134741',
+rank = 1;
+console.log(contentId);
+if ($(this).hasClass('happy')) {
+mood = "Happy"
+}
+if ($(this).hasClass('sad')) {
+mood = "Sad"
+}
+if ($(this).hasClass('angry')) {
+mood = "Angry"
+}
+if ($(this).hasClass('inspired')) {
+mood = "Inspired"
+}
+if ($(this).hasClass('afraid')) {
+mood = "Afraid"
+}
+if ($(this).hasClass('amused')) {
+mood = "Amused"
+}
+if ($(this).hasClass('dontcare')) {
+mood = "Don't Care"
+}
+if ($(this).hasClass('annoyed')) {
+mood = "Annoyed"
+}
+//$('#moodloading_' + contentId).fadeIn()
+$.post('https://mm.rappler.com/moodmeter/vote', {
+hash           : hash,
+mood_type_id   : mood_type_id,
+mood_type_name : mood,
+content_id     : contentId,
+cookies_enabled: 1
+}, function (data) {
+var moodTypeId = 0;
+if(!data.content_mood_id) {
+//alert("You've already voted");
+updateAlert('show',"Sorry. You've already voted",data.mood_type_name);
+} else {
+updateAlert('show',"Thank you for voting " + data.mood_type_name ,data.mood_type_name);
+//$('#moodthanks_' + contentId).html('Thank you for voting ' + mood).fadeIn().delay(3000).fadeOut();
+var url = 'https://mm.rappler.com/moodmeter/ranking?content_id=' + contentId;
+$.getJSON(url, {}, function (data) {
+var mood_el = $('#mood-meter');
+mood_el.find('.mood.happy > div > p').html(data.moods.happy + '%');
+mood_el.find('.mood.sad > div > p').html(data.moods.sad + '%');
+mood_el.find('.mood.angry > div > p').html(data.moods.angry + '%');
+mood_el.find('.mood.dontcare > div > p').html(data.moods.dont_care + '%');
+mood_el.find('.mood.inspired > div > p').html(data.moods.inspired + '%');
+mood_el.find('.mood.afraid > div > p').html(data.moods.afraid + '%');
+mood_el.find('.mood.amused > div > p').html(data.moods.amused + '%');
+mood_el.find('.mood.annoyed > div > p').html(data.moods.annoyed + '%');
+})
+}
+//$('#moodloading_' + contentId).fadeOut();
+})
+})
+})
+})
+$(document).ready(function () {
+// Render sharebars
+rapplerCreateSharebar({
+title      : 'Becoming Leni Robredo',
+url        : 'http://www.rappler.com/nation/134741-becoming-leni-robredo',
+showpin    : 'https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/79D75FD097BA4CCEB7950CC1DE6B2596/leni-share-image.jpg',
+container  : 'storypageShare-134741',
+orientation: 'vertical',
+showcount  : 'top',
+via        : '@rapplerdotcom'
+}, true, true, 134741)
+rapplerCreateSharebar({
+title      : 'Becoming Leni Robredo',
+url        : 'http://www.rappler.com/nation/134741-becoming-leni-robredo',
+showpin    : 'https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/79D75FD097BA4CCEB7950CC1DE6B2596/leni-share-image.jpg',
+container  : 'gysharebarh-2-134741',
+orientation: 'horizontal',
+showcount  : 'top',
+via        : '@rapplerdotcom'
+}, true, true, 134741)
+rapplerCreateSharebar({
+title      : 'Becoming Leni Robredo',
+url        : 'http://www.rappler.com/nation/134741-becoming-leni-robredo',
+showpin    : 'https://assets.rappler.com/FD3B54A5BAF649959EBE398D1A7E88C6/img/79D75FD097BA4CCEB7950CC1DE6B2596/leni-share-image.jpg',
+container  : 'gysharebarh-134741',
+orientation: 'horizontal',
+showcount  : 'none',
+via        : '@rapplerdotcom'
+}, true);
+//console.log("░░░░░░░░░▄░░░░░░░░░░░░░░▄" + "\n" + "░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌" + "\n" + "░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐" + "\n" + "░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐" + "\n" + "░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐" + "\n" + "░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌" + "\n" + "░░▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒▌" + "\n" + "░░▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐" + "\n" + "░▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌" + "\n" + "░▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌" + "\n" + "▌▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐" + "\n" + "▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌" + "\n" + "▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐" + "\n" + "░▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌" + "\n" + "░▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐" + "\n" + "░░▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌" + "\n" + "░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀" + "\n" + "░░░░░░▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀" + "\n" + "░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀");
+//console.log("Such hacker, much amaze!");
+});
+var id = 134741;
+var title = $("#story-area-" + id).attr("data-article_title");
+//gamification
+var gm_id = '134741';
+var gm_cats = $('#story-area-'+gm_id).attr('data-article_categories');
+var gm_title = "Becoming Leni Robredo";
+if (gigya) {
+gigya.socialize.getUserInfo({
+callback: function (r) {
+if (r.user.isLoggedIn) {
+if (r.user.isSiteUID) {
+//record read actions
+recordCommunityAction('read', {
+contentId:gm_id,
+contentTitle:gm_title,
+contentUrl:window.location.href
+});
+//show notification
+gigya.gm.showNotifications({
+excludeChallenges: 'Overall Rank',
+onNewLevel: function(event) {
+publishToFeed('newLevel', { levelTitle:event.challenge.levelTitle });
+}
+});
+}
+}
+}
+});
+}
+if(!initContentId) { var initContentId; } if(!contentMoodId) { var contentMoodId; } $(document).ready(function() { if(gigya) { gigya.comments.showCommentsUI({ categoryID: 'General', streamID: '5005ab2147_id134741', streamURL:'http://www.rappler.com/nation/134741-becoming-leni-robredo', containerID: 'article_comments', width:'100%', deviceType:'auto', cid:'', version:2, onLoad: function(){ $('#article_comments').addClass("clearfix"); }, onCommentSubmitted:function(e) { var params = { 'content_id': initContentId, 'content_mood_id': contentMoodId, 'comment_data':JSON.stringify(e.comment) }; $.post('/?option=com_rappler&task=moodmeter.write_gigya_comment', params, function(data) { socialize.refreshUI(); },'json'); recordCommunityAction('comment',{ contentId:'134741', contentUrl:'http://www.rappler.com/nation/134741-becoming-leni-robredo' }); } }) } });
+// Render Ads Last
+//renderLeaderboardAd();
+//renderNativeAd();
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"77a19f2746","applicationID":"36625530","transactionName":"ZVdWNhZWDUFWU0EPXFwddQEQXgxcGHNaCEdXXEAhC1kXQFhcWQNBHVZdERRbAks=","queueTime":0,"applicationTime":1015,"atts":"SRBVQF5MHk8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -67,6 +67,9 @@ DOWNLOAD_DELAY = 10
 ITEM_PIPELINES = {
    'crawler.pipelines.CrawlerPipeline': 300,
 }
+DOWNLOADER_MIDDLEWARES = {
+	'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
