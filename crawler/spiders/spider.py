@@ -11,6 +11,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse
 import urllib
 import pymysql
+import emoji
 
 db = pymysql.connect("localhost","root","belle","thsst_db" )
 
@@ -28,12 +29,11 @@ class Spider(scrapy.Spider):
         urls.append("".join(row))
 
     cursor.close()
-
     start_urls = urls
 
     def getLastId(self):
         cursor = db.cursor()
-        count = cursor.execute("SELECT COUNT(*) FROM page")
+        cursor.execute("SELECT COUNT(*) FROM page")
         db.commit()
         rows = cursor.fetchone()[0]
         cursor.close()
@@ -42,7 +42,7 @@ class Spider(scrapy.Spider):
     def parse(self, response):
 
         self.getLastId()
-        
+
         for rapplerStory in response.css('div.story-area'):
 
             item = CrawlerItem()
@@ -80,15 +80,19 @@ class Spider(scrapy.Spider):
                 cleantext = BeautifulSoup(str(content), "lxml").text
                 content = re.sub('fulltext', '', cleantext, 1)
                 content = re.sub('[^A-Za-z0-9\.]+', ' ', content)
-                item["content"] = content
-                # item["content"] = bytes(content, 'utf-8').decode('utf-8', 'ignore')
 
+                patt = re.compile(u"[^\U00000000-\U0000d7ff\U0000e000-\U0000ffff]", flags=re.UNICODE)
+                item["content"] = patt.sub(u'', content)
+                
             except:
                 try:
                     #content located in <p> (scripts not included) or <p><span> 
                     content = response.xpath('//div[starts-with(@class,"story-area")]//p//text()[not(ancestor::script|ancestor::style|ancestor::noscript)] | //div[starts-with(@class,"story-area")]//p/span//text()').extract()
+                    
                     item["content"] = u','.join(content)
-                    # item["content"] = bytes(item["content"], 'utf-8').decode('utf-8', 'ignore')
+
+                    patt = re.compile(u"[^\U00000000-\U0000d7ff\U0000e000-\U0000ffff]", flags=re.UNICODE)
+                    item["content"] = patt.sub(u'', item["content"])
 
                 except:
                     item["content"] = ""  
